@@ -1,0 +1,81 @@
+             Pgm
+
+             DclF       File(TEMPMENUS) RcdFmt(*ALL)
+
+             Dcl        &Job      *char      10
+             Dcl        &MsgDta   *char  256
+             Dcl        &MsgID    *char    7
+             Dcl        &RtnType  *char    2
+             Dcl        &MsgF     *char   10
+             Dcl        &MsgFLib  *char   10
+             Dcl        &Sender   *char   80
+             Dcl        &PgmName  *char   10
+             Dcl        &MsgKey   *char    4
+             Dcl        &Today    *char    6
+             Dcl        &Header   *char   30
+             Dcl        &Option   *dec    (2 0)
+             Dcl        &Abending *lgl
+/*-------------------------------------------------------------------*/
+/* Global Error Monitoring                                           */
+/*-------------------------------------------------------------------*/
+             MonMsg     CPF0000 Exec(GoTo Abend)
+             MonMsg     MCH0000 Exec(GoTo Abend)
+/*-------------------------------------------------------------------*/
+/* Retrieve the program name                                         */
+/*-------------------------------------------------------------------*/
+             SndPgmMsg  msg(' ') topgmq(*same) msgtype(*info) +
+                          keyvar(&msgkey)
+             RcvMsg     pgmq(*same) msgtype(*info) sender(&sender) +
+                          rmv(*yes)
+             ChgVar     VAR(&PGMNAME) VALUE(%SST(&SENDER 56 10))
+
+             RtvJobA    Job(&Job) User(&WsUser)
+
+             Call       Pgm(MnuTopR) Parm(&Header)
+
+ STRLOOP:    SndRcvF    RcdFmt(TEMPMENU)
+             RmvMsg     PgmQ(*Same) Clear(*All)
+
+             Select
+
+ F3:            When       Cond(&IN03) Then(GoTo CmdLbl(End))
+ F12:           When       Cond(&IN12) Then(GoTo CmdLbl(End))
+ OPT30:         When       Cond(&OPTION *EQ 30) Then(GoTo CmdLbl(End))
+
+ OPT90:         When       Cond(&OPTION *EQ 90) Then(Do)
+                   SignOff
+
+                EndDo
+                Otherwise  Do
+                   SndPgmMsg  ('Invalid Option Entered') ToPgmQ(*Same)
+                   GoTo       StrLoop
+                EndDo
+
+ ENDLOOP:    EndSelect
+
+/*-------------------------------------------------------------------*/
+             /* Routine to handle unexpected errors */
+/*-------------------------------------------------------------------*/
+ Abend:
+             If         Cond(&Abending) Then(Return)
+             ChgVar     Var(&Abending) Value('1')
+
+             RcvMsg     MsgType(*LAST) MsgDta(&MsgDta) MsgId(&MsgId) +
+                          RtnType(&RtnType) MsgF(&MsgF) +
+                          SndMsgFLib(&MsgFLib)
+             If         Cond((&RtnType *EQ '15') *OR (&RtnType *EQ '17')) +
+                          Then(Do) /* *escape */
+                SndPgmMsg  MsgId(&MsgId) MsgF(&MsgF) MsgDta(&MsgDta) +
+                             MsgType(*DIAG)
+             EndDo
+ Escape:
+             SndPgmMsg  MsgId(CPF9898) MsgF(QCPFMSG) MsgDta('Program' +
+                          *BCAT &PGMNAME *BCAT 'ended abnormally') +
+                          MsgType(*ESCAPE)
+
+/*-------------------------------------------------------------------*/
+/*- End of Program                                                  -*/
+/*-------------------------------------------------------------------*/
+
+ End:        Return
+             EndPgm
