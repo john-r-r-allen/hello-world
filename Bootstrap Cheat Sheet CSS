@@ -106,7 +106,7 @@
 }
 #section1 {
 	padding-top:50px;
-	height:600px;
+	height:550px;
 	overflow-y:auto;
 	color: #000000; 
 	background-color:rgba(200,100,200,100);
@@ -114,7 +114,7 @@
 }
 #section2 {
 	padding-top:50px;
-	height:600px;
+	height:550px;
 	overflow-y:auto;
 	color: #000000; 
 	background-color: rgba(100, 200, 200,100);
@@ -122,7 +122,7 @@
 }
 #section3 {
 	padding-top:50px;
-	height:600px;
+	height:550px;
 	overflow-y:auto;
 	color: #000000; 
 	background-color: rgba(200, 200, 100,100);
@@ -130,7 +130,7 @@
 }
 #section4 {
 	padding-top:50px;
-	height:600px;
+	height:550px;
 	overflow-y:auto;
 	color: #000000; 
 	background-color: rgba(100, 200, 100,100);
@@ -138,7 +138,7 @@
 }
 #section5 {
 	padding-top:50px;
-	height:600px;
+	height:550px;
 	overflow-y:auto;
 	color: #000000; 
 	background-color: rgba(200, 100, 100,100);
@@ -147,7 +147,7 @@
 
 #section6 {
 	padding-top:50px;
-	height:600px;
+	height:550px;
 	overflow-y:auto;
 	color: #ffffff; 
 	background-color: rgba(100, 100, 200,100);
@@ -155,7 +155,7 @@
 }
 #section7 {
 	padding-top:50px;
-	height:600px;
+	height:550px;
 	overflow-y:auto;
 	color: #000000; 
 	background-color: rgba(100, 200, 100,100);
