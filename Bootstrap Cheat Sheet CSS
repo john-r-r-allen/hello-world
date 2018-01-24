@@ -1,0 +1,163 @@
+.profile-picture {
+	margin-right: 25px;
+	height: auto;
+	max-width: 100%;
+}
+
+.profile-link {
+	height: auto;
+	max-width: 100%;
+}
+
+.pull-left {
+	float:left!important;
+}
+
+
+.pull-center{
+	float:center!important;
+}
+
+.pull-right {
+	float:right!important;
+}
+
+.img-responsive{
+	display:block;
+	max-width:100%;
+	height:auto
+}
+
+/* CUSTOM NAVBAR COLORS */
+.navbar-custom {
+    background-color:#1a75ff;
+    color:#ffffff;
+	border-color:darkblue;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color: #005ce6;
+	border-color:darkblue;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: inverse;
+    background-color: #ff9900;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#33aa33;
+}
+
+
+.coding-example {
+	font: monaco;
+	width:auto;
+	background-color: #fff;
+	padding: 8px 12px;
+	border-left: 4px solid purple;
+	word-wrap: break-word;
+}
+
+.coding-example-box {
+	background-color:rgba(250,250,250,100);
+	padding:1em 16px;
+	margin:20px 0;
+	box-shadow:0 2px 4px 0 rgba(190,255,190,100), 0 5px 10px 0 rgba(0,0,0,1) !important;
+}
+
+ .navbar-toggler .icon-bar {
+      background-color: #888;
+}
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.img-spacer {
+	margin: 10px;
+}
+
+.body {
+    position: relative; 
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#section1 {
+	padding-top:50px;
+	height:600px;
+	overflow-y:auto;
+	color: #000000; 
+	background-color:rgba(200,100,200,100);
+	font:monaco;
+}
+#section2 {
+	padding-top:50px;
+	height:600px;
+	overflow-y:auto;
+	color: #000000; 
+	background-color: rgba(100, 200, 200,100);
+	font:monaco;
+}
+#section3 {
+	padding-top:50px;
+	height:600px;
+	overflow-y:auto;
+	color: #000000; 
+	background-color: rgba(200, 200, 100,100);
+	font:monaco;
+}
+#section4 {
+	padding-top:50px;
+	height:600px;
+	overflow-y:auto;
+	color: #000000; 
+	background-color: rgba(100, 200, 100,100);
+	font:monaco;
+}
+#section5 {
+	padding-top:50px;
+	height:600px;
+	overflow-y:auto;
+	color: #000000; 
+	background-color: rgba(200, 100, 100,100);
+	font:monaco;
+}
+
+#section6 {
+	padding-top:50px;
+	height:600px;
+	overflow-y:auto;
+	color: #ffffff; 
+	background-color: rgba(100, 100, 200,100);
+	font:monaco;
+}
+#section7 {
+	padding-top:50px;
+	height:600px;
+	overflow-y:auto;
+	color: #000000; 
+	background-color: rgba(100, 200, 100,100);
+	font:monaco;
+}
