@@ -1,0 +1,36 @@
+ A          R TOP                       SKIPB(2)
+     A                                     2DATE EDTCDE(Y)
+     A                                    30'Title for Printer File +
+     A                                      goes here. :) '
+     A                                    72TIME
+     A                                      SPACEA(1)
+     A                                     4'FLD1'
+     A                                    10'FLD2'
+     A                                    16'FLD3'
+     A                                    22'FLD4'
+     A                                    36'FLD7'
+     A                                    46'FLD5 /'
+     A                                      SPACEA(1)
+     A                                     4'FLD1'
+     A                                    10'FLD2'
+     A                                    16'FLD3'
+     A                                    25'FLD4'
+     A                                    37'FLD7'
+     A                                    46'FLD6'
+     A                                      SPACEA(1)
+     A                                     4'----'
+     A                                    10'----'
+     A                                    16'----'
+     A                                    22'----------'
+     A                                    34'----------'
+     A                                    46'--------------------------------'
+     A                                      SPACEA(1)
+     A          R DETAIL
+     A            FIELD1         2         5
+     A            FIELD2         2        11
+     A            FIELD3         2        17
+     A            FIELD4          L       22
+     A            FIELD7          L       34
+     A            FIELD5         1        46
+     A            FIELD6        30        48
+     A                                      SPACEA(1)                            
