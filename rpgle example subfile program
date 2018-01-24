@@ -1,0 +1,1993 @@
+RPGLE Subfile Example Program
+
+						
+      *=============================================================================================
+      *                          H E A D E R   S P E C I F I C A T I O N S
+      *=============================================================================================
+       Ctl-Opt DftActGrp(*No) ActGrp(*Caller) SrtSeq(*LangIDShr) AltSeq(*Ext)
+               Option(*NoDebugIO:*SrcStmt:*NoUnref) FixNbr(*Zoned: *InputPacked)
+               AlwNull(*UsrCtl);
+      *=============================================================================================
+      *                           F I L E   S P E C I F I C A T I O N S
+      *=============================================================================================
+       Dcl-F MainFilePF Usage(*Update: *Output) Rename(MAINFR: PFR) UsrOpn
+                              InfDS(MainFilePF_InfDS);
+       Dcl-F MainFileLF Keyed InfDS(MainFileLF_InfDS);
+       Dcl-F ControlF1  Keyed;
+       Dcl-F ControlF2  Keyed;
+       Dcl-F ControlF3  Keyed;
+       Dcl-F ControlF4  Keyed;
+       Dcl-F ControlF5  Keyed;
+       Dcl-F SFSCRATCHP Printer OflInd(OverFlow);
+       Dcl-F SFScratchS WorkStn InfDS(DspF_info) SFile(Sfl1A: Rrn1)
+                        SFile(Sfl1B:Rrn1) SFile(fsfl1:RrnQ) SFile(Wdw:RrnW);
+      *=============================================================================================
+      *                      D E F I N I T I O N   S P E C I F I C A T I O N S
+      *=============================================================================================
+      *=============================================================================================
+      *                             Program Status Data Structure
+      *=============================================================================================
+       Dcl-DS @SDS  PSDS;
+        @ProcName   *Proc;                // Name of Main Proc
+        @PgmStatus  *Status;              // Status Code
+        @PrvStatus  Zoned(5:0) Pos(16);   // Previous Status Code
+        @LineNum    Char(8)    Pos(21);   // RPGIV Source listing Statement Num.
+        @Routine    *Routine;             // Name of routine where error occurred
+        @Parms      *Parms;               // # of parms passed to pgm
+        @ExceptTyp  Char(3)    Pos(40);   // Exception Type
+        @ExceptNum  Char(4)    Pos(43);   // Exception #
+        @Reserved   Char(4)    Pos(47);   // Reserved
+        @WorkMssg   Char(30)   Pos(51);   // Work area for messages
+        @PgmLibr    Char(10)   Pos(81);   // Name of lib where PGM is located
+        @RTVExcDta  Char(80)   Pos(91);   // Retrieved Exception Data
+        @ExceptID   Char(4)    Pos(171);  // Exception ID that caused RNX9001
+        @FileName   Char(10)   Pos(175);  // Full Name of File in Pos 201
+        @Unused6    Char(6)    Pos(185);  // Unused
+        @JobDate    Char(8)    Pos(191);  // Date Job entered the System
+        @JobDateNum Zoned(8)   Pos(191);  // Date Job entered the System, Numeric
+        @JobDateMm  Zoned(2)   Pos(191);  // Month Job entered the System, Numeric
+        @JobDateDd  Zoned(2)   Pos(193);  // Day Job entered the System, Numeric
+        @JobDateCn  Zoned(2)   Pos(195);  // Century Job entered the System, Numeric
+        @JobDateYy  Zoned(2)   Pos(197);  // Year Job entered the System, Numeric
+        @JobCentry  Char(2)    Pos(199);  // Century for @UDate (Pos 270)
+        @LastFile   Char(8)    Pos(201);  // Name of File where last op occurred
+        @FileInfo   Char(35)   Pos(209);  // Status Info on last file used
+        @WrkStn     Char(10)   Pos(244);  // Job Name
+        @UserID     Char(10)   Pos(254);  // User name from user profile
+        @JobNumber  Zoned(6:0) Pos(264);  // Job Number
+        @JobUDate   Zoned(6:0) Pos(270);  // Job Date YYMMDD format
+        @PGMRunDat  Zoned(6:0) Pos(276);  // Date of Pgm running
+        @PGMRunTim  Zoned(6:0) Pos(282);  // Time of the Pgm running
+        @PGMCmpDat  Char(6)    Pos(288);  // Compile Date YYMMDD Format
+        @PGMCmpTim  Char(6)    Pos(294);  // Compile Time HHMMSS Format
+        @LvlCompile Char(4)    Pos(300);  // Level of the compiler
+        @SrcFile    Char(10)   Pos(304);  // Source File Name
+        @SrcLibr    Char(10)   Pos(314);  // Source Library Name
+        @SrcFilMbr  Char(10)   Pos(324);  // Source Member Name
+        @PGMName    Char(10)   Pos(334);  // Program containing Procedure
+        @ModuName   Char(10)   Pos(344);  // Module containing Procedure
+        @Unused76   Char(76)   Pos(354);  // Unused
+       End-DS;
+      *=============================================================================================
+      *                               D a t a   S t r u c t u r e s
+      *=============================================================================================
+       Dcl-S PIndicators    Pointer Inz(%Addr(*In));
+       Dcl-DS *N            Based(PIndicators);
+         Indicators         Char(99);
+         F1                 Ind Overlay(Indicators: 01);
+         F2                 Ind Overlay(Indicators: 02);
+         F3                 Ind Overlay(Indicators: 03);
+         F4                 Ind Overlay(Indicators: 04);
+         F5                 Ind Overlay(Indicators: 05);
+         F6                 Ind Overlay(Indicators: 06);
+         F7                 Ind Overlay(Indicators: 07);
+         F8                 Ind Overlay(Indicators: 08);
+         F9                 Ind Overlay(Indicators: 09);
+         F10                Ind Overlay(Indicators: 10);
+         F11                Ind Overlay(Indicators: 11);
+         F12                Ind Overlay(Indicators: 12);
+         F13                Ind Overlay(Indicators: 13);
+         F14                Ind Overlay(Indicators: 14);
+         F15                Ind Overlay(Indicators: 15);
+         F16                Ind Overlay(Indicators: 16);
+         F17                Ind Overlay(Indicators: 17);
+         F18                Ind Overlay(Indicators: 18);
+         F19                Ind Overlay(Indicators: 19);
+         F20                Ind Overlay(Indicators: 20);
+         F21                Ind Overlay(Indicators: 21);
+         F22                Ind Overlay(Indicators: 22);
+         F23                Ind Overlay(Indicators: 23);
+         F24                Ind Overlay(Indicators: 24);
+         SFL_Next_Change    Ind Overlay(Indicators: 26);
+         Screen_Changed     Ind Overlay(Indicators: 27);
+         Highlight_Option   Ind Overlay(Indicators: 60);
+         Place_Cursor       Ind Overlay(Indicators: 62);
+         Protect_All_Fields Ind Overlay(Indicators: 70);
+         Protect_for_Change Ind Overlay(Indicators: 71);
+         Show_Copy_Fields   Ind Overlay(Indicators: 72);
+         FIELD1_Error       Ind Overlay(Indicators: 80);
+         FIELD2_Error       Ind Overlay(Indicators: 81);
+         FIELD3_Error       Ind Overlay(Indicators: 82);
+         FIELD4_Error       Ind Overlay(Indicators: 83);
+         FIELD5_Error       Ind Overlay(Indicators: 84);
+         FIELD6_Error       Ind Overlay(Indicators: 85);
+         SFL_Clear          Ind Overlay(Indicators: 91);
+         SFL_Display_Ctl    Ind Overlay(Indicators: 92);
+         SFL_Not_End        Ind Overlay(Indicators: 93);
+         Window_Sfl_End     Ind Overlay(Indicators: 94);
+         Global_Error       Ind Overlay(Indicators: 99);
+       End-DS;
+
+       Dcl-Ds Errc0100_t Qualified Template;
+          Bytes_Provided     Int(10);
+          Bytes_Available    Int(10);
+          Exception_ID       Char(7);
+          Reserved           Char(1);
+          Exception_Data     Char(32767);
+       End-Ds;
+
+       Dcl-DS Work_Date_DS;
+         Work_Date        Date(*Iso);
+         Work_Date_Cn     Zoned(2) Pos(1);
+         Work_Date_Yy     Zoned(2) Pos(3);
+         Work_Date_Mm     Zoned(2) Pos(6);
+         Work_Date_Dd     Zoned(2) Pos(9);
+       End-Ds;
+
+       Dcl-DS MainFilePF_InfDS Qualified;   // File Feedback Information
+        File       *File;                // First 8 char of the file name
+        Opn_Ind    Char(1) Pos(9);       // Open Indication (1=Open)
+        EoF_Ind    Char(1) Pos(10);      // End of File(1=End of File)
+        Status     *Status;              // Status Code
+        LstOpcode  *Opcode;              // Pos1-5=Opcode, Pos6=F/R/I
+        LstRoutine *Routine;             // First 8 Char of Routine Name
+        FileRRN    Bindec(9) Pos(397);   // Relative Record Number
+       End-DS;
+
+       Dcl-DS MainFileLF_InfDS Qualified;   // File Feedback Information
+        File       *File;                // First 8 char of the file name
+        Opn_Ind    Char(1) Pos(9);       // Open Indication (1=Open)
+        EoF_Ind    Char(1) Pos(10);      // End of File(1=End of File)
+        Status     *Status;              // Status Code
+        LstOpcode  *Opcode;              // Pos1-5=Opcode, Pos6=F/R/I
+        LstRoutine *Routine;             // First 8 Char of Routine Name
+        FileRRN    Bindec(9) Pos(397);   // Relative Record Number
+       End-DS;
+
+       Dcl-DS DspF_Info;                 // Display File Feedback Information
+         DspFlag1  Char(2)   Pos(367);   // Display Flags
+         FKey      Char(1)   Pos(369);   // AID Byte
+         CsrLoc    BinDec(4) Pos(370);   // Cursor Location
+         DataLen   Zoned(4)  Pos(372);   // Actual Data Len
+         SflRrn    BinDec(4) Pos(376);   // Subfile RRN
+         SflCur    BinDec(4) Pos(378);   // Subfile Min RRN
+         SflRcds   BinDec(4) Pos(380);   // Subfile Num Records
+         ActCurLoc Char(2)   Pos(382);   // Actual Cursor Location
+         DspMajor  Char(2)   Pos(401);   // Major Ret Code
+         DspMinor  Char(2)   Pos(403);   // Minor Ret Code
+       End-DS;
+
+       Dcl-Ds SndMsgParms;
+          Msg_ID                 Char(7);
+          Qual_Msg_F_Name        Char(20);
+          Msg_Dta_or_Immed_Text  Char(79);
+          Len_Msg_Dta_Immed_Text Int(10);
+          Msg_Type               Char(10);
+          Call_Stck_Entry        Char(4096);
+          Call_Stck_Counter      Int(10);
+          Msg_Key                Char(4);
+          Msgs_to_Rmv            Char(10);
+       End-Ds;
+
+       Dcl-Ds ErrC     LikeDs(Errc0100_t);
+
+       Dcl-DS CONTROLF5DS     LikeRec(CONTROL5R);
+       Dcl-DS MAINFILEDS      LikeRec(MAINLFR);
+      *=============================================================================================
+      *                           K e y   D a t a   S t r u c t u r e s
+      *=============================================================================================
+       Dcl-DS MAINFILELF      LikeRec(MAINLFR : *Key);
+       Dcl-DS Last_Rrn_Key    LikeRec(MAINPFR : *Key);
+       Dcl-DS Key_CONTROL1    LikeRec(CONTROL1R: *Key);
+       Dcl-DS Key_CONTROL2    LikeRec(CONTROL2R: *Key);
+       Dcl-DS Key_CONTROL3    LikeRec(CONTROL3R: *Key);
+       Dcl-DS Key_CONTROL4    LikeRec(CONTROL4R: *Key);
+       Dcl-DS Key_CONTROL5    LikeRec(CONTROL5R: *Key);
+      *=============================================================================================
+      *                                 S t a n d a l o n e s
+      *=============================================================================================
+       Dcl-S isodate        Date(*Iso) Template;
+       Dcl-S datepart       Zoned(2:0) Template;
+       Dcl-S CenterMe       Char(256);
+       Dcl-S Length         Packed(3);
+       Dcl-S AltView        Packed(3) Inz(1);
+       Dcl-S RRNW           Packed(4);
+       Dcl-S FileName       Char(10);
+       Dcl-S Row            Packed(3);
+       Dcl-S Col            Packed(3);
+       Dcl-S ReturnFields   Char(256);
+       Dcl-S FirstRRN       Bindec(9);
+       Dcl-S LastRRN        Bindec(9);
+       Dcl-S Count          Zoned(3);
+       Dcl-S Error_Messages Char(78) Dim(10);
+       Dcl-S Hold_Main_Opt  Char(1);
+       Dcl-S Hold_Sfl_Cur       BinDec(4);
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // Display File Output Variables
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       Dcl-S Header1        Char(30);
+       Dcl-S Header2        Char(30);
+       Dcl-S Header3        Char(30);
+       Dcl-S OptLine        Char(77);
+       Dcl-S ColHead        Char(75);
+       Dcl-S Keys           Char(78);
+       Dcl-S FIELD4         Date(*Iso);
+       Dcl-S FIELD7         Date(*Iso);
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // Subfile RRN's
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       Dcl-S RRN1           Zoned(4) Inz;
+       Dcl-S RRNQ           Zoned(4) Inz;
+      *=============================================================================================
+      *                                   C o n s t a n t s
+      *=============================================================================================
+       Dcl-C CRLF              Const(X'0D25');
+       Dcl-C Null              Const(X'00');
+       Dcl-C ISO8859_1         Const(1252);
+       Dcl-C EBCDIC            Const(37);
+       Dcl-C Apostrophe        Const(X'7D');
+       Dcl-C Lowercase         Const('abcdefghijklmnopqrstuvwxyz');
+       Dcl-C Uppercase         Const('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+       Dcl-C Enter             Const(X'F1');
+       Dcl-C PageUp            Const(X'F4');
+       Dcl-C PageDown          Const(X'F5');
+       Dcl-C Help              Const(X'F6');
+       Dcl-C Home              Const(X'F8');
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // Function Key output line (Keys)
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       Dcl-C Keys1             Const('F3=Exit   +
+                                      F5=Refresh   +
+                                      F6=Create   +
+                                      F10=Alt View   +
+                                      F12=Cancel   +
+                                      F24=More Keys');
+
+       //----------------------------------------------------------------------
+       // The Hide_Deleted_Keys and Show_Deleted_Keys are the keys
+       // that should be displaying when hiding/showing the deleted
+       // records, respectively, when the more keys option was taken.
+       //----------------------------------------------------------------------
+       Dcl-C Hide_Deleted_Keys Const('F11=Show Deleted   +
+                                      F15=Print Table   +
+                                      F17=Position to   +
+                                      F24=More Keys');
+
+       Dcl-C Show_Deleted_Keys Const('F11=Hide Deleted   +
+                                      F15=Print Table   +
+                                      F17=Position to   +
+                                      F24=More Keys');
+
+       Dcl-C More_Keys_3       Const('F19=Go to Top    +
+                                      F20=Go to Bottom    +
+                                      F24=More Keys');
+
+       Dcl-C Add_and_Copy_Keys Const('F3=Exit    +
+                                      F4=Prompt    +
+                                      F12=Cancel');
+
+       Dcl-C Change_Keys       Const('F3=Exit    +
+                                      F12=Cancel');
+
+       Dcl-C Delete_Keys       Const('F3=Exit    +
+                                      F12=Cancel    +
+                                      F23=Delete');
+
+       Dcl-C Display_Keys      Const('F3=Exit    +
+                                      F12=Cancel    +
+                                      F15=Print');
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // Option Line Constants
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       Dcl-C SFOptLine         Const('2=Change    +
+                                      3=Copy    +
+                                      4=Delete    +
+                                      5=Display');
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       //  Header 2 for all Screens
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       Dcl-C HEADER2CONST      Const('HEADER 2 TEXT');
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // Header 3 for all Screens
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       Dcl-C Add               Const('Add a Record');
+       Dcl-C Change            Const('Change a Record');
+       Dcl-C Copy              Const('Copy a Record');
+       Dcl-C View              Const('Display a Record');
+       Dcl-C Delete            Const('Delete a Record');
+       Dcl-C SFLH3             Const('Work With Posting Status');
+      *=============================================================================================
+      *                                 I n d i c a t o r s
+      *=============================================================================================
+       Dcl-S OverFlow           Ind Inz(*On);
+       Dcl-S Good               Ind;
+       Dcl-S Hold               Ind;
+       Dcl-S BadOpts            Ind;
+       Dcl-S True               Ind Inz(*On);
+       Dcl-S Show_Deleted       Ind Inz(*Off);
+       Dcl-S Leave_at_Full_Page Ind;
+       Dcl-S Change_SflRrn      Ind Inz(*Off);
+      *=============================================================================================
+      *                                 P r o t o t y p e s
+      *=============================================================================================
+       Dcl-Pr Main ExtPgm('SFSCRATCHR') End-Pr;
+
+       Dcl-Pi Main End-Pi;
+
+       Dcl-Pr SndMsg    ExtPgm('QMHSNDPM'); // IBM supplied Send Message to Program Message Queue API.
+        Msg_ID                 Char(7)    Const;
+        Qual_Msg_F_Name        Char(20)   Const;
+        Msg_Dta_or_Immed_Text  Char(79)   Const;
+        Len_Msg_Dta_Immed_Text Int(10)    Const;
+        Msg_Type               Char(10)   Const;
+        Call_Stck_Entry        Char(4096) Const;
+        Call_Stck_Counter      Int(10)    Const;
+        Msg_Key                Char(4)    Const;
+        ErrC                   LikeDS(Errc0100_t);
+       End-Pr;
+
+       Dcl-Pr RmvMsgs   ExtPgm('QMHRMVPM'); // IBM supplied Remove Message from Program Message Queue API
+          Call_Stck_Entry      Char(4096) Const;
+          Call_Stck_Counter    Int(10)    Const;
+          Msg_Key              Char(4)    Const;
+          Msgs_to_Rmv          Char(10)   Const;
+          ErrC                 LikeDs(Errc0100_t);
+       End-Pr;
+
+       dcl-pr Center    ExtPgm('CENTER'); // This calls a program which will center the text
+         *N             Char  (256);
+         *N             Packed(3:0) Const;
+       End-pr;
+
+       Dcl-Pr WindowCall ExtPgm('CI00600R'); // This calls a program which puts out the correct window for the control file specified.
+         FileName        Char(10);
+         CsrRow          Packed(3);
+         CsrCol          Packed(3);
+         RtnFlds         Char(256);
+       End-Pr;
+
+       Dcl-Pr alpdate Like(isodate); // This sub-procedure is defined in this program
+         cc           Like(datepart) Value;
+         yy           Like(datepart) Value;
+         mm           Like(datepart) Value;
+         dd           Like(datepart) Value;
+         dft          Like(isodate) Const Options(*nopass);
+       End-Pr;
+
+       Dcl-Pr Error_Check; // This sub-procedure is defined in this program
+         Msgs Char(78) Dim(10);
+         FLD1 Char(2);
+         FLD2 Char(2);
+         FLD3 Char(2);
+         FLD4 Packed(6); // MMDDYY Format Date
+         FLD5 Char(1);
+         FLD6 Char(30);
+         CRRN Packed(8) Options(*NoPass);
+       End-Pr;
+      *=============================================================================================
+      *                          M a i n l i n e   o f   P r o g r a m
+      *=============================================================================================
+       // Exsr *InzSr; *InzSr Subroutine will be executed upon entry into the program.
+
+       Exsr SubFile_Processing;
+
+       Exsr End_Pgm;
+
+      *=============================================================================================
+      *                               S u b r o u t i n e s
+      *=============================================================================================
+       BegSr BuildMain;
+          If Rrn1 <> 0;
+             SFL_Clear = *On;   // *In91
+             Rrn1 = 0;
+             Write CTL1A;
+             Write CTL1B;
+             SFL_Clear = *Off;  // *In91
+          EndIf;
+
+          SetLL %kds(Key_MAINFLF) MAINFLF;
+          Read MAINFLF;
+          DoW (RRN1 < 12) and (Not %EoF(MAINFLF));
+             If AlpDate( FIELD12
+                       : FIELD13
+                       : FIELD14
+                       : FIELD15) = D'0001-01-01'
+             or Show_Deleted = *On;
+                Clear MainOpt;
+                FIELD4 = AlpDate( FIELD8
+                                : FIELD9
+                                : FIELD10
+                                : FIELD11);
+                FIELD7 = AlpDate( FIELD12
+                                : FIELD13
+                                : FIELD14
+                                : FIELD15);
+                Rrn1 += 1;
+                FILERrn = MainFileLF_InfDS.FileRrn;
+                Write SFL1A;
+                Write SFL1B;
+                If Rrn1 = 1;
+                   FirstRrn = MainFileLF_InfDS.FileRrn;
+                   Exsr Set_Key_To_File_Fields;
+                EndIf;
+                If Rrn1 = 12;
+                   LastRrn = MainFileLF_InfDS.FileRrn;
+                EndIf;
+             EndIf;
+             Read MAINFLF;
+          EndDo;
+
+          If Not %EoF(MAINFLF);
+             SFL_Not_End = *On;    // *In93
+             SflRrn = Rrn1 - 11;
+          Else;
+             SFL_Not_End = *Off;   // *In93
+          EndIf;
+
+          If SflRrn = *Zero;
+            SflRrn = 1;
+          EndIf;
+
+       EndSr;
+      *=========================================================================
+      * Handle Processing for the Main Subfile
+      *=========================================================================
+       BegSr SubFile_Processing;
+          Dow True;
+        //::::::::::::::::::::::::::::::::
+        // Write the MsgSfl Control record
+        //::::::::::::::::::::::::::::::::
+          Write FCTL1;
+        //::::::::::::::::::::::::::::::::::::
+        // When there are no records written,
+        // show no records screen to the user.
+        //::::::::::::::::::::::::::::::::::::
+          If Rrn1 = *Zero;
+             SFL_Display_Ctl = *On;  // *In92
+             SflRRN = *Zero;
+             Select;
+                When AltView = 1;
+                   Write CTL1A;
+                   Write NoRcds;
+                   Read CTL1A;
+                When AltView = 2;
+                   Write CTL1B;
+                   Write NoRcds;
+                   Read CTL1B;
+             EndSl;
+          Else;
+        //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        // When there are records to display, display the subfile to the user.
+        //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+             SFL_Display_Ctl = *Off;  // *In92
+
+             If Change_SflRrn = *On;
+                SflRrn = Hold_Sfl_Cur;
+                Change_SflRrn = *Off;
+             EndIf;
+
+             Select;
+                When AltView = 1;
+                   ExFmt CTL1A;
+                When AltView = 2;
+                   ExFmt CTL1B;
+             EndSl;
+             Hold_Sfl_Cur = SflCur;
+          EndIf;
+        //::::::::::::::::::::::::::::::::::::::::::::::::::
+        // Clear previous messages from the message subfile.
+        //::::::::::::::::::::::::::::::::::::::::::::::::::
+          Exsr Clear_Message_Subfile;
+          Write FCtl1;
+        //::::::::::::::::::::::::::::::
+        // Process user entry / entries.
+        //::::::::::::::::::::::::::::::
+          Select;
+             When F3 or F12;
+               LeaveSr;
+
+             When F5;
+               Exsr Refresh_Subfile;
+
+             When F6;
+                Exsr Add_Mode;
+                Exsr Refresh_Subfile;
+
+             When F10;
+                Exsr Alternate_View;
+
+             When F11;
+                Exsr Toggle_Deleted;
+                Exsr Refresh_Subfile;
+
+             When F15;
+                Exsr Print_Table;
+
+             When F17;
+                Exsr Position_To;
+
+             When F19;
+                Exsr Go_to_Top;
+
+             When F20;
+                Exsr Go_To_Bottom;
+
+             When F24;
+               Exsr More_Keys;
+
+             When FKey = Enter;
+                Exsr Read_Changes;
+                Exsr Refresh_Subfile;
+
+             When FKey = PageDown;
+                Exsr Page_Down;
+
+             Other;
+                Exsr Invalid_FKey;
+
+          EndSl;
+          Header3 = SFLH3;
+          CenterMe = Header3;
+          Center(CenterMe: %Len(Header3));
+          Header3 = CenterMe;
+       EndDo;
+       EndSr;
+      *=========================================================================
+      * Refresh the Subfile
+      *=========================================================================
+       BegSr Refresh_Subfile;
+
+          If Rrn1 <= 12;
+             Leave_at_Full_Page = *On;
+          EndIf;
+
+          If Rrn1 <> 0;    // Clear the Subfile
+             SFL_Clear = *On;   // *In91
+             Rrn1 = 0;
+             Write CTL1A;
+             Write CTL1B;
+             SFL_Clear = *Off;  // *In91
+          EndIf;
+
+          Count = *Zero;
+          SetLL %Kds(Key_MAINFLF) MAINFLF;
+          Read MAINFLF;
+          DoW Not %EoF(MAINFLF);
+             If AlpDate( FIELD12
+                       : FIELD13
+                       : FIELD14
+                       : FIELD15) = D'0001-01-01'
+             or Show_Deleted = *On;
+                Clear MainOpt;
+                FIELD4 = AlpDate( FIELD8
+                                : FIELD9
+                                : FIELD10
+                                : FIELD11);
+                FIELD7 = AlpDate( FIELD12
+                                : FIELD13
+                                : FIELD14
+                                : FIELD15);
+                Rrn1 += 1;
+                Count += 1;
+                FILERRN = MainFileLF_InfDS.FileRRN;
+                Write SFL1A;
+                Write SFL1B;
+
+                If Rrn1 = 1;
+                   FirstRRN = MainFileLF_InfDS.FileRRN;
+                EndIf;
+
+                If Rrn1 >= 12 and Leave_at_Full_Page = *On;
+                   LastRrn = MainFileLF_InfDS.FileRrn;
+                   Leave;
+                EndIf;
+
+             EndIf;
+
+             Read MAINFLF;
+
+             If LastRrn = MainFileLF_InfDS.FileRrn
+             and Rrn1 >= 12;
+                Leave;
+             Elseif LastRrn = MainFileLF_InfDS.FileRrn;
+                Leave_at_full_Page = *On;
+             EndIf;
+
+          EndDo;
+
+
+          If Not %EoF(MAINFLF);
+             SflRrn = Rrn1 - 11;
+             SFL_Not_End = *On;    // *In93
+          Else;
+             SflRrn = 1;
+             SFL_Not_End = *Off;   // *In93
+          EndIf;
+       EndSr;
+      *=========================================================================
+      * Go To Top of Subfile
+      *=========================================================================
+       BegSr Go_To_Top;
+          Clear Key_MAINFLF;
+          Exsr BuildMain;
+       Endsr;
+      *=========================================================================
+      * Go To Bottom of Subfile
+      *=========================================================================
+       BegSr Go_To_Bottom;
+          If Rrn1 <> *Zero;
+             SFL_Clear = *On;   // *In91
+             Rrn1 = *Zero;
+             Write CTL1A;
+             Write CTL1B;
+             SFL_Clear = *Off;  // *In91
+          EndIf;
+
+          Count = *Zero;
+          SetGt *Hival MAINFLF;
+          ReadP MAINFLF;
+          DoW Count < 12 and Not %EoF(MAINFLF);
+             If AlpDate( FIELD12
+                       : FIELD13
+                       : FIELD14
+                       : FIELD15) = D'0001-01-01'
+             or Show_Deleted = *On;
+                Count += 1;
+             EndIf;
+             ReadP MAINFLF;
+          EndDo;
+
+          Count = *Zero;
+          Read MAINFLF;
+          DoW Count < 12 and Not %EoF(MAINFLF);
+             If AlpDate( FIELD12
+                       : FIELD13
+                       : FIELD14
+                       : FIELD15) = D'0001-01-01'
+             or Show_Deleted = *On;
+                Clear MainOpt;
+                FIELD4 = AlpDate( FIELD8
+                                : FIELD9
+                                : FIELD10
+                                : FIELD11);
+                FIELD7 = AlpDate( FIELD12
+                                : FIELD13
+                                : FIELD14
+                                : FIELD15);
+                Rrn1 += 1;
+                Count += 1;
+                FILERRN = MainFileLF_InfDS.FileRrn;
+                Write Sfl1A;
+                Write Sfl1B;
+                If Rrn1 = 1;
+                   Exsr Set_Key_to_File_Fields;
+                EndIf;
+
+                LastRrn = MainFileLF_InfDS.FileRrn;
+             EndIf;
+
+             Read MAINFLF;
+          EndDo;
+
+          If Not %EoF(MAINFLF);
+             SFL_Not_End = *On;    // *In93
+             SflRrn = Rrn1 - 11;
+          Else;
+             SflRrn = 1;
+             Sfl_Not_End = *Off;   // *In93
+          EndIf;
+       Endsr;
+      *=========================================================================
+      * Add Mode Subroutine
+      *=========================================================================
+       BegSr Add_Mode;
+          Exsr Set_Up_Add_Screen;
+
+          DoW True;
+             ExFmt RecProcess;
+             Exsr Clear_Message_Subfile;
+             Place_Cursor = *Off; // *In62
+             Exsr Turn_Off_Error_Indicators;
+
+             Select;
+                When F3 or F12;
+                   Leave;
+
+                When F4;
+                   Exsr Prompt;
+
+                When FKey = Enter;
+                   Error_Check( Error_Messages
+                              : DspFld1
+                              : DspFld2
+                              : DspFld3
+                              : DspFld4
+                              : DspFld5
+                              : DspFld6);
+
+                   If Global_Error = *Off;
+                      Exsr Move_to_File;
+                      Monitor;
+                         Exsr Open_MainFilePF;
+                         Write Pfr;
+                         Exsr Set_Key_to_File_Fields;
+                         Exsr Close_MainFilePF;
+                         Clear SndMsgParms;
+                         Msg_Dta_or_Immed_Text = 'Record successfully added.';
+                         Exsr SndMsgDS3;
+
+                      On-Error *all;
+                         Clear SndMsgParms;
+                         Msg_Dta_or_Immed_Text =
+                                            'Error Occurred, record not added';
+                         Exsr SndMsgDS3;
+                      EndMon;
+                      Leave;
+
+                   Else;
+                      Count = 1;
+                      DoW Count <= 10;
+                         If Error_Messages(Count) <> *Blanks;
+                            Clear SndMsgParms;
+                            Msg_Dta_or_Immed_Text = Error_Messages(Count);
+                            Exsr SndMsgDS3;
+                            Clear Error_Messages(Count);
+                            Count += 1;
+                         Else;
+                            Leave;
+                         EndIf;
+                      EndDo;
+                      Clear SndMsgParms;
+                      Msg_Dta_or_Immed_Text =
+                            'Unable to add record due to highlighted error(s).';
+                      Exsr SndMsgDS3;
+                      Iter;
+                   EndIf;
+
+                Other;
+                   Exsr Invalid_FKey;
+             EndSl;
+          EndDo;
+
+          Exsr Exit_Process_Screen;
+       EndSr;
+      *========================================================================
+      * Set fields for add screen
+      *========================================================================
+       BegSr Set_Up_Add_Screen;
+          Header3 = Change;
+          CenterMe = Header3;
+          Center(CenterMe: %Len(Header3));
+          Header3 = CenterMe;
+          Keys2 = Add_and_Copy_Keys;
+          Exsr Clear_Process_Screen_Fields;
+          Work_Date = %Date();
+          DspFld4 = %Dec(%Char(Work_Date: *MDY0): 6: 0);
+          Protect_all_Fields = *Off; // *In70
+          Protect_for_Change = *Off; // *In71
+          Show_Copy_Fields   = *Off; // *In72
+       EndSr;
+      *========================================================================
+      * Move the correct fields into the file fields before writing or updating
+      * the record. This will be done by examining how the indicators are set,
+      * and using that to determine what mode we are in. Since display mode
+      * will never use the Move_To_File subroutine, and the other 4 modes set
+      * indicators uniquely, we will know what needs to be moved where.
+      *========================================================================
+       BegSr Move_To_File;
+          Select;
+          // When in add mode...
+             When Protect_All_Fields = *Off
+              and Protect_for_Change = *Off
+              and Show_Copy_Fields   = *Off;
+                FIELD1 = DspFld1;
+                FIELD2 = DspFld2;
+                FIELD3 = DspFld3;
+                FIELD8 = Work_Date_cn;
+                FIELD9 = Work_Date_yy;
+                FIELD10 = Work_Date_mm;
+                FIELD11 = Work_Date_dd;
+                FIELD5 = DspFld5;
+                FIELD6 = DspFld6;
+                FIELD12 = *Zeros;
+                FIELD13 = *Zeros;
+                FIELD14 = *Zeros;
+                FIELD15 = *Zeros;
+
+          // When in change mode...
+             When Protect_All_Fields = *Off
+              and Protect_for_Change = *On
+              and Show_Copy_Fields   = *Off;
+                FIELD1 = DspFld1;
+                FIELD2 = DspFld2;
+                FIELD3 = DspFld3;
+                FIELD8 = Work_Date_cn;
+                FIELD9 = Work_Date_yy;
+                FIELD10 = Work_Date_mm;
+                FIELD11 = Work_Date_dd;
+                FIELD5 = DspFld5;
+                FIELD6 = DspFld6;
+                FIELD12 = *Zeros;
+                FIELD13 = *Zeros;
+                FIELD14 = *Zeros;
+                FIELD15 = *Zeros;
+
+          // When in copy mode...
+             When Protect_All_Fields = *On
+              and Protect_for_Change = *Off
+              and Show_Copy_Fields   = *On;
+                FIELD1 = NewFld1;
+                FIELD2 = NewFld2;
+                FIELD3 = NewFld3;
+                FIELD8 = Work_Date_cn;
+                FIELD9 = Work_Date_yy;
+                FIELD10 = Work_Date_mm;
+                FIELD11 = Work_Date_dd;
+                FIELD5 = DspFld5;
+                FIELD6 = DspFld6;
+                FIELD12 = *Zeros;
+                FIELD13 = *Zeros;
+                FIELD14 = *Zeros;
+                FIELD15 = *Zeros;
+
+          // When in delete mode...
+             When Protect_All_Fields = *On
+              and Protect_for_Change = *Off
+              and Show_Copy_Fields   = *Off;
+                FIELD12 = @JobDateCn;
+                FIELD13 = @JobDateYy;
+                FIELD14 = @JobDateMm;
+                FIELD15 = @JobDateDd;
+
+          EndSl;
+       EndSr;
+      *========================================================================
+      * Change Record Mode Subroutine
+      *========================================================================
+       BegSr ChangeMode;
+          Exsr Set_Up_Change_Screen;
+          Exsr Open_MainFilePF;
+          Chain FILERRN Pfr;
+          If %Found(MainFilePF);
+
+             DoW True;
+                ExFmt RecProcess;
+                Exsr Clear_Message_Subfile;
+                Place_Cursor = *Off;  // *In62
+                Exsr Turn_Off_Error_Indicators;
+
+                Select;
+                   When F3 or F12;
+                      Leave;
+
+                   When F4;
+                      Exsr Prompt;
+
+                   When FKey = Enter;
+                      If Screen_Changed;
+                         Error_Check( Error_Messages
+                                    : DspFld1
+                                    : DspFld2
+                                    : DspFld3
+                                    : DspFld4
+                                    : DspFld5
+                                    : DspFld6
+                                    : FILERRN);
+
+                         If Global_Error = *Off;
+                            Exsr Move_To_File;
+                            Monitor;
+                               Update Pfr;
+                               Clear SndMsgParms;
+                               Msg_Dta_or_Immed_Text =
+                                   'Record has been successfully updated.';
+                               Exsr SndMsgDs3;
+                            On-Error;
+                               Clear SndMsgParms;
+                               Msg_Dta_or_Immed_Text =
+                                   'Error occurred while updating record, '
+                                   + 'try again in 5 minutes.';
+                               Exsr SndMsgDs3;
+                            EndMon;
+                            Leave;
+                         Else;
+                            Count = 1;
+                            DoW Count <= 10;
+                               If Error_Messages(Count) <> *Blanks;
+                                  Clear SndMsgParms;
+                                  Msg_Dta_or_Immed_Text = Error_Messages(Count);
+                                  Exsr SndMsgDS3;
+                                  Clear Error_Messages(Count);
+                                  Count += 1;
+                               Else;
+                                  Leave;
+                               EndIf;
+                            EndDo;
+                            Clear SndMsgParms;
+                            Msg_Dta_or_Immed_Text =
+                                'Unable to change record due to highlighted '
+                                + 'errors';
+                            Exsr SndMsgDS3;
+                            Iter;
+                         EndIf;
+                      Else;
+                         Leave;
+                      EndIf;
+
+                   Other;
+                      Exsr Invalid_FKey;
+                EndSl;
+             EndDo;
+          Else;
+             ExFmt BadChain;
+          EndIf;
+
+          Exsr Exit_Process_Screen;
+       EndSr;
+      *========================================================================
+      * Set Fields for Change Screen
+      *========================================================================
+       BegSr Set_Up_Change_Screen;
+          Header3 = Change;
+          CenterMe = Header3;
+          Center(CenterMe: %Len(Header3) );
+          Header3 = CenterMe;
+          Keys2 = Change_Keys;
+          Exsr Clear_Process_Screen_Fields;
+          Exsr Fill_Display_Fields;
+          Exsr Display_Descriptions;
+          Protect_all_Fields = *Off; // *In70
+          Protect_for_Change = *On;  // *In71
+          Show_Copy_Fields   = *Off; // *In72
+       EndSr;
+      *=========================================================================
+      * Copy Mode Subroutine
+      *=========================================================================
+       BegSr Copy_Mode;
+          Exsr Open_MainFilePF;
+          Chain FILERRN Pfr;
+          If %Found(MainFilePF);
+             Exsr Set_Up_Copy_Screen;
+             Exsr Close_MainFilePF;
+
+             DoW True;
+                ExFmt RecProcess;
+                Exsr Clear_Message_Subfile;
+                Place_Cursor = *Off;  // *In62
+                Exsr Turn_Off_Error_Indicators;
+
+                Select;
+                   When F3 or F12;
+                      Leave;
+
+                   When F4;
+                      Exsr Prompt;
+
+                   When FKey = Enter;
+                   Error_Check( Error_Messages
+                              : NewFld1
+                              : NewFld2
+                              : NewFld3
+                              : NewFld4
+                              : DspFld5
+                              : DspFld6);
+
+                      If Global_Error = *Off;
+                         Exsr Move_To_File;
+                         Monitor;
+                            Exsr Open_MainFilePF;
+                            Write Pfr;
+                            Exsr Close_MainFilePF;
+                            Clear SndMsgParms;
+                            Msg_Dta_or_Immed_Text =
+                                'Record Successfully Copied.';
+                            Exsr SndMsgDS3;
+                         On-Error;
+                           Clear SndMsgParms;
+                           Msg_Dta_or_Immed_Text = 'Failed to copy record.';
+                           Exsr SndMsgDS3;
+                         EndMon;
+                         Leave;
+                      Else;
+                         Count = 1;
+                         DoW Count <= 10;
+                            If Error_Messages(Count) <> *Blanks;
+                               Clear SndMsgParms;
+                               Msg_Dta_or_Immed_Text = Error_Messages(Count);
+                               Exsr SndMsgDS3;
+                               Clear Error_Messages(Count);
+                               Count += 1;
+                            Else;
+                               Leave;
+                            EndIf;
+                         EndDo;
+                         Clear SndMsgParms;
+                         Msg_Dta_or_Immed_Text =
+                             'Unable to Copy Record due to highlighted '
+                             + 'error(s).';
+                         Exsr SndMsgDS3;
+                         Iter;
+                      EndIf;
+
+                   Other;
+                      Exsr Invalid_FKey;
+                EndSl;
+             EndDo;
+          Else;
+             ExFmt BadChain;
+          EndIf;
+
+          Exsr Exit_Process_Screen;
+       EndSr;
+      *========================================================================
+      * Set Fields for Copy Screen
+      *========================================================================
+       BegSr Set_Up_Copy_Screen;
+          Header3 = Copy;
+          CenterMe = Header3;
+          Center(CenterMe: %Len(Header3) );
+          Header3 = CenterMe;
+          Keys2 = Add_and_Copy_Keys;
+          Exsr Clear_Process_Screen_Fields;
+          Exsr Fill_Display_Fields;
+          Exsr Display_Descriptions;
+          Work_Date = %Date();
+          NewFld4 = %Dec(%Char(Work_Date: *MDY0): 6: 0);
+          Protect_all_Fields = *On;  // *In70
+          Protect_for_Change = *Off; // *In71
+          Show_Copy_Fields   = *On;  // *In72
+       EndSr;
+      *=========================================================================
+      * Delete Mode Subroutine
+      *=========================================================================
+       BegSr Delete_Mode;
+          Exsr Set_Up_Delete_Screen;
+          Exsr Open_MainFilePF;
+          Chain FILERRN Pfr;
+          If %Found(MainFilePF);
+
+             DoW True;
+                ExFmt RecProcess;
+                Exsr Clear_Message_Subfile;
+
+                Select;
+                   When F3 or F12
+                   or FKey = Enter;
+                      Leave;
+
+                   When F23;
+                      DoW True;
+                         ExFmt DltWindow;
+                         Exsr Clear_Message_Subfile;
+                         Select;
+                            When F3 or F12
+                            or   FKey = Enter;
+                               Leave;
+                            When F23;
+                               Exsr Move_To_File;
+                               Update Pfr;
+                               Clear SndMsgParms;
+                               Msg_Dta_or_Immed_Text =
+                                   'Record Successfully Deleted.';
+                               Exsr SndMsgDS3;
+                               Leave;
+                            Other;
+                              Exsr Invalid_FKey;
+                         EndSl;
+                      EndDo;
+                      If F23;
+                         Leave;
+                      EndIf;
+
+                   Other;
+                      Exsr Invalid_FKey;
+                EndSl;
+             EndDo;
+          Else;
+             Exfmt BadChain;
+          EndIf;
+
+          Exsr Exit_Process_Screen;
+       EndSr;
+      *=========================================================================
+      * Set Fields for Delete Screen
+      *=========================================================================
+       BegSr Set_Up_Delete_Screen;
+          Header3 = View;
+          CenterMe = Header3;
+          Center(CenterMe: %Len(Header3) );
+          Header3 = CenterMe;
+          Exsr Clear_Process_Screen_Fields;
+          Exsr Fill_Display_Fields;
+          Exsr Display_Descriptions;
+          Keys2 = Delete_Keys;
+          Protect_all_Fields = *On;  // *In70
+          Protect_for_Change = *Off; // *In71
+          Show_Copy_Fields   = *Off; // *In72
+       EndSr;
+      *=========================================================================
+      * Display Mode Subroutine
+      *=========================================================================
+       BegSr Display_Mode;
+          Exsr Open_MainFilePF;
+          Chain FILERRN Pfr;
+          If %Found(MainFilePF);
+             Exsr Set_Up_Display_Screen;
+             Exsr Close_MainFilePF;
+
+             DoW True;
+                ExFmt RecProcess;
+                Exsr Clear_Message_Subfile;
+                Select;
+                   When F3 or F12
+                   or FKey = Enter;
+                      Leave;
+
+                   When F15;
+                      Exsr Print_Record;
+
+                   Other;
+                      Exsr Invalid_FKey;
+                EndSl;
+             EndDo;
+          Else;
+             Exfmt BadChain;
+          EndIf;
+          Exsr Exit_Process_Screen;
+       EndSr;
+      *=========================================================================
+      * Set Fields for Display Screen
+      *=========================================================================
+       BegSr Set_Up_Display_Screen;
+          Header3 = View;
+          CenterMe = Header3;
+          Center(CenterMe: %Len(Header3) );
+          Header3 = CenterMe;
+          Keys2 = Display_Keys;
+          Exsr Clear_Process_Screen_Fields;
+          Exsr Fill_Display_Fields;
+          Exsr Display_Descriptions;
+          Protect_all_Fields = *On;  // *In70
+          Protect_for_Change = *Off; // *In71
+          Show_Copy_Fields   = *Off; // *In72
+       EndSr;
+      *=========================================================================
+      * Handle all processing for leaving the display screen
+      *=========================================================================
+       BegSr Exit_Process_Screen;
+          Exsr Close_MainFilePF;
+          Exsr Turn_Off_Error_Indicators;
+          Exsr Clear_Process_Screen_Fields;
+          Protect_all_Fields = *Off; // *In70
+          Protect_for_Change = *Off; // *In71
+          Show_Copy_Fields   = *Off; // *In72
+       EndSr;
+      *=========================================================================
+      * Move to Display Fields
+      *=========================================================================
+       BegSr Fill_Display_Fields;
+          DspFld1 = FIELD1;   
+          DspFld2 = FIELD2;   
+          DspFld3 = FIELD3;   
+          DspFld5 = FIELD5;   
+          DspFld6 = FIELD6;   
+
+          Work_Date = AlpDate( FIELD8
+                             : FIELD9
+                             : FIELD10
+                             : FIELD11);
+          DspFld4 = %Dec(%Char(Work_Date: *MDY0): 6: 0); // Effective Date
+       EndSr;
+      *=========================================================================
+      * Clear the Display Fields
+      *=========================================================================
+       BegSr Clear_Process_Screen_Fields;
+         Clear DspFld1;      
+         Clear DspFld2;      
+         Clear DspFld3;      
+         Clear DspFld4;      
+         Clear DspFld5;      
+         Clear DspFld6;      
+         Clear DspDesc1;     
+         Clear DspDesc2;     
+         Clear DspDesc3;     
+         Clear NewFld1;      
+         Clear NewFld2;      
+         Clear NewFld3;      
+         Clear NewFld4;      
+       EndSr;
+      *=========================================================================
+      * Position to Subroutine - Position to desired location in subfile
+      *=========================================================================
+       BegSr Position_To;
+          DoW True;
+             Exfmt Window;
+             Exsr Clear_Message_Subfile;
+             Place_Cursor = *Off; // *In62
+
+             Select;
+                When F3 or F12;
+                   Leave;
+
+                When F4;
+                  Exsr Prompt;
+
+                When FKey = Enter;
+                  Select;
+                     When PosFld1 = *Blanks;
+                       Leave;
+
+                     When PosFld2 = *Blanks;
+                       Clear Key_MAINFLF;
+                       Key_MAINFLF.FIELD1 = PosFld1;
+                       Exsr BuildMain;
+
+                     When PosFld3 = *Blanks;
+                       Clear Key_MAINFLF;
+                       Key_MAINFLF.FIELD1 = PosFld1;
+                       Key_MAINFLF.FIELD2 = PosFld2;
+                       Exsr BuildMain;
+
+                     Other;
+                       Clear Key_MAINFLF;
+                       Key_MAINFLF.FIELD1 = PosFld1;
+                       Key_MAINFLF.FIELD2 = PosFld2;
+                       Key_MAINFLF.FIELD3 = PosFld3;
+                       Exsr BuildMain;
+
+                  EndSl;
+                  Leave;
+                Other;
+                  Exsr Invalid_FKey;
+             EndSl;
+          EndDo;
+          Place_Cursor = *Off; // *In62
+          Exsr Clear_Position_Fields;
+       EndSr;
+      *=========================================================================
+      * Clear the Posittion to Fields
+      *=========================================================================
+       BegSr Clear_Position_Fields;
+         Clear PosFld1;  // Position Key Field 1
+         Clear PosFld2;  // Position Key Field 2
+         Clear PosFld3;  // Position Key Field 3
+       EndSr;
+      *=========================================================================
+      * Print Table Subroutine
+      *=========================================================================
+       BegSr Print_Table;
+          Write Top;
+          Overflow = *Off;
+          SetLL *Start MAINFLF;
+          Read MAINFLF;
+
+          DoW Not %EoF(MAINFLF);
+             If Overflow = *On;
+                Write Top;
+                Overflow = *Off;
+             EndIf;
+             FIELD4 = AlpDate( FIELD8
+                             : FIELD9
+                             : FIELD10
+                             : FIELD11);
+             FIELD7 = AlpDate( FIELD12
+                             : FIELD13
+                             : FIELD14
+                             : FIELD15);
+             Write Detail;
+             Read MAINFLF;
+          EndDo;
+
+          Clear SndMsgParms;
+          Msg_Dta_or_Immed_Text = 'Table printed successfully.';
+          Exsr SndMsgDS3;
+       EndSr;
+      *=========================================================================
+      * Print Record Subroutine
+      *=========================================================================
+       BegSr Print_Record;
+
+          If Overflow = *On;
+             Write Top;
+             Overflow = *Off;
+          EndIf;
+
+          FIELD4 = AlpDate( FIELD8
+                          : FIELD9
+                          : FIELD10
+                          : FIELD11);
+          FIELD7 = AlpDate( FIELD12
+                          : FIELD13
+                          : FIELD14
+                          : FIELD15);
+          Write Detail;
+
+          Clear SndMsgParms;
+          Msg_Dta_or_Immed_Text = 'Record printed successfully.';
+          Exsr SndMsgDS3;
+       EndSr;
+      *=========================================================================
+      * Set the key for page down processing of the subfile
+      * First step will be getting the last record written.
+      *=========================================================================
+       BegSr Page_Down;
+          Exsr Open_MainFilePF;
+          Chain LastRrn Pfr;
+          If %Found(MainFilePF);
+             Exsr Set_Last_Rrn_Key;
+          EndIf;
+          Exsr Close_MainFilePF;
+       // ----------------------------------------------------------------------
+       // Now add 12 records to the subfile.
+       // ----------------------------------------------------------------------
+          Count = *Zero;
+          SetGT %Kds(Last_Rrn_Key) MAINFLF;
+          Read MAINFLF;
+          DoW (Count < 12) and (Not %EoF(MAINFLF));
+             If AlpDate( FIELD12
+                       : FIELD13
+                       : FIELD14
+                       : FIELD15) = D'0001-01-01'
+             or Show_Deleted = *On;
+                Clear MainOpt;
+                FIELD4 = AlpDate( FIELD8
+                                : FIELD9
+                                : FIELD10
+                                : FIELD11);
+                FIELD7 = AlpDate( FIELD12
+                                : FIELD13
+                                : FIELD14
+                                : FIELD15);
+                Rrn1 += 1;
+                Count += 1;
+                FILERRN = MainFileLF_InfDS.FileRRN;
+                LastRRN = MainFileLF_InfDS.FileRRN;
+                Write SFL1A;
+                Write SFL1B;
+             EndIf;
+             Read MAINFLF;
+          EndDo;
+
+          // If a full page is loaded, and we are not at the end of the file,
+          // position the subfile to the top of the next page
+          If Not %EoF(MAINFLF);
+             SflRrn = Rrn1 - 11;
+             SFL_Not_End = *On;    // *In93
+          // If we are at the end of the file, we want to position to the top
+          // of the next page, we will do this by taking the rrn of the final
+          // record written, minus (the number of new records written minus 1).
+          Else;
+             SflRrn = Rrn1 - (Count - 1);
+             SFL_Not_End = *Off;   // *In93
+          EndIf;
+
+       EndSr;
+      *=========================================================================
+      * Read Changes Subroutine
+      *=========================================================================
+       BegSr Read_Changes;
+          Select;
+             When AltView = 1;
+                ReadC SFL1A;
+             When AltView = 2;
+                ReadC SFL1B;
+          EndSl;
+          DoW Not %EoF;
+             Select;
+                When MainOpt = '2';
+                   If FIELD7 = D'0001-01-01';
+                      Exsr ChangeMode;
+                      Exsr Clear_Subfile_Option;
+                   Else;
+                      Clear SndMsgParms;
+                      Msg_Dta_or_Immed_Text =
+                          'Cannot edit a deleted record.';
+                      Exsr SndMsgDS3;
+                      Highlight_Option = *On; // *In60
+                      SFL_Next_Change = *On;  // *In26
+                      Exsr Update_Subfile_Option;
+                      Highlight_Option = *Off; // *In60
+                      SFL_Next_Change = *Off;  // *In26
+                      Leave;
+                   EndIf;
+
+                When MainOpt = '3';
+                   Exsr Copy_Mode;
+                   Exsr Clear_Subfile_Option;
+
+                When MainOpt = '4';
+                   Exsr Delete_Mode;
+                   Exsr Clear_Subfile_Option;
+
+                When MainOpt = '5';
+                   Exsr Display_Mode;
+                   Exsr Clear_Subfile_Option;
+
+                When MainOpt = *Blanks;
+                   Highlight_Option = *Off;  // *In60
+                   Exsr Clear_Subfile_Option;
+
+             EndSl;
+             Select;
+                When AltView = 1;
+                   ReadC SFL1A;
+                When AltView = 2;
+                   ReadC SFL1B;
+             EndSl;
+          EndDo;
+       EndSr;
+      *=========================================================================
+      * Clear the subfile option for all views
+      *=========================================================================
+       BegSr Clear_Subfile_Option;
+          Clear MainOpt;
+          Exsr Update_Subfile_Option;
+       EndSr;
+      *=========================================================================
+      * Update the Subfile Options on all views
+      *=========================================================================
+       BegSr Update_Subfile_Option;
+          Select;
+             When AltView = 1;
+                Update SFL1A;
+                Chain RRN1 SFL1B;
+                Update SFL1B;
+             When AltView = 2;
+                Update SFL1B;
+                Chain RRN1 SFL1A;
+                Update SFL1A;
+          EndSl;
+       EndSr;
+      *=========================================================================
+      * Prompt Subroutine
+      *=========================================================================
+       BegSr Prompt;
+          Place_Cursor = *Off;  // *In62
+          @Row = %Dec(CsrLoc / 256: 3: 0);
+          @Col = CsrLoc - (@Row * 256);
+
+          If @CRFLD = 'DspFld1' or @CRFLD = 'DspFld2' or @CRFLD = 'DspFld3'
+          or @CRFLD = 'PosFld1' or @CRFLD = 'PosFld2' or @CRFLD = 'PosFld3'
+          or @CRFLD = 'NewFld1' or @CRFLD = 'NewFld2' or @CRFLD = 'NewFld3';
+             FileName = 'ControlF5';
+             Row = @Row;
+             Col = @Col;
+             ReturnFields = ControlF5DS;
+             WindowCall( Filename
+                       : Row
+                       : Col
+                       : ReturnFields);
+             ControlF5DS = ReturnFields;
+             Select;
+             When @CrFld = 'DspFld1'
+             or   @CRFLD = 'DspFld2'
+             or   @CRFLD = 'DspFld3';
+                DspFld1 = ControlF5DS.CtrlFld1;
+                DspFld2 = ControlF5DS.CtrlFld2;
+                DspFld3 = ControlF5DS.CtrlFld3;
+                Exsr Display_Descriptions;
+
+             When @CRFLD = 'PosFld1'
+             or   @CRFLD = 'PosFld2'
+             or   @CRFLD = 'PosFld3';
+                PosFld1 = ControlF5DS.CtrlFld1;
+                PosFld2 = ControlF5DS.CtrlFld2;
+                PosFld3 = ControlF5DS.CtrlFld3;
+
+             When @CrFld = 'NewFld1'
+             or   @CRFLD = 'NewFld2'
+             or   @CRFLD = 'NewFld3';
+                NewFld1 = ControlF5DS.CtrlFld1;
+                NewFld2 = ControlF5DS.CtrlFld2;
+                NewFld3 = ControlF5DS.CtrlFld3;
+
+             EndSl;
+
+             Clear ControlF5DS;
+          Else;
+             Clear SndMsgParms;
+             Msg_Dta_or_Immed_Text =
+                 'Cursor not positioned on a promptable field.';
+             Exsr SndMsgDS3;
+          EndIf;
+          Place_Cursor = *On; // *In62
+       EndSr;
+      *=========================================================================
+      * Get Display Descriptions
+      *=========================================================================
+       BegSr Display_Descriptions;
+          // Get Field 1 Description
+          Chain (DspFld1) ControlF1;
+          If %Found(ControlF1);
+             DspDesc1 = DescFld1;
+          EndIf;
+          // Get Field 2 Description
+          Chain (DspFld2) ControlF3;
+          If %Found(ControlF3);
+             DspDesc2 = DescFld2;
+          EndIf;
+          // Get Field 3 Description
+          Chain (DspFld3) ControlF2;
+          If %Found(ControlF2);
+             DspDesc3 = DescFld3;
+          EndIf;
+       EndSr;
+      *=========================================================================
+      * Deleted record Toggle Subroutine
+      *=========================================================================
+       BegSr Toggle_Deleted;
+          If Show_Deleted = *On;
+             Show_Deleted = *Off;
+             If Keys = Show_Deleted_Keys;
+                Keys = Hide_Deleted_Keys;
+             EndIf;
+             Clear SndMsgParms;
+             Msg_Dta_or_Immed_Text = 'Hiding Deleted Records';
+             Exsr SndMsgDs3;
+          Else;
+             Show_Deleted = *On;
+             If Keys = Hide_Deleted_Keys;
+                Keys = Show_Deleted_Keys;
+             EndIf;
+             Clear SndMsgParms;
+             Msg_Dta_or_Immed_Text = 'Showing Deleted Records';
+             Exsr SndMsgDs3;
+          EndIf;
+       EndSr;
+      *=========================================================================
+      * Alternate View Subroutine
+      *=========================================================================
+       BegSr Alternate_View;
+          Change_SflRrn = *On;
+          Select;
+             When AltView = 1;
+                AltView = 2;
+                ReadC SFL1A;
+                DoW Not %EoF;
+                   If MainOpt <> *Blanks;
+                      Hold_Main_Opt = MainOpt;
+                      Chain RRN1 SFL1B;
+                      SFL_Next_Change = *On;
+                      MainOpt = Hold_Main_Opt;
+                      Update SFL1B;
+                      SFL_Next_Change = *Off;
+                   EndIf;
+                   ReadC SFL1A;
+                EndDo;
+
+             When AltView = 2;
+                AltView = 1;
+                ReadC SFL1B;
+                DoW Not %EoF;
+                   If MainOpt <> *Blanks;
+                      Hold_Main_Opt = MainOpt;
+                      Chain RRN1 SFL1A;
+                      SFL_Next_Change = *On;
+                      MainOpt = Hold_Main_Opt;
+                      Update SFL1A;
+                      SFL_Next_Change = *Off;
+                   EndIf;
+                   ReadC SFL1B;
+                EndDo;
+
+          EndSl;
+       EndSr;
+      *=========================================================================
+      * More Keys Subroutine
+      *=========================================================================
+       BegSr More_Keys;
+          Change_SflRrn = *On;
+          Select;
+             When Keys = Keys1;
+                If Show_Deleted = *On;
+                   Keys = Show_Deleted_Keys;
+                Else;
+                   Keys = Hide_Deleted_Keys;
+                EndIf;
+
+             When Keys = Show_Deleted_Keys or Keys = Hide_Deleted_Keys;
+                Keys = More_Keys_3;
+
+             When Keys = More_Keys_3;
+                Keys = Keys1;
+          EndSl;
+       EndSr;
+      *=========================================================================
+      * Send Message to the Message Subfile Subroutine
+      *=========================================================================
+       BegSr SndMsgDS3;
+          Clear Errc;
+          If Msg_ID <> *Blanks;
+             Qual_Msg_F_Name = 'QCPFMSG   *LIBL     ';
+          EndIf;
+          Len_Msg_Dta_Immed_Text = %Len(%Trim(Msg_Dta_or_Immed_Text));
+          Errc.Bytes_Provided = %Size(Errc);
+          Msg_Type = '*INFO';
+          Call_Stck_Entry = @ProcName;
+          Call_Stck_Counter = 0;
+
+          SndMsg( Msg_ID
+                : Qual_Msg_F_Name
+                : Msg_Dta_or_Immed_Text
+                : Len_Msg_Dta_Immed_Text
+                : Msg_Type
+                : Call_Stck_Entry
+                : Call_Stck_Counter
+                : Msg_Key
+                : Errc);
+
+       EndSr;
+      *=========================================================================
+      * Clear The Message Subfile Subroutine
+      *=========================================================================
+       BegSr Clear_Message_Subfile;
+          RRNQ = 0;
+          Call_Stck_Entry = @ProcName;
+          Call_Stck_Counter = 0;
+          Msg_Key = *Blanks;
+          Msgs_to_Rmv = '*OLD';
+          Errc.Bytes_Provided = %Size(Errc);
+          RmvMsgs( Call_Stck_Entry
+                 : Call_Stck_Counter
+                 : Msg_Key
+                 : Msgs_to_Rmv
+                 : Errc);
+       EndSr;
+      *=========================================================================
+      * Invalid Function Key Pressed Message Subroutine
+      *=========================================================================
+       BegSr Invalid_FKey;
+          Clear SndMsgParms;
+          Msg_ID = 'CPD6A60';
+          Exsr SndMsgDS3;
+       EndSr;
+      *=========================================================================
+      * Set Key to File Fields
+      *=========================================================================
+       BegSr Set_Key_To_File_Fields;
+          Key_MAINFLF.FIELD1  = FIELD1;
+          Key_MAINFLF.FIELD2  = FIELD2;
+          Key_MAINFLF.FIELD3  = FIELD3;
+          Key_MAINFLF.FIELD8  = FIELD8;
+          Key_MAINFLF.FIELD9  = FIELD9;
+          Key_MAINFLF.FIELD10 = FIELD10;
+          Key_MAINFLF.FIELD11 = FIELD11;
+          Key_MAINFLF.FIELD5  = FIELD5;
+       EndSr;
+      *=========================================================================
+      * Set Last Rrn key to file fields
+      *=========================================================================
+       BegSr Set_Last_Rrn_Key;
+          Last_Rrn_Key.FIELD1  = FIELD1;
+          Last_Rrn_Key.FIELD2  = FIELD2;
+          Last_Rrn_Key.FIELD3  = FIELD3;
+          Last_Rrn_Key.FIELD8  = FIELD8;
+          Last_Rrn_Key.FIELD9  = FIELD9;
+          Last_Rrn_Key.FIELD10 = FIELD10;
+          Last_Rrn_Key.FIELD11 = FIELD11;
+          Last_Rrn_Key.FIELD5  = FIELD5;
+       EndSr;
+      *=========================================================================
+      * Turn Off Error Indicators
+      *=========================================================================
+       BegSr Turn_Off_Error_Indicators;
+          FIELD1_Error = *Off;   // *In80
+          FIELD2_Error = *Off;   // *In81
+          FIELD3_Error = *Off;   // *In82
+          FIELD4_Error = *Off;   // *In83
+          FIELD5_Error = *Off;   // *In84
+          FIELD6_Error = *Off;   // *In85
+          Global_Error = *Off;   // *In99
+       EndSr;
+      *=========================================================================
+      * Initilization Subroutine - Set up the program to run at the mainline
+      *=========================================================================
+       BegSr *InzSr;
+
+          Exsr Open_MainFilePF;
+
+          // -------------------------------------------------------
+          // Set Header1 and use Center to Center it.
+          // -------------------------------------------------------
+          Chain (Insert Key for ControlF1) ControlF1;
+          If %Found;
+             Header1 =  Header_1_Control_Value;
+          Else;
+             Header1 = '**ERROR** **ERROR** **ERROR**';
+          EndIf;
+          CenterMe = Header1;
+          Center(CenterMe: %Len(Header1) );
+          Header1 = CenterMe;
+
+          // -------------------------------------------------------
+          // Set Header2 and use Center to center it.
+          // -------------------------------------------------------
+          Header2 = HEADER2CONST;
+          CenterMe = Header2;
+          Center(CenterMe: %Len(Header2) );
+          Header2 = CenterMe;
+
+          // -------------------------------------------------------
+          // Set Header3 and use Center to center it.
+          // -------------------------------------------------------
+          Header3 = SFLH3;
+          CenterMe = Header3;
+          Center(CenterMe: %Len(Header3) );
+          Header3 = CenterMe;
+
+          // -------------------------------------------------------
+          // Fill the Function Key Line field and Option Line field.
+          // -------------------------------------------------------
+          Keys = Keys1;
+          OptLine = SFOptLine;
+          Exsr Refresh_Subfile;
+       EndSr;
+      *=========================================================================
+      * Error Handling Subroutine
+      *=========================================================================
+       BegSr *Pssr;
+         Dump(a);
+         Dsply ('Critical Error Occurred, Ending Program');
+         Exsr End_Pgm;
+       EndSR '*CANCL';
+      *=============================================================================================
+      * Open MainFilePF
+      *=============================================================================================
+       BegSr Open_MainFilePF;
+          If MainFilePF_InfDS.Opn_Ind = '0';
+             Open MainFilePF;
+          EndIf;
+       EndSr;
+      *=============================================================================================
+      * Close MainFilePF
+      *=============================================================================================
+       BegSr Close_MainFilePF;
+          If MainFilePF_InfDS.Opn_Ind = '1';
+             Close MainFilePF;
+          EndIf;
+       EndSr;
+      *=============================================================================================
+      * Close File(s) and end the program.
+      *=============================================================================================
+       BegSr End_Pgm;
+          Exsr Close_MainFilePF;
+          *InLr = *On;
+          Return;
+       EndSr;
+      *=============================================================================================
+      *                                S u b - P r o c e d u r e s
+      *=============================================================================================
+      *                            Error Check Sub-Procedure
+      * Accepts the fields to check as parameters and checks for errors.
+      *
+      *  @param  Msgs        Error Messages       - Mandatory  - Char(78) Dim(10)
+      *  @param  FLD1        Field 1              - Mandatory  - Char(2)
+      *  @param  FLD2        Field 2              - Mandatory  - Char(2)
+      *  @param  FLD3        Field 3              - Mandatory  - Char(2)
+      *  @param  FLD4        Field 4 (Date)       - Mandatory  - Packed(6) [MMDDYY Format]
+      *  @param  FLD5        Field 5              - Mandatory  - Char(1)
+      *  @param  FLD6        Field 6              - Mandatory  - Char(30)
+      *  @param  CRRN        RRN of Change Record - Optional   - Packed(8)
+      *
+      * --------------------------------------------------------------------------------------
+      * The CRRN parameter is ONLY to be used when changing a record. If they are changing the
+      * FLD6 of the FLD5, we do not want the record we are checking to cause a
+      * failure on this check. If the record read is the same as the record that we are
+      * checking then omit that record in the check.
+      *
+      *=============================================================================================
+       Dcl-Proc Error_Check;
+
+       Dcl-Pi Error_Check;
+         Msgs Char(78) Dim(10);
+         FLD1 Char(2);
+         FLD2 Char(2);
+         FLD3 Char(2);
+         FLD4 Packed(6);
+         FLD5 Char(1);
+         FLD6 Char(30);
+         CRRN Packed(8) Options(*NoPass);
+       End-Pi;
+
+          Count = *Zero;
+          Global_Error = *Off;
+
+
+          //-----------------------------------------
+          // Check the validity of FLD1
+          //-----------------------------------------
+
+          Chain (FLD1) ControlF1;
+          If Not %Found
+          or FLD1 = '85';
+             FIELD1_Error = *On;   // *In80
+             Global_Error = *On;   // *In99
+             Count += 1;
+             Msgs(Count) = 'FLD1 is not valid.';
+          EndIf;
+
+          //-----------------------------------------
+          // Check the Validity of FLD2
+          //-----------------------------------------
+
+          Chain (FLD2) ControlF3;
+          If Not %Found;
+             FIELD2_Error = *On;   // *In81
+             Global_Error = *On;   // *In99
+             Count += 1;
+             Msgs(Count) = 'FLD2 is not valid.';
+          EndIF;
+
+          //-----------------------------------------
+          // Check the Validity of FLD3
+          //-----------------------------------------
+
+          Chain (FLD3) ControlF2;
+          If Not %Found;
+             FIELD3_Error = *On;   // *In82
+             Global_Error = *On;   // *In99
+             Count += 1;
+             Msgs(Count) = 'FLD3 is not valid.';
+          EndIf;
+
+          //-------------------------------------------------
+          // Check the validity of the FLD1, FLD2, FLD3
+          // combination in control table ControlF5.
+          //-------------------------------------------------
+
+          If  FIELD1_Error = *Off     // *In80
+          and FIELD2_Error = *Off     // *In81
+          and FIELD3_Error = *Off;    // *In82
+             Key_ControlF5.CTRLFLD1 = FLD1;
+             Key_ControlF5.CTRLFLD2 = FLD2;
+             Key_ControlF5.CTRLFLD3 = FLD3;
+             Chain %KDS(Key_ControlF5: 3) ControlF5;
+             If Not %Found(ControlF5);
+                FIELD1_Error = *On;   // *In80
+                FIELD2_Error = *On;   // *In81
+                FIELD3_Error = *On;   // *In82
+                Global_Error = *On;   // *In99
+                Count += 1;
+                Msgs(Count) = 'Not a valid FLD1, FLD2, & FLD3 '
+                            + 'combination.';
+             EndIf;
+          EndIf;
+
+          //-----------------------------------------
+          // Check FLD4
+          //-----------------------------------------
+          Monitor;
+             Work_Date = %Date(%EditC(FLD4: 'X'): *MDY0);
+          On-Error;
+             FIELD4_Error = *On;  // *In83
+             Global_Error = *On;  // *In99
+             Count += 1;
+             Msgs(Count) = 'FLD4 date not valid, must be in MMDDYY Format';
+          EndMon;
+
+          //-----------------------------------------
+          // Check FLD5
+          //-----------------------------------------
+          If FLD5 = *Blanks;
+             FIELD5_Error = *On;  // *In84
+             Global_Error = *On;  // *In99
+             Count += 1;
+             Msgs(Count) = 'FLD5 cannot be blank';
+          EndIf;
+
+          //-----------------------------------------
+          // Check FLD6
+          //-----------------------------------------
+          If FLD6 = *Blanks;
+             FIELD6_Error = *On;  // *In85
+             Global_Error = *On;  // *In99
+             Count += 1;
+             Msgs(Count) = 'FLD6 cannot be blank.';
+          EndIf;
+
+          //-----------------------------------------
+          // Check if duplicate record.
+          //-----------------------------------------
+          If Global_Error = *Off;
+             SetLL ( FLD1: FLD2: FLD3) MAINFLF;
+             ReadE ( FLD1: FLD2: FLD3) MAINFLF;
+             DoW Not %EoF(MAINFLF);
+                If AlpDate( FIELD12: FIELD13: FIELD14: FIELD15) <> D'0001-01-01';
+                   ReadE ( FLD1: FLD2: FLD3) MAINFLF;
+                   Iter;
+                EndIf;
+
+                If %Parms = 8 and MainFileLF_InfDS.FileRRN = CRRN;
+                   ReadE ( FLD1: FLD2: FLD3) MAINFLF;
+                   Iter;
+                EndIf;
+
+                If  FLD1 = FIELD1
+                and FLD2 = FIELD2
+                and FLD3 = FIELD3
+                and FLD5 = FIELD5;
+                   FIELD1_Error = *On;   // *In80
+                   FIELD2_Error = *On;   // *In81
+                   FIELD3_Error = *On;   // *In82
+                   FIELD5_Error = *On;   // *In84
+                   Global_Error = *On;   // *In99
+                   Count += 1;
+                   Msgs(Count) = 'Record already exists, cannot add duplicate '
+                               + 'record';
+                   Leave;
+                EndIf;
+                ReadE ( FLD1: FLD2: FLD3) MAINFLF;
+             EndDo;
+          EndIf;
+          Return;
+       End-Proc;
+      *=============================================================================================
+      *                            ALP Date Sub-Procedure
+      *  Converts ALPS "date" fields into an actual date data type.
+      *
+      *  @param  cc          Century.
+      *  @param  yy          Year.
+      *  @param  mm          Month.
+      *  @param  dd          Day.
+      *
+      *  Optional Parameter Group 1:
+      *  @param  dft         Default date value for invalid dates.
+      *
+      *  @return             The date value, or the default if the date fields
+      *                      do not represent a valid date.
+      *
+      *=============================================================================================
+       Dcl-Proc alpdate;
+       Dcl-Pi *N Like(isodate);
+         cc      Like(datepart) Value;
+         yy      Like(datepart) Value;
+         mm      Like(datepart) Value;
+         dd      Like(datepart) Value;
+         dft     Like(isodate) Const Options(*NoPass);
+       End-Pi;
+
+       Dcl-DS alp Qualified;
+         date;
+           cc    Like(datepart) Overlay(date);
+           yy    Like(datepart) Overlay(date: *next);
+           mm    Like(datepart) Overlay(date: *next);
+           dd    Like(datepart) Overlay(date: *next);
+       End-DS;
+
+       Dcl-S rtn Like(isodate) Inz(D'0001-01-01');
+
+         If (%parms = 5);
+           rtn = dft;
+         EndIf;
+
+         // Catch standard ALP "zero dates" to avoid exception processing
+         alp.cc = cc;
+         alp.yy = yy;
+         alp.mm = mm;
+         alp.dd = dd;
+         If (alp.date = *zeros);
+           Return rtn;
+         Endif;
+
+         // Catch truly invalid dates
+         Monitor;
+           rtn = %date(alp.date: *iso0);
+         On-Error;
+           Return rtn;
+         EndMon;
+
+         Return rtn;
+       End-Proc;
+      *=============================================================================================
+      *                               E n d   o f  P r o g r a m
+      *=============================================================================================
