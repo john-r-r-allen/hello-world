@@ -1,0 +1,504 @@
+DDS - Display File
+
+							
+      *                      Indicator Usage
+      *                      ===============
+      *  26 - Subfile Next Change. This will allow manual control of when
+      *       it gets turned off or on.
+      *
+      *  60 - Highlight an invalid option on the subfile.
+      *
+      *  62 - Allow Manual Positioning of the cursor to a desired location.
+      *
+      *  80 - Error on Field 1
+      *
+      *  81 - Error on Field 2
+      *
+      *  82 - Error on Field 3
+      *
+      *  83 - Error on Field 4
+      *
+      *  84 - Error on Field 5
+      *
+      *  85 - Error on Field 6
+      *
+      *  91 - Turn on to clear the subfile and off to display. This indicator
+      *       is used on the SFLCLR and SFLDSPCTL keywords.
+      *
+      *  92 - Turn off to display the subfile. Used on the SFLDSP keyword.
+      *
+      *  93 - Used on SFLEND and the ROLLUP Keywords. When we get to the
+      *       bottom of the subfile, the user will not be able to page down.
+      *
+      *  94 - Used on SFLEND for the message subfiles.
+      *
+      *=========================================================================
+     A                                      DSPSIZ(*DS3)
+     A                                      MSGLOC(24)
+     A                                      CF01(01)
+     A                                      CF02(02)
+     A                                      CF03(03)
+     A                                      CF04(04)
+     A                                      CF05(05)
+     A                                      CF06(06)
+     A                                      CF07(07)
+     A                                      CF08(08)
+     A                                      CF09(09)
+     A                                      CF10(10)
+     A                                      CF11(11)
+     A                                      CF12(12)
+     A                                      CF13(13)
+     A                                      CF14(14)
+     A                                      CF15(15)
+     A                                      CF16(16)
+     A                                      CF17(17)
+     A                                      CF18(18)
+     A                                      CF19(19)
+     A                                      CF20(20)
+     A                                      CF21(21)
+     A                                      CF22(22)
+     A                                      CF23(23)
+     A                                      CF24(24)
+     A                                      INDARA
+     A                                      REF(*LIBL/MainFilePF)
+      *=========================================================================
+      * Main Subfile - Primary View
+      *=========================================================================
+     A          R SFL1A                     SFL
+     A  26                                  SFLNXTCHG
+     A            MAINOPT        1A  B 10  3
+     A  60                                  DSPATR(RI PC)
+     A                                      VALUES(' ' '2' '3' '4' '5')
+     A                                      CHKMSGID((Insert MSGID here) *LIBL/(Insert MSGF here)
+     A* You will want the message you insert above to say Invalid Selection.
+     A* It can also be removed and the program will handle for invalid selections.
+     A            FIELD1    R        O 10  6REFFLD(FIELD1)
+     A            FIELD2    R        O 10 10REFFLD(FIELD2)
+     A            FIELD3    R        O 10 14REFFLD(FIELD3)
+     A            FIELD4          L  O 10 18
+     A            FIELD7          L  H
+     A            FIELD5    R        O 10 30REFFLD(FIELD5)
+     A            FIELD6    R        O 10 33REFFLD(FIELD6)
+     A            FIELD8    R        H
+     A            FIELD9    R        H
+     A            FIELD10   R        H
+     A            FIELD11   R        H
+     A* In this example, fields 8-11 are date parts for field 4. 8=cn, 9=yy, 10=mm, 11=dd.
+     A            FIELD12   R        H
+     A            FIELD13   R        H
+     A            FIELD14   R        H
+     A            FIELD15   R        H
+     A* In this example, fields 12-14 are date parts for field 7. 12=cn, 13=yy, 14=mm, 15=dd.
+     A            FILERRN        8  0H
+     A* FILERRN IS THE RELATIVE RECORD NUMBER OF THE RECORD IN THE FILE WE ARE READING.
+      *-------------------------------------------------------------------------
+     A          R CTL1A                     SFLCTL(SFL1A)
+     A                                      SFLSIZ(120)
+     A                                      SFLPAG(012)
+     A                                      OVERLAY
+     A                                      CHANGE(27)
+     A  62                                  CSRLOC(@ROW       @COL)
+     A  93                                  ROLLUP
+     A N92                                  SFLDSP
+     A N91                                  SFLDSPCTL
+     A  91                                  SFLCLR
+     A N93                                  SFLEND(*MORE)
+     A            SFLRRN         4S 0H      SFLRCDNBR
+     A            @ROW           3S 0H
+     A            @COL           3S 0H
+      * Line 1
+     A                               O  1  2'(RPGLE PGM)-A'
+     A            HEADER1       30A  O  1 25DSPATR(HI)
+     A                                  1 63'System:'
+     A                               O  1 72SYSNAME
+      * Line 2
+     A            @WRKSTN       10   O  2  2
+     A            HEADER2       30A  O  2 25
+     A                                      DSPATR(HI)
+     A                                  2 62DATE EDTCDE(Y)
+     A                                  2 72TIME
+      * Line 3
+     A            @USERID       10   O  3  2
+     A            HEADER3       30A  O  3 25
+     A                                      DSPATR(HI)
+      * Line 5
+     A                                  5  2'Type Options, press enter.'
+     A                                      COLOR(BLU)
+      * Line 6
+     A            OPTLINE       77A  O  6  4
+     A                                      COLOR(BLU)
+      * Subfile Option Headings, Lines 8 and 9
+     A                                  9  2'Opt'
+     A                                      DSPATR(HI)
+      * FIELD 1 Heading
+     A                                  8  6'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9  6'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 2 Heading
+     A                                  8 10'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9 10'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 3 Heading
+     A                                  9 14'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 4 Heading
+     A                                  8 18'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9 21'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 5 AND FIELD 6 HEADINGS
+     A                                  8 30'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9 30'(insert here)'
+     A                                      DSPATR(HI)
+      *=========================================================================
+      * Main Subfile - Secondary View.
+      *=========================================================================
+     A          R SFL1B                     SFL
+     A  26                                  SFLNXTCHG
+     A            MAINOPT        1A  B 10  3
+     A  60                                  DSPATR(RI PC)
+     A                                      VALUES(' ' '2' '3' '4' '5')
+     A                                      CHKMSGID((MSGID) *LIBL/(MSGFILE))
+     A            FIELD1    R        O 10  6REFFLD(FIELD1)
+     A            FIELD2    R        O 10 10REFFLD(FIELD2)
+     A            FIELD3    R        O 10 14REFFLD(FIELD3)
+     A            FIELD4          L  H
+     A            FIELD7          L  O 10 18
+     A            FIELD5    R        O 10 30REFFLD(FIELD5)
+     A            FIELD6    R        O 10 33REFFLD(FIELD6)
+     A            FIELD8    R        H
+     A            FIELD9    R        H
+     A            FIELD10   R        H
+     A            FIELD11   R        H
+     A            FIELD12   R        H
+     A            FIELD13   R        H
+     A            FIELD14   R        H
+     A            FIELD15   R        H
+     A            FILERRN        8  0H
+      *-------------------------------------------------------------------------
+     A          R CTL1B                     SFLCTL(SFL1B)
+     A                                      SFLSIZ(120)
+     A                                      SFLPAG(012)
+     A                                      OVERLAY
+     A                                      CHANGE(27)
+     A  62                                  CSRLOC(@ROW       @COL)
+     A  93                                  ROLLUP
+     A N92                                  SFLDSP
+     A N91                                  SFLDSPCTL
+     A  91                                  SFLCLR
+     A N93                                  SFLEND(*MORE)
+     A            SFLRRN         4S 0H      SFLRCDNBR
+     A            @ROW           3S 0H
+     A            @COL           3S 0H
+      * Line 1
+     A                               O  1  2'(RPGLE PGM)-B'
+     A            HEADER1       30A  O  1 25DSPATR(HI)
+     A                                  1 63'System:'
+     A                               O  1 72SYSNAME
+      * Line 2
+     A            @WRKSTN       10   O  2  2
+     A            HEADER2       30A  O  2 25
+     A                                      DSPATR(HI)
+     A                                  2 62DATE EDTCDE(Y)
+     A                                  2 72TIME
+      * Line 3
+     A            @USERID       10   O  3  2
+     A            HEADER3       30A  O  3 25
+     A                                      DSPATR(HI)
+      * Line 5
+     A                                  5  2'Type Options, press enter.'
+     A                                      COLOR(BLU)
+      * Line 6
+     A            OPTLINE       77A  O  6  4
+     A                                      COLOR(BLU)
+      * Subfile Option Headings, Lines 8 and 9
+     A                                  9  2'Opt'
+     A                                      DSPATR(HI)
+      * FIELD 1 Heading
+     A                                  8  6'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9  6'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 2 Heading
+     A                                  8 10'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9 10'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 3 Heading
+     A                                  9 14'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 4 Heading
+     A                                  8 18'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9 21'(insert here)'
+     A                                      DSPATR(HI)
+      * FIELD 5 AND FIELD 6 HEADINGS
+     A                                  8 30'(insert here)'
+     A                                      DSPATR(HI)
+     A                                  9 30'(insert here)'
+     A                                      DSPATR(HI)
+      *=========================================================================
+     A          R NORCDS                    OVERLAY
+     A                                 12 15'(No records to display)'
+     A                                      DSPATR(HI)
+      *=========================================================================
+     A          R FSFL1                     SFL
+     A                                      SFLMSGRCD(24)
+     A            @MSGKY                    SFLMSGKEY
+     A            @PROCNAME                 SFLPGMQ
+     A
+      *-------------------------------------------------------------------------
+     A          R FCTL1                     SFLCTL(FSFL1)
+     A                                      SFLINZ
+     A                                      OVERLAY
+     A                                      SFLSIZ(12)
+     A                                      SFLPAG(01)
+     A                                      SFLDSP SFLDSPCTL
+     A N94                                  SFLEND
+     A            @PROCNAME                 SFLPGMQ
+     A            KEYS          78   O 23  2COLOR(BLU)
+      *=========================================================================
+      * Process Record Screen - Add/Change/Copy/Display/Delete
+      *-------------------------------------------------------------------------
+      *                Indicator Guideline for RecProcess Screen
+      *                =========================================
+      * This Screen has been designed to handle processing for adding records,
+      *  changing records, copying records, displaying records, and deleting
+      *  records. The indicators that need to be set on for each mode are
+      *  detailed below and should help make any maintenance work easier.
+      *  A quick note regarding how these indicators are set in the RPGLE
+      *  program that is using this screen file: All of these indicators have
+      *  a new name in the program and are referred to by their name so, please
+      *  pay attention to that. Comments have been added to all of the named
+      *  indicators which will tell you what indicator number is being modified
+      *  with the operation which is being performed.
+      *
+      *    Mode        *In70       *In71       *In72
+      *  --------      -----       -----       -----
+      *  Add           *Off        *Off        *Off
+      *  Change        *Off        *On         *Off
+      *  Copy          *On         *Off        *On
+      *  Display       *On         *Off        *Off
+      *  Delete        *On         *Off        *Off
+      *
+      *=========================================================================
+     A          R RECPROCSFL                SFL
+     A                                      SFLMSGRCD(24)
+     A            @MSGKY                    SFLMSGKEY
+     A            @PROCNAME                 SFLPGMQ
+     A
+      *-------------------------------------------------------------------------
+     A          R RECPROCESS                SFLCTL(RECPROCSFL)
+     A                                      SFLINZ
+     A                                      OVERLAY
+     A                                      CHANGE(27)
+     A  62                                  CSRLOC(@ROW       @COL)
+     A                                      RTNCSRLOC(&@CRREC &@CRFLD &@CRPOS)
+     A                                      SFLSIZ(12)
+     A                                      SFLPAG(01)
+     A                                      SFLDSP SFLDSPCTL
+     A N94                                  SFLEND
+     A            @PROCNAME                 SFLPGMQ
+     A            @ROW           3S 0H
+     A            @COL           3S 0H
+     A            @CRREC        10A  H
+     A            @CRFLD        10A  H
+     A            @CRPOS         4S 0H
+      *
+     A            @SRCFILMBR    10A  O  1  2
+     A            HEADER1       30A  O  1 25DSPATR(HI)
+     A                                  1 71DATE EDTCDE(Y)
+     A            @WRKSTN       10A  O  2  2
+     A            HEADER2       30A  O  2 25DSPATR(HI)
+     A                                  2 71TIME
+     A            @USERID       10A  O  3  2
+     A            HEADER3       30A  O  3 25DSPATR(HI)
+     A                                  3 68'Page 1 of 1'
+      *
+     A                                  6  2'INSERT HERE  . . . . . . :'
+     A            DSPFLD1        2A  B  6 30
+     A N70
+     AAN71                                  DSPATR(HI)
+     A  70
+     AO 71                                  DSPATR(PR)
+     A N72 80                               COLOR(GRN) DSPATR(RI PC)
+     A            DSPDESC1      30A  O  6 34
+      *
+     A                                  7  2'INSERT HERE  . . . . . . :'
+     A            DSPFLD2        2A  B  7 30
+     A N70
+     AAN71                                  DSPATR(HI)
+     A  70
+     AO 71                                  DSPATR(PR)
+     A N72 81                               COLOR(GRN) DSPATR(RI PC)
+     A            DSPDESC2      40A  O  7 34
+      *
+     A                                  8  2'INSERT HERE  . . . . . . :'
+     A            DSPFLD3        2A  B  8 30
+     A N70
+     AAN71                                  DSPATR(HI)
+     A  70
+     AO 71                                  DSPATR(PR)
+     A N72 82                               COLOR(GRN) DSPATR(RI PC)
+     A            DSPDESC3      20A  O  8 34
+      *
+     A                                  9  2'INSERT HERE  . . . . . . :'
+     A            DSPFLD4        6  0B  9 30EDTCDE(Y)
+     A N70
+     AAN71                                  DSPATR(HI)
+     A  70
+     AO 71                                  DSPATR(PR)
+     A N72 83                               COLOR(GRN) DSPATR(RI PC)
+      *
+     A                                 10  2'INSERT HERE  . . . . . . :'
+     A            DSPFLD5        1A  B 10 30
+     A N70                                  DSPATR(HI)
+     A  70                                  DSPATR(PR)
+     A  84                                  COLOR(GRN) DSPATR(RI PC)
+      *
+     A                                 11  2'INSERT HERE  . . . . . . :'
+     A            DSPFLD6       30A  B 11 30CHECK(LC)
+     A N70                                  DSPATR(HI)
+     A  70                                  DSPATR(PR)
+     A  85                                  COLOR(GRN) DSPATR(RI PC)
+      *
+     A  72                             13  2'INSERT HERE  . . . . . . :'
+     A  72        NEWFLD1        2A  B 13 30
+     A  72                                  DSPATR(HI)
+     A  72 80                               COLOR(GRN) DSPATR(RI PC)
+      *
+     A  72                             14  2'INSERT HERE  . . . . . . :'
+     A  72        NEWFLD2        2A  B 14 30
+     A  72                                  DSPATR(HI)
+     A  72 81                               COLOR(GRN) DSPATR(RI PC)
+      *
+     A  72                             15  2'INSERT HERE  . . . . . . :'
+     A  72        NEWFLD3        2A  B 15 30
+     A  72                                  DSPATR(HI)
+     A  72 82                               COLOR(GRN) DSPATR(RI PC)
+      *
+     A  72                             16  2'INSERT HERE  . . . . . . :'
+     A  72        NEWFLD4        6  0B 16 30EDTCDE(Y)
+     A  72                                  DSPATR(HI)
+     A  72 83                               COLOR(GRN) DSPATR(RI PC)
+      *
+     A            KEYS2         78A  O 23  2COLOR(BLU)
+      *=========================================================================
+      * Screen to dislpay when the chain to the record failed.
+      *=========================================================================
+     A          R BADCHAINSF                SFL
+     A                                      SFLMSGRCD(24)
+     A            @MSGKY                    SFLMSGKEY
+     A            @PROCNAME                 SFLPGMQ
+     A
+      *-------------------------------------------------------------------------
+     A          R BADCHAIN                  SFLCTL(BADCHAINSF)
+     A                                      SFLINZ
+     A                                      OVERLAY
+     A  62                                  CSRLOC(@ROW       @COL)
+     A                                      RTNCSRLOC(&@CRREC &@CRFLD &@CRPOS)
+     A                                      SFLSIZ(12)
+     A                                      SFLPAG(01)
+     A                                      SFLDSP SFLDSPCTL
+     A N94                                  SFLEND
+     A            @PROCNAME                 SFLPGMQ
+     A            @ROW           3S 0H
+     A            @COL           3S 0H
+     A            @CRREC        10A  H
+     A            @CRFLD        10A  H
+     A            @CRPOS         4S 0H
+      *
+     A            @SRCFILMBR    10A  O  1  2
+     A            HEADER1       30A  O  1 25DSPATR(HI)
+     A                                  1 71DATE EDTCDE(Y)
+     A            @WRKSTN       10A  O  2  2
+     A            HEADER2       30A  O  2 25DSPATR(HI)
+     A                                  2 71TIME
+     A            @USERID       10A  O  3  2
+     A            HEADER3       30A  O  3 25DSPATR(HI)
+     A                                  3 68'Page 1 of 1'
+     A                                  6 20'Unable to find selected record.'
+     A                                      COLOR(RED)
+     A                                  7 20'Please try your selection again.'
+     A                                      COLOR(RED)
+      *
+     A            KEYS2         78A  O 23  2COLOR(BLU)
+      *=========================================================================
+      * Confirm delete window which will be used when the user hits
+      * F23 on the delete record screen (RecDsp).
+      *=========================================================================
+     A          R DLTWDW                    SFL
+     A                                      SFLMSGRCD(5)
+     A            @MSGKY                    SFLMSGKEY
+     A            @PROCNAME                 SFLPGMQ
+      *-------------------------------------------------------------------------
+      * Subfile Control Record for the Delete Window.
+      *-------------------------------------------------------------------------
+     A          R DLTWINDOW                 SFLCTL(DLTWDW)
+     A                                      SFLSIZ(12)
+     A                                      SFLPAG(01)
+     A                                      SFLINZ
+     A                                      WINDOW(14 2 5 40 *NOMSGLIN)
+     A                                      WDWBORDER((*CHAR '        ') (*DSP+
+     A                                      ATR RI) (*COLOR BLU))
+     A                                      WDWTITLE((*TEXT 'Confirm Delete') +
+     A                                      (*COLOR WHT))
+     A                                      OVERLAY
+     A                                      SFLDSP SFLDSPCTL
+     A N94                                  SFLEND
+     A            @PROCNAME                 SFLPGMQ
+     A                                  2  2'Press F23 Again to Confirm Delete'
+     A                                      COLOR(RED)
+     A                                  4  2'F3=Exit' COLOR(BLU)
+     A                                    +4'F12=Cancel' COLOR(BLU)
+      *=========================================================================
+      * Position to Window, contains a message subfile.
+      *=========================================================================
+     A          R WDW                       SFL
+     A                                      SFLMSGRCD(10)
+     A            @MSGKY                    SFLMSGKEY
+     A            @PROCNAME                 SFLPGMQ
+      *-------------------------------------------------------------------------
+     A          R WINDOW                    SFLCTL(WDW)
+     A                                      SFLSIZ(12)
+     A                                      SFLPAG(01)
+     A                                      SFLINZ
+     A                                      OVERLAY
+     A                                      CHANGE(27)
+     A  62                                  CSRLOC(@ROW       @COL)
+     A                                      RTNCSRLOC(&@CRREC &@CRFLD &@CRPOS)
+     A                                      WINDOW(*DFT 10 60 *NOMSGLIN)
+     A                                      WDWBORDER((*CHAR '        ') (*DSP+
+     A                                      ATR RI) (*COLOR BLU))
+     A                                      WDWTITLE((*TEXT 'Position to') (*+
+     A                                      COLOR WHT))
+     A                                      SFLDSP SFLDSPCTL
+     A N94                                  SFLEND
+     A            @PROCNAME                 SFLPGMQ
+     A            @ROW           3S 0H
+     A            @COL           3S 0H
+     A            @CRREC        10A  H
+     A            @CRFLD        10A  H
+     A            @CRPOS         4S 0H
+      *
+     A                                  2  2'Key Field 1 . . .'
+     A            POSFLD1        2   B  2 20
+     A                                      DSPATR(HI)
+     A                                  3  2'Key Field 2 . . .'
+     A            POSFLD2        2   B  3 20
+     A                                      DSPATR(HI)
+     A                                  4  2'Key Field 3 . . .'
+     A            POSFLD3        2   B  4 20
+     A                                      DSPATR(HI)
+     A                                  9  2'F3=Exit'
+     A                                      COLOR(BLU)
+     A                                    +5'F4=Prompt'
+     A                                      COLOR(BLU)
+     A                                    +5'F12=Cancel'
+     A                                      COLOR(BLU)
+      *=========================================================================
+      * End of Display File
+      *========================================================================= 
