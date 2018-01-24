@@ -1,0 +1,66 @@
+							
+     A                                      MSGLOC(24)
+     A                                      INDARA
+     A                                      CF03(03)
+     A                                      CF12(12)
+     A
+      *=========================================================================
+     A          R MSGSFL                    SFL
+     A                                      SFLMSGRCD(24)
+     A            MSGKEY                    SFLMSGKEY
+     A            PGMNAME                   SFLPGMQ
+      *-------------------------------------------------------------------------
+     A          R TEMPMENU                  SFLCTL(MSGSFL)
+     A                                      SFLSIZ(12)
+     A                                      SFLPAG(01)
+     A                                      OVERLAY
+     A                                      SFLINZ
+     A                                      SFLDSP SFLDSPCTL
+     A N97                                  SFLEND
+     A            PGMNAME                   SFLPGMQ
+     A                                 01 02'TEMPMENU'
+     A            HEADER        30A    01 25DSPATR(HI)
+     A                                 01 62'System:'
+     A                                 01 72SYSNAME
+
+     A            JOB           10A    02 02
+     A                                 02 29'Example Menu Heading'
+     A                                      DSPATR(HI)
+     A                                 02 62DATE EDTCDE(Y)
+     A                                 02 72TIME
+
+     A                                 03 02USER
+     A                                 03 33'Temp Main Menu'
+     A                                      DSPATR(HI)
+
+     A                                 06 02'Select one of the following:'
+     A                                      COLOR(BLU)
+      *
+     A                                 08 05'1.'
+     A                                      DSPATR(HI)
+     A                                 08 08'Example Option 1'
+      *
+     A                                 09 05'2.'
+     A                                      DSPATR(HI)
+     A                                 09 08'Example Option 2'
+      *
+     A                                 10 05'3.'
+     A                                      DSPATR(HI)
+     A                                 10 08'Example Option 3'
+      *
+     A                                 11 05'4.'
+     A                                      DSPATR(HI)
+     A                                 11 08'Example Option 4'
+      *
+     A                                 19 04'90.'
+     A                                      DSPATR(HI)
+     A                                 19 08'Sign Off'
+      *
+     A                                 21 02'Enter Option:' DSPATR(HI)
+     A            OPTION         2Y 0I 21 16
+      *
+     A                                 23 02'F3=Exit'
+     A                                      COLOR(BLU)
+     A                                    +4'F12=Cancel'
+     A                                      COLOR(BLU)
+      *=========================================================================
