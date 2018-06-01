@@ -2982,12 +2982,12 @@
 /*		Pink Outline Button			      */
 /*-------------------------------------*/
 .btn-outline-pink{
-	color: #fc0fc0;
+	color: #fc0fc0 !important;
 	background-color: #ffffff;
 	border-color: #fc0fc0 !important;
 }
 .btn-outline-pink:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fc0fc0;
 	border-color: #fc0fc0;
 }
@@ -2997,12 +2997,12 @@
 /*-------------------------------------*/
 
 .btn-outline-hibiscus{
-	color: #b43757;
+	color: #b43757 !important;
 	background-color: #ffffff;
 	border-color: #b43757 !important;
 }
 .btn-outline-hibiscus:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #b43757;
 	border-color: #b43757;
 }
@@ -3012,12 +3012,12 @@
 /*-------------------------------------*/
 
 .btn-outline-yellow{
-	color: #fff200;
+	color: #fff200 !important;
 	background-color: #ffffff;
 	border-color: #fff200 !important;
 }
 .btn-outline-yellow:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fff200;
 	border-color: #fff200;
 }
@@ -3027,12 +3027,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mellow{
-	color: #f8de7e;
+	color: #f8de7e !important;
 	background-color: #ffffff;
 	border-color: #f8de7e !important;
 }
 .btn-outline-mellow:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #f8de7e;
 	border-color: #f8de7e;
 }
@@ -3042,12 +3042,12 @@
 /*-------------------------------------*/
 
 .btn-outline-cyber{
-	color: #ffd300;
+	color: #ffd300 !important;
 	background-color: #ffffff;
 	border-color: #ffd300 !important;
 }
 .btn-outline-cyber:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ffd300;
 	border-color: #ffd300;
 }
@@ -3057,12 +3057,12 @@
 /*-------------------------------------*/
 
 .btn-outline-royal-yellow{
-	color: #fada5e;
+	color: #fada5e !important;
 	background-color: #ffffff;
 	border-color: #fada5e !important;
 }
 .btn-outline-royal-yellow:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fada5e;
 	border-color: #fada5e;
 }
@@ -3072,12 +3072,12 @@
 /*-------------------------------------*/
 
 .btn-outline-banana{
-	color: #fcf4a3;
+	color: #fcf4a3 !important;
 	background-color: #ffffff;
 	border-color: #fcf4a3 !important;
 }
 .btn-outline-banana:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fcf4a3;
 	border-color: #fcf4a3;
 }
@@ -3087,12 +3087,12 @@
 /*-------------------------------------*/
 
 .btn-outline-tuscany{
-	color: #fcd12a;
+	color: #fcd12a !important;
 	background-color: #ffffff;
 	border-color: #fcd12a !important;
 }
 .btn-outline-tuscany:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fcd12a;
 	border-color: #fcd12a;
 }
@@ -3102,12 +3102,12 @@
 /*-------------------------------------*/
 
 .btn-outline-lemon{
-	color: #eefd5f;
+	color: #eefd5f !important;
 	background-color: #ffffff;
 	border-color: #eefd5f !important;
 }
 .btn-outline-lemon:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #eefd5f;
 	border-color: #eefd5f;
 }
@@ -3117,12 +3117,12 @@
 /*-------------------------------------*/
 
 .btn-outline-bumblebee{
-	color: #fce205;
+	color: #fce205 !important;
 	background-color: #ffffff;
 	border-color: #fce205 !important;
 }
 .btn-outline-bumblebee:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fce205;
 	border-color: #fce205;
 }
@@ -3132,12 +3132,12 @@
 /*-------------------------------------*/
 
 .btn-outline-cream{
-	color: #fffdd0;
+	color: #fffdd0 !important;
 	background-color: #ffffff;
 	border-color: #fffdd0 !important;
 }
 .btn-outline-cream:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fffdd0;
 	border-color: #fffdd0;
 }
@@ -3147,12 +3147,12 @@
 /*-------------------------------------*/
 
 .btn-outline-peach{
-	color: #ffe5b4;
+	color: #ffe5b4 !important;
 	background-color: #ffffff;
 	border-color: #ffe5b4 !important;
 }
 .btn-outline-peach:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ffe5b4;
 	border-color: #ffe5b4;
 }
@@ -3162,12 +3162,12 @@
 /*-------------------------------------*/
 
 .btn-outline-laguna{
-	color: #f8e473;
+	color: #f8e473 !important;
 	background-color: #ffffff;
 	border-color: #f8e473 !important;
 }
 .btn-outline-laguna:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #f8e473;
 	border-color: #f8e473;
 }
@@ -3177,12 +3177,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mustard{
-	color: #fedc56;
+	color: #fedc56 !important;
 	background-color: #ffffff;
 	border-color: #fedc56 !important;
 }
 .btn-outline-mustard:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fedc56;
 	border-color: #fedc56;
 }
@@ -3192,12 +3192,12 @@
 /*-------------------------------------*/
 
 .btn-outline-corn{
-	color: #e4cd05;
+	color: #e4cd05 !important;
 	background-color: #ffffff;
 	border-color: #e4cd05 !important;
 }
 .btn-outline-corn:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #e4cd05;
 	border-color: #e4cd05;
 }
@@ -3207,12 +3207,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pineapple{
-	color: #fee12b;
+	color: #fee12b !important;
 	background-color: #ffffff;
 	border-color: #fee12b !important;
 }
 .btn-outline-pineapple:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fee12b;
 	border-color: #fee12b;
 }
@@ -3222,12 +3222,12 @@
 /*-------------------------------------*/
 
 .btn-outline-flaxen{
-	color: #d5b85a;
+	color: #d5b85a !important;
 	background-color: #ffffff;
 	border-color: #d5b85a !important;
 }
 .btn-outline-flaxen:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #d5b85a;
 	border-color: #d5b85a;
 }
@@ -3237,12 +3237,12 @@
 /*-------------------------------------*/
 
 .btn-outline-egg-nog{
-	color: #f9e29c;
+	color: #f9e29c !important;
 	background-color: #ffffff;
 	border-color: #f9e29c !important;
 }
 .btn-outline-egg-nog:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #f9e29c;
 	border-color: #f9e29c;
 }
@@ -3252,12 +3252,12 @@
 /*-------------------------------------*/
 
 .btn-outline-trombone{
-	color: #d2b55b;
+	color: #d2b55b !important;
 	background-color: #ffffff;
 	border-color: #d2b55b !important;
 }
 .btn-outline-trombone:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #d2b55b;
 	border-color: #d2b55b;
 }
@@ -3267,12 +3267,12 @@
 /*-------------------------------------*/
 
 .btn-outline-flax{
-	color: #eedc82;
+	color: #eedc82 !important;
 	background-color: #ffffff;
 	border-color: #eedc82 !important;
 }
 .btn-outline-flax:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #eedc82;
 	border-color: #eedc82;
 }
@@ -3282,12 +3282,12 @@
 /*-------------------------------------*/
 
 .btn-outline-ecru{
-	color: #ceb180;
+	color: #ceb180 !important;
 	background-color: #ffffff;
 	border-color: #ceb180 !important;
 }
 .btn-outline-ecru:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ceb180;
 	border-color: #ceb180;
 }
@@ -3297,12 +3297,12 @@
 /*-------------------------------------*/
 
 .btn-outline-sepia{
-	color: #e3b778;
+	color: #e3b778 !important;
 	background-color: #ffffff;
 	border-color: #e3b778 !important;
 }
 .btn-outline-sepia:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #e3b778;
 	border-color: #e3b778;
 }
@@ -3312,12 +3312,12 @@
 /*-------------------------------------*/
 
 .btn-outline-orange{
-	color: #fc6600;
+	color: #fc6600 !important;
 	background-color: #ffffff;
 	border-color: #fc6600 !important;
 }
 .btn-outline-orange:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #fc6600;
 	border-color: #fc6600;
 }
@@ -3327,12 +3327,12 @@
 /*-------------------------------------*/
 
 .btn-outline-gold{
-	color: #f9a602;
+	color: #f9a602 !important;
 	background-color: #ffffff;
 	border-color: #f9a602 !important;
 }
 .btn-outline-gold:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #f9a602;
 	border-color: #f9a602;
 }
@@ -3342,12 +3342,12 @@
 /*-------------------------------------*/
 
 .btn-outline-goldenrod{
-	color: #dba520;
+	color: #dba520 !important;
 	background-color: #ffffff;
 	border-color: #dba520 !important;
 }
 .btn-outline-goldenrod:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #dba520;
 	border-color: #dba520;
 }
@@ -3357,12 +3357,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pumpkin{
-	color: #ff7417;
+	color: #ff7417 !important;
 	background-color: #ffffff;
 	border-color: #ff7417 !important;
 }
 .btn-outline-pumpkin:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ff7417;
 	border-color: #ff7417;
 }
@@ -3372,12 +3372,12 @@
 /*-------------------------------------*/
 
 .btn-outline-fire{
-	color: #fda50f;
+	color: #fda50f !important;
 	background-color: #ffffff;
 	border-color: #fda50f !important;
 }
 .btn-outline-fire:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #fda50f;
 	border-color: #fda50f;
 }
@@ -3387,12 +3387,12 @@
 /*-------------------------------------*/
 
 .btn-outline-ochre{
-	color: #cc7722;
+	color: #cc7722 !important;
 	background-color: #ffffff;
 	border-color: #cc7722 !important;
 }
 .btn-outline-ochre:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #cc7722;
 	border-color: #cc7722;
 }
@@ -3402,12 +3402,12 @@
 /*-------------------------------------*/
 
 .btn-outline-burnt-orange{
-	color: #964000;
+	color: #964000 !important;
 	background-color: #ffffff;
 	border-color: #964000 !important;
 }
 .btn-outline-burnt-orange:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #964000;
 	border-color: #964000;
 }
@@ -3417,12 +3417,12 @@
 /*-------------------------------------*/
 
 .btn-outline-dijon{
-	color: #c49102;
+	color: #c49102 !important;
 	background-color: #ffffff;
 	border-color: #c49102 !important;
 }
 .btn-outline-dijon:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #c49102;
 	border-color: #c49102;
 }
@@ -3432,12 +3432,12 @@
 /*-------------------------------------*/
 
 .btn-outline-tangerine{
-	color: #f9812a;
+	color: #f9812a !important;
 	background-color: #ffffff;
 	border-color: #f9812a !important;
 }
 .btn-outline-tangerine:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #f9812a;
 	border-color: #f9812a;
 }
@@ -3447,12 +3447,12 @@
 /*-------------------------------------*/
 
 .btn-outline-tiger{
-	color: #fd6a02;
+	color: #fd6a02 !important;
 	background-color: #ffffff;
 	border-color: #fd6a02 !important;
 }
 .btn-outline-tiger:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #fd6a02;
 	border-color: #fd6a02;
 }
@@ -3462,12 +3462,12 @@
 /*-------------------------------------*/
 
 .btn-outline-honey{
-	color: #eb9605;
+	color: #eb9605 !important;
 	background-color: #ffffff;
 	border-color: #eb9605 !important;
 }
 .btn-outline-honey:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #eb9605;
 	border-color: #eb9605;
 }
@@ -3477,12 +3477,12 @@
 /*-------------------------------------*/
 
 .btn-outline-carrot{
-	color: #ef7215;
+	color: #ef7215 !important;
 	background-color: #ffffff;
 	border-color: #ef7215 !important;
 }
 .btn-outline-carrot:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ef7215;
 	border-color: #ef7215;
 }
@@ -3492,12 +3492,12 @@
 /*-------------------------------------*/
 
 .btn-outline-amber{
-	color: #ffbf00;
+	color: #ffbf00 !important;
 	background-color: #ffffff;
 	border-color: #ffbf00 !important;
 }
 .btn-outline-amber:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ffbf00;
 	border-color: #ffbf00;
 }
@@ -3507,12 +3507,12 @@
 /*-------------------------------------*/
 
 .btn-outline-apricot{
-	color: #ef820d;
+	color: #ef820d !important;
 	background-color: #ffffff;
 	border-color: #ef820d !important;
 }
 .btn-outline-apricot:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ef820d;
 	border-color: #ef820d;
 }
@@ -3522,12 +3522,12 @@
 /*-------------------------------------*/
 
 .btn-outline-bronze{
-	color: #b1560f;
+	color: #b1560f !important;
 	background-color: #ffffff;
 	border-color: #b1560f !important;
 }
 .btn-outline-bronze:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #b1560f;
 	border-color: #b1560f;
 }
@@ -3537,12 +3537,12 @@
 /*-------------------------------------*/
 
 .btn-outline-cider{
-	color: #b3672b;
+	color: #b3672b !important;
 	background-color: #ffffff;
 	border-color: #b3672b !important;
 }
 .btn-outline-cider:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #b3672b;
 	border-color: #b3672b;
 }
@@ -3552,12 +3552,12 @@
 /*-------------------------------------*/
 
 .btn-outline-clay{
-	color: #813f0b;
+	color: #813f0b !important;
 	background-color: #ffffff;
 	border-color: #813f0b !important;
 }
 .btn-outline-clay:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #813f0b;
 	border-color: #813f0b;
 }
@@ -3567,12 +3567,12 @@
 /*-------------------------------------*/
 
 .btn-outline-rust{
-	color: #8b4000;
+	color: #8b4000 !important;
 	background-color: #ffffff;
 	border-color: #8b4000 !important;
 }
 .btn-outline-rust:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #8b4000;
 	border-color: #8b4000;
 }
@@ -3582,12 +3582,12 @@
 /*-------------------------------------*/
 
 .btn-outline-amber2{
-	color: #883000;
+	color: #883000 !important;
 	background-color: #ffffff;
 	border-color: #883000 !important;
 }
 .btn-outline-amber2:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #883000;
 	border-color: #883000;
 }
@@ -3597,12 +3597,12 @@
 /*-------------------------------------*/
 
 .btn-outline-spice{
-	color: #793802;
+	color: #793802 !important;
 	background-color: #ffffff;
 	border-color: #793802 !important;
 }
 .btn-outline-spice:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #793802;
 	border-color: #793802;
 }
@@ -3612,12 +3612,12 @@
 /*-------------------------------------*/
 
 .btn-outline-red{
-	color: #d30000;
+	color: #d30000 !important;
 	background-color: #ffffff;
 	border-color: #d30000 !important;
 }
 .btn-outline-red:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #d30000;
 	border-color: #d30000;
 }
@@ -3627,12 +3627,12 @@
 /*-------------------------------------*/
 
 .btn-outline-salmon{
-	color: #fa8072;
+	color: #fa8072 !important;
 	background-color: #ffffff;
 	border-color: #fa8072 !important;
 }
 .btn-outline-salmon:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #fa8072;
 	border-color: #fa8072;
 }
@@ -3642,12 +3642,12 @@
 /*-------------------------------------*/
 
 .btn-outline-scarlet{
-	color: #ff2400;
+	color: #ff2400 !important;
 	background-color: #ffffff;
 	border-color: #ff2400 !important;
 }
 .btn-outline-scarlet:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ff2400;
 	border-color: #ff2400;
 }
@@ -3657,12 +3657,12 @@
 /*-------------------------------------*/
 
 .btn-outline-barn-red{
-	color: #7c0a02;
+	color: #7c0a02 !important;
 	background-color: #ffffff;
 	border-color: #7c0a02 !important;
 }
 .btn-outline-barn-red:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #7c0a02;
 	border-color: #7c0a02;
 }
@@ -3672,12 +3672,12 @@
 /*-------------------------------------*/
 
 .btn-outline-imperial{
-	color: #ed2939;
+	color: #ed2939 !important;
 	background-color: #ffffff;
 	border-color: #ed2939 !important;
 }
 .btn-outline-imperial:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ed2939;
 	border-color: #ed2939;
 }
@@ -3687,12 +3687,12 @@
 /*-------------------------------------*/
 
 .btn-outline-indian-red{
-	color: #cd5c5c;
+	color: #cd5c5c !important;
 	background-color: #ffffff;
 	border-color: #cd5c5c !important;
 }
 .btn-outline-indian-red:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #cd5c5c;
 	border-color: #cd5c5c;
 }
@@ -3702,12 +3702,12 @@
 /*-------------------------------------*/
 
 .btn-outline-chili{
-	color: #c21807;
+	color: #c21807 !important;
 	background-color: #ffffff;
 	border-color: #c21807 !important;
 }
 .btn-outline-chili:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #c21807;
 	border-color: #c21807;
 }
@@ -3717,12 +3717,12 @@
 /*-------------------------------------*/
 
 .btn-outline-fire-brick{
-	color: #b22222;
+	color: #b22222 !important;
 	background-color: #ffffff;
 	border-color: #b22222 !important;
 }
 .btn-outline-fire-brick:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #b22222;
 	border-color: #b22222;
 }
@@ -3732,12 +3732,12 @@
 /*-------------------------------------*/
 
 .btn-outline-maroon{
-	color: #800000;
+	color: #800000 !important;
 	background-color: #ffffff;
 	border-color: #800000 !important;
 }
 .btn-outline-maroon:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #800000;
 	border-color: #800000;
 }
@@ -3747,12 +3747,12 @@
 /*-------------------------------------*/
 
 .btn-outline-redwood{
-	color: #a45a52;
+	color: #a45a52 !important;
 	background-color: #ffffff;
 	border-color: #a45a52 !important;
 }
 .btn-outline-redwood:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #a45a52;
 	border-color: #a45a52;
 }
@@ -3762,12 +3762,12 @@
 /*-------------------------------------*/
 
 .btn-outline-raspberry{
-	color: #d21f3c;
+	color: #d21f3c !important;
 	background-color: #ffffff;
 	border-color: #d21f3c !important;
 }
 .btn-outline-raspberry:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #d21f3c;
 	border-color: #d21f3c;
 }
@@ -3777,12 +3777,12 @@
 /*-------------------------------------*/
 
 .btn-outline-candy-apple{
-	color: #ff0800;
+	color: #ff0800 !important;
 	background-color: #ffffff;
 	border-color: #ff0800 !important;
 }
 .btn-outline-candy-apple:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ff0800;
 	border-color: #ff0800;
 }
@@ -3792,12 +3792,12 @@
 /*-------------------------------------*/
 
 .btn-outline-ferrari{
-	color: #ff2800;
+	color: #ff2800 !important;
 	background-color: #ffffff;
 	border-color: #ff2800 !important;
 }
 .btn-outline-ferrari:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ff2800;
 	border-color: #ff2800;
 }
@@ -3807,12 +3807,12 @@
 /*-------------------------------------*/
 
 .btn-outline-persian{
-	color: #ca3433;
+	color: #ca3433 !important;
 	background-color: #ffffff;
 	border-color: #ca3433 !important;
 }
 .btn-outline-persian:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #ca3433;
 	border-color: #ca3433;
 }
@@ -3822,12 +3822,12 @@
 /*-------------------------------------*/
 
 .btn-outline-us-flag{
-	color: #bf0a30;
+	color: #bf0a30 !important;
 	background-color: #ffffff;
 	border-color: #bf0a30 !important;
 }
 .btn-outline-us-flag:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #bf0a30;
 	border-color: #bf0a30;
 }
@@ -3837,12 +3837,12 @@
 /*-------------------------------------*/
 
 .btn-outline-carmine{
-	color: #960019;
+	color: #960019 !important;
 	background-color: #ffffff;
 	border-color: #960019 !important;
 }
 .btn-outline-carmine:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #960019;
 	border-color: #960019;
 }
@@ -3852,12 +3852,12 @@
 /*-------------------------------------*/
 
 .btn-outline-burgundy{
-	color: #8d021f;
+	color: #8d021f !important;
 	background-color: #ffffff;
 	border-color: #8d021f !important;
 }
 .btn-outline-burgundy:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #8d021f;
 	border-color: #8d021f;
 }
@@ -3867,12 +3867,12 @@
 /*-------------------------------------*/
 
 .btn-outline-crimson{
-	color: #b80f0a;
+	color: #b80f0a !important;
 	background-color: #ffffff;
 	border-color: #b80f0a !important;
 }
 .btn-outline-crimson:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #b80f0a;
 	border-color: #b80f0a;
 }
@@ -3882,12 +3882,12 @@
 /*-------------------------------------*/
 
 .btn-outline-sangria{
-	color: #5e1914;
+	color: #5e1914 !important;
 	background-color: #ffffff;
 	border-color: #5e1914 !important;
 }
 .btn-outline-sangria:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #5e1914;
 	border-color: #5e1914;
 }
@@ -3897,12 +3897,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mahogany{
-	color: #420d09;
+	color: #420d09 !important;
 	background-color: #ffffff;
 	border-color: #420d09 !important;
 }
 .btn-outline-mahogany:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #420d09;
 	border-color: #420d09;
 }
@@ -3912,12 +3912,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pink{
-	color: #fc0fc0;
+	color: #fc0fc0 !important;
 	background-color: #ffffff;
 	border-color: #fc0fc0 !important;
 }
 .btn-outline-pink:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fc0fc0;
 	border-color: #fc0fc0;
 }
@@ -3927,12 +3927,12 @@
 /*-------------------------------------*/
 
 .btn-outline-ruby{
-	color: #e0115f;
+	color: #e0115f !important;
 	background-color: #ffffff;
 	border-color: #e0115f !important;
 }
 .btn-outline-ruby:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #e0115f;
 	border-color: #e0115f;
 }
@@ -3942,12 +3942,12 @@
 /*-------------------------------------*/
 
 .btn-outline-ultra{
-	color: #ff6fff;
+	color: #ff6fff !important;
 	background-color: #ffffff;
 	border-color: #ff6fff !important;
 }
 .btn-outline-ultra:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ff6fff;
 	border-color: #ff6fff;
 }
@@ -3957,12 +3957,12 @@
 /*-------------------------------------*/
 
 .btn-outline-magenta{
-	color: #ff0090;
+	color: #ff0090 !important;
 	background-color: #ffffff;
 	border-color: #ff0090 !important;
 }
 .btn-outline-magenta:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ff0090;
 	border-color: #ff0090;
 }
@@ -3972,12 +3972,12 @@
 /*-------------------------------------*/
 
 .btn-outline-rose-pink{
-	color: #ff66cc;
+	color: #ff66cc !important;
 	background-color: #ffffff;
 	border-color: #ff66cc !important;
 }
 .btn-outline-rose-pink:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ff66cc;
 	border-color: #ff66cc;
 }
@@ -3987,12 +3987,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pink-lavender{
-	color: #fbaed2;
+	color: #fbaed2 !important;
 	background-color: #ffffff;
 	border-color: #fbaed2 !important;
 }
 .btn-outline-pink-lavender:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fbaed2;
 	border-color: #fbaed2;
 }
@@ -4002,12 +4002,12 @@
 /*-------------------------------------*/
 
 .btn-outline-creamy{
-	color: #ff69b4;
+	color: #ff69b4 !important;
 	background-color: #ffffff;
 	border-color: #ff69b4 !important;
 }
 .btn-outline-creamy:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ff69b4;
 	border-color: #ff69b4;
 }
@@ -4017,12 +4017,12 @@
 /*-------------------------------------*/
 
 .btn-outline-fuchsia{
-	color: #ff00ff;
+	color: #ff00ff !important;
 	background-color: #ffffff;
 	border-color: #ff00ff !important;
 }
 .btn-outline-fuchsia:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ff00ff;
 	border-color: #ff00ff;
 }
@@ -4032,12 +4032,12 @@
 /*-------------------------------------*/
 
 .btn-outline-french-rose{
-	color: #f64a8a;
+	color: #f64a8a !important;
 	background-color: #ffffff;
 	border-color: #f64a8a !important;
 }
 .btn-outline-french-rose:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #f64a8a;
 	border-color: #f64a8a;
 }
@@ -4047,12 +4047,12 @@
 /*-------------------------------------*/
 
 .btn-outline-cerise{
-	color: #de3163;
+	color: #de3163 !important;
 	background-color: #ffffff;
 	border-color: #de3163 !important;
 }
 .btn-outline-cerise:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #de3163;
 	border-color: #de3163;
 }
@@ -4062,12 +4062,12 @@
 /*-------------------------------------*/
 
 .btn-outline-carnation{
-	color: #ffa6c9;
+	color: #ffa6c9 !important;
 	background-color: #ffffff;
 	border-color: #ffa6c9 !important;
 }
 .btn-outline-carnation:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ffa6c9;
 	border-color: #ffa6c9;
 }
@@ -4077,12 +4077,12 @@
 /*-------------------------------------*/
 
 .btn-outline-brick{
-	color: #fb607f;
+	color: #fb607f !important;
 	background-color: #ffffff;
 	border-color: #fb607f !important;
 }
 .btn-outline-brick:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fb607f;
 	border-color: #fb607f;
 }
@@ -4092,12 +4092,12 @@
 /*-------------------------------------*/
 
 .btn-outline-amaranth{
-	color: #f19cbb;
+	color: #f19cbb !important;
 	background-color: #ffffff;
 	border-color: #f19cbb !important;
 }
 .btn-outline-amaranth:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #f19cbb;
 	border-color: #f19cbb;
 }
@@ -4107,12 +4107,12 @@
 /*-------------------------------------*/
 
 .btn-outline-taffy{
-	color: #f987c5;
+	color: #f987c5 !important;
 	background-color: #ffffff;
 	border-color: #f987c5 !important;
 }
 .btn-outline-taffy:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #f987c5;
 	border-color: #f987c5;
 }
@@ -4122,12 +4122,12 @@
 /*-------------------------------------*/
 
 .btn-outline-bubble-gum{
-	color: #fe5bac;
+	color: #fe5bac !important;
 	background-color: #ffffff;
 	border-color: #fe5bac !important;
 }
 .btn-outline-bubble-gum:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fe5bac;
 	border-color: #fe5bac;
 }
@@ -4137,12 +4137,12 @@
 /*-------------------------------------*/
 
 .btn-outline-punch{
-	color: #ec5578;
+	color: #ec5578 !important;
 	background-color: #ffffff;
 	border-color: #ec5578 !important;
 }
 .btn-outline-punch:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #ec5578;
 	border-color: #ec5578;
 }
@@ -4152,12 +4152,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pink-lemonade{
-	color: #fdb9c8;
+	color: #fdb9c8 !important;
 	background-color: #ffffff;
 	border-color: #fdb9c8 !important;
 }
 .btn-outline-pink-lemonade:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fdb9c8;
 	border-color: #fdb9c8;
 }
@@ -4167,12 +4167,12 @@
 /*-------------------------------------*/
 
 .btn-outline-flamingo{
-	color: #fca3b7;
+	color: #fca3b7 !important;
 	background-color: #ffffff;
 	border-color: #fca3b7 !important;
 }
 .btn-outline-flamingo:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #fca3b7;
 	border-color: #fca3b7;
 }
@@ -4182,12 +4182,12 @@
 /*-------------------------------------*/
 
 .btn-outline-violet{
-	color: #b200ed;
+	color: #b200ed !important;
 	background-color: #ffffff;
 	border-color: #b200ed !important;
 }
 .btn-outline-violet:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #b200ed;
 	border-color: #b200ed;
 }
@@ -4197,12 +4197,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mauve{
-	color: #784b84;
+	color: #784b84 !important;
 	background-color: #ffffff;
 	border-color: #784b84 !important;
 }
 .btn-outline-mauve:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #784b84;
 	border-color: #784b84;
 }
@@ -4212,12 +4212,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mulberry{
-	color: #c64b8c;
+	color: #c64b8c !important;
 	background-color: #ffffff;
 	border-color: #c64b8c !important;
 }
 .btn-outline-mulberry:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #c64b8c;
 	border-color: #c64b8c;
 }
@@ -4227,12 +4227,12 @@
 /*-------------------------------------*/
 
 .btn-outline-lavender{
-	color: #e4a0f7;
+	color: #e4a0f7 !important;
 	background-color: #ffffff;
 	border-color: #e4a0f7 !important;
 }
 .btn-outline-lavender:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #e4a0f7;
 	border-color: #e4a0f7;
 }
@@ -4242,12 +4242,12 @@
 /*-------------------------------------*/
 
 .btn-outline-orchid{
-	color: #af69ee;
+	color: #af69ee !important;
 	background-color: #ffffff;
 	border-color: #af69ee !important;
 }
 .btn-outline-orchid:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #af69ee;
 	border-color: #af69ee;
 }
@@ -4257,12 +4257,12 @@
 /*-------------------------------------*/
 
 .btn-outline-lilac{
-	color: #b660cd;
+	color: #b660cd !important;
 	background-color: #ffffff;
 	border-color: #b660cd !important;
 }
 .btn-outline-lilac:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #b660cd;
 	border-color: #b660cd;
 }
@@ -4272,12 +4272,12 @@
 /*-------------------------------------*/
 
 .btn-outline-electric{
-	color: #8f00ff;
+	color: #8f00ff !important;
 	background-color: #ffffff;
 	border-color: #8f00ff !important;
 }
 .btn-outline-electric:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #8f00ff;
 	border-color: #8f00ff;
 }
@@ -4287,12 +4287,12 @@
 /*-------------------------------------*/
 
 .btn-outline-african{
-	color: #b284be;
+	color: #b284be !important;
 	background-color: #ffffff;
 	border-color: #b284be !important;
 }
 .btn-outline-african:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #b284be;
 	border-color: #b284be;
 }
@@ -4302,12 +4302,12 @@
 /*-------------------------------------*/
 
 .btn-outline-grape{
-	color: #6f2da8;
+	color: #6f2da8 !important;
 	background-color: #ffffff;
 	border-color: #6f2da8 !important;
 }
 .btn-outline-grape:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #6f2da8;
 	border-color: #6f2da8;
 }
@@ -4317,12 +4317,12 @@
 /*-------------------------------------*/
 
 .btn-outline-amethyst{
-	color: #9966cb;
+	color: #9966cb !important;
 	background-color: #ffffff;
 	border-color: #9966cb !important;
 }
 .btn-outline-amethyst:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #9966cb;
 	border-color: #9966cb;
 }
@@ -4332,12 +4332,12 @@
 /*-------------------------------------*/
 
 .btn-outline-byzantine{
-	color: #702963;
+	color: #702963 !important;
 	background-color: #ffffff;
 	border-color: #702963 !important;
 }
 .btn-outline-byzantine:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #702963;
 	border-color: #702963;
 }
@@ -4347,12 +4347,12 @@
 /*-------------------------------------*/
 
 .btn-outline-fandango{
-	color: #b5338a;
+	color: #b5338a !important;
 	background-color: #ffffff;
 	border-color: #b5338a !important;
 }
 .btn-outline-fandango:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #b5338a;
 	border-color: #b5338a;
 }
@@ -4362,12 +4362,12 @@
 /*-------------------------------------*/
 
 .btn-outline-helio{
-	color: #de73ff;
+	color: #de73ff !important;
 	background-color: #ffffff;
 	border-color: #de73ff !important;
 }
 .btn-outline-helio:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #de73ff;
 	border-color: #de73ff;
 }
@@ -4377,12 +4377,12 @@
 /*-------------------------------------*/
 
 .btn-outline-floral{
-	color: #b47ede;
+	color: #b47ede !important;
 	background-color: #ffffff;
 	border-color: #b47ede !important;
 }
 .btn-outline-floral:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #b47ede;
 	border-color: #b47ede;
 }
@@ -4392,12 +4392,12 @@
 /*-------------------------------------*/
 
 .btn-outline-thistle{
-	color: #d7bfdc;
+	color: #d7bfdc !important;
 	background-color: #ffffff;
 	border-color: #d7bfdc !important;
 }
 .btn-outline-thistle:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #d7bfdc;
 	border-color: #d7bfdc;
 }
@@ -4407,12 +4407,12 @@
 /*-------------------------------------*/
 
 .btn-outline-royal{
-	color: #7852a9;
+	color: #7852a9 !important;
 	background-color: #ffffff;
 	border-color: #7852a9 !important;
 }
 .btn-outline-royal:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #7852a9;
 	border-color: #7852a9;
 }
@@ -4422,12 +4422,12 @@
 /*-------------------------------------*/
 
 .btn-outline-lollipop{
-	color: #81007f;
+	color: #81007f !important;
 	background-color: #ffffff;
 	border-color: #81007f !important;
 }
 .btn-outline-lollipop:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #81007f;
 	border-color: #81007f;
 }
@@ -4437,12 +4437,12 @@
 /*-------------------------------------*/
 
 .btn-outline-plum{
-	color: #8d4585;
+	color: #8d4585 !important;
 	background-color: #ffffff;
 	border-color: #8d4585 !important;
 }
 .btn-outline-plum:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #8d4585;
 	border-color: #8d4585;
 }
@@ -4452,12 +4452,12 @@
 /*-------------------------------------*/
 
 .btn-outline-eggplant{
-	color: #311432;
+	color: #311432 !important;
 	background-color: #ffffff;
 	border-color: #311432 !important;
 }
 .btn-outline-eggplant:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #311432;
 	border-color: #311432;
 }
@@ -4467,12 +4467,12 @@
 /*-------------------------------------*/
 
 .btn-outline-blue{
-	color: #0018f9;
+	color: #0018f9 !important;
 	background-color: #ffffff;
 	border-color: #0018f9 !important;
 }
 .btn-outline-blue:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #0018f9;
 	border-color: #0018f9;
 }
@@ -4482,12 +4482,12 @@
 /*-------------------------------------*/
 
 .btn-outline-yale{
-	color: #0e4c92;
+	color: #0e4c92 !important;
 	background-color: #ffffff;
 	border-color: #0e4c92 !important;
 }
 .btn-outline-yale:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #0e4c92;
 	border-color: #0e4c92;
 }
@@ -4497,12 +4497,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pigeon{
-	color: #7285a5;
+	color: #7285a5 !important;
 	background-color: #ffffff;
 	border-color: #7285a5 !important;
 }
 .btn-outline-pigeon:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #7285a5;
 	border-color: #7285a5;
 }
@@ -4512,12 +4512,12 @@
 /*-------------------------------------*/
 
 .btn-outline-sky{
-	color: #95c8d8;
+	color: #95c8d8 !important;
 	background-color: #ffffff;
 	border-color: #95c8d8 !important;
 }
 .btn-outline-sky:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #95c8d8;
 	border-color: #95c8d8;
 }
@@ -4527,12 +4527,12 @@
 /*-------------------------------------*/
 
 .btn-outline-independence{
-	color: #4d516d;
+	color: #4d516d !important;
 	background-color: #ffffff;
 	border-color: #4d516d !important;
 }
 .btn-outline-independence:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4d516d;
 	border-color: #4d516d;
 }
@@ -4542,12 +4542,12 @@
 /*-------------------------------------*/
 
 .btn-outline-air-force{
-	color: #598baf;
+	color: #598baf !important;
 	background-color: #ffffff;
 	border-color: #598baf !important;
 }
 .btn-outline-air-force:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #598baf;
 	border-color: #598baf;
 }
@@ -4557,12 +4557,12 @@
 /*-------------------------------------*/
 
 .btn-outline-baby-blue{
-	color: #89cfef;
+	color: #89cfef !important;
 	background-color: #ffffff;
 	border-color: #89cfef !important;
 }
 .btn-outline-baby-blue:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #89cfef;
 	border-color: #89cfef;
 }
@@ -4572,12 +4572,12 @@
 /*-------------------------------------*/
 
 .btn-outline-navy{
-	color: #000080;
+	color: #000080 !important;
 	background-color: #ffffff;
 	border-color: #000080 !important;
 }
 .btn-outline-navy:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #000080;
 	border-color: #000080;
 }
@@ -4587,12 +4587,12 @@
 /*-------------------------------------*/
 
 .btn-outline-steel-blue{
-	color: #4682b4;
+	color: #4682b4 !important;
 	background-color: #ffffff;
 	border-color: #4682b4 !important;
 }
 .btn-outline-steel-blue:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4682b4;
 	border-color: #4682b4;
 }
@@ -4602,12 +4602,12 @@
 /*-------------------------------------*/
 
 .btn-outline-carolina{
-	color: #57a0d2;
+	color: #57a0d2 !important;
 	background-color: #ffffff;
 	border-color: #57a0d2 !important;
 }
 .btn-outline-carolina:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #57a0d2;
 	border-color: #57a0d2;
 }
@@ -4617,12 +4617,12 @@
 /*-------------------------------------*/
 
 .btn-outline-turkish{
-	color: #5097a4;
+	color: #5097a4 !important;
 	background-color: #ffffff;
 	border-color: #5097a4 !important;
 }
 .btn-outline-turkish:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #5097a4;
 	border-color: #5097a4;
 }
@@ -4632,12 +4632,12 @@
 /*-------------------------------------*/
 
 .btn-outline-maya{
-	color: #73c2fb;
+	color: #73c2fb !important;
 	background-color: #ffffff;
 	border-color: #73c2fb !important;
 }
 .btn-outline-maya:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #73c2fb;
 	border-color: #73c2fb;
 }
@@ -4647,12 +4647,12 @@
 /*-------------------------------------*/
 
 .btn-outline-cornflower{
-	color: #6693f5;
+	color: #6693f5 !important;
 	background-color: #ffffff;
 	border-color: #6693f5 !important;
 }
 .btn-outline-cornflower:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #6693f5;
 	border-color: #6693f5;
 }
@@ -4662,12 +4662,12 @@
 /*-------------------------------------*/
 
 .btn-outline-olympic{
-	color: #008ecc;
+	color: #008ecc !important;
 	background-color: #ffffff;
 	border-color: #008ecc !important;
 }
 .btn-outline-olympic:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #008ecc;
 	border-color: #008ecc;
 }
@@ -4677,12 +4677,12 @@
 /*-------------------------------------*/
 
 .btn-outline-sapphire{
-	color: #0f52ba;
+	color: #0f52ba !important;
 	background-color: #ffffff;
 	border-color: #0f52ba !important;
 }
 .btn-outline-sapphire:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #0f52ba;
 	border-color: #0f52ba;
 }
@@ -4692,12 +4692,12 @@
 /*-------------------------------------*/
 
 .btn-outline-azure{
-	color: #0080fe;
+	color: #0080fe !important;
 	background-color: #ffffff;
 	border-color: #0080fe !important;
 }
 .btn-outline-azure:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #0080fe;
 	border-color: #0080fe;
 }
@@ -4707,12 +4707,12 @@
 /*-------------------------------------*/
 
 .btn-outline-egyptian{
-	color: #1134a6;
+	color: #1134a6 !important;
 	background-color: #ffffff;
 	border-color: #1134a6 !important;
 }
 .btn-outline-egyptian:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #1134a6;
 	border-color: #1134a6;
 }
@@ -4722,12 +4722,12 @@
 /*-------------------------------------*/
 
 .btn-outline-denim{
-	color: #131e3a;
+	color: #131e3a !important;
 	background-color: #ffffff;
 	border-color: #131e3a !important;
 }
 .btn-outline-denim:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #131e3a;
 	border-color: #131e3a;
 }
@@ -4737,12 +4737,12 @@
 /*-------------------------------------*/
 
 .btn-outline-prussian{
-	color: #003151;
+	color: #003151 !important;
 	background-color: #ffffff;
 	border-color: #003151 !important;
 }
 .btn-outline-prussian:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #003151;
 	border-color: #003151;
 }
@@ -4752,12 +4752,12 @@
 /*-------------------------------------*/
 
 .btn-outline-space{
-	color: #1c2951;
+	color: #1c2951 !important;
 	background-color: #ffffff;
 	border-color: #1c2951 !important;
 }
 .btn-outline-space:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #1c2951;
 	border-color: #1c2951;
 }
@@ -4767,12 +4767,12 @@
 /*-------------------------------------*/
 
 .btn-outline-green{
-	color: #3bb143;
+	color: #3bb143 !important;
 	background-color: #ffffff;
 	border-color: #3bb143 !important;
 }
 .btn-outline-green:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #3bb143;
 	border-color: #3bb143;
 }
@@ -4782,12 +4782,12 @@
 /*-------------------------------------*/
 
 .btn-outline-forest{
-	color: #0b6623;
+	color: #0b6623 !important;
 	background-color: #ffffff;
 	border-color: #0b6623 !important;
 }
 .btn-outline-forest:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #0b6623;
 	border-color: #0b6623;
 }
@@ -4797,12 +4797,12 @@
 /*-------------------------------------*/
 
 .btn-outline-sage{
-	color: #9dc183;
+	color: #9dc183 !important;
 	background-color: #ffffff;
 	border-color: #9dc183 !important;
 }
 .btn-outline-sage:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #9dc183;
 	border-color: #9dc183;
 }
@@ -4812,12 +4812,12 @@
 /*-------------------------------------*/
 
 .btn-outline-olive{
-	color: #708238;
+	color: #708238 !important;
 	background-color: #ffffff;
 	border-color: #708238 !important;
 }
 .btn-outline-olive:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #708238;
 	border-color: #708238;
 }
@@ -4827,12 +4827,12 @@
 /*-------------------------------------*/
 
 .btn-outline-lime{
-	color: #c7ea46;
+	color: #c7ea46 !important;
 	background-color: #ffffff;
 	border-color: #c7ea46 !important;
 }
 .btn-outline-lime:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #c7ea46;
 	border-color: #c7ea46;
 }
@@ -4842,12 +4842,12 @@
 /*-------------------------------------*/
 
 .btn-outline-hunter{
-	color: #3f704d;
+	color: #3f704d !important;
 	background-color: #ffffff;
 	border-color: #3f704d !important;
 }
 .btn-outline-hunter:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #3f704d;
 	border-color: #3f704d;
 }
@@ -4857,12 +4857,12 @@
 /*-------------------------------------*/
 
 .btn-outline-jade{
-	color: #00a86b;
+	color: #00a86b !important;
 	background-color: #ffffff;
 	border-color: #00a86b !important;
 }
 .btn-outline-jade:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #00a86b;
 	border-color: #00a86b;
 }
@@ -4872,12 +4872,12 @@
 /*-------------------------------------*/
 
 .btn-outline-artichoke{
-	color: #8f9779;
+	color: #8f9779 !important;
 	background-color: #ffffff;
 	border-color: #8f9779 !important;
 }
 .btn-outline-artichoke:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #8f9779;
 	border-color: #8f9779;
 }
@@ -4887,12 +4887,12 @@
 /*-------------------------------------*/
 
 .btn-outline-fern{
-	color: #4f7942;
+	color: #4f7942 !important;
 	background-color: #ffffff;
 	border-color: #4f7942 !important;
 }
 .btn-outline-fern:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4f7942;
 	border-color: #4f7942;
 }
@@ -4902,12 +4902,12 @@
 /*-------------------------------------*/
 
 .btn-outline-jungle{
-	color: #29ab87;
+	color: #29ab87 !important;
 	background-color: #ffffff;
 	border-color: #29ab87 !important;
 }
 .btn-outline-jungle:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #29ab87;
 	border-color: #29ab87;
 }
@@ -4917,12 +4917,12 @@
 /*-------------------------------------*/
 
 .btn-outline-laurel{
-	color: #a9ba9d;
+	color: #a9ba9d !important;
 	background-color: #ffffff;
 	border-color: #a9ba9d !important;
 }
 .btn-outline-laurel:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #a9ba9d;
 	border-color: #a9ba9d;
 }
@@ -4932,12 +4932,12 @@
 /*-------------------------------------*/
 
 .btn-outline-moss{
-	color: #8a9a5b;
+	color: #8a9a5b !important;
 	background-color: #ffffff;
 	border-color: #8a9a5b !important;
 }
 .btn-outline-moss:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #8a9a5b;
 	border-color: #8a9a5b;
 }
@@ -4947,12 +4947,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mint{
-	color: #98fb98;
+	color: #98fb98 !important;
 	background-color: #ffffff;
 	border-color: #98fb98 !important;
 }
 .btn-outline-mint:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #98fb98;
 	border-color: #98fb98;
 }
@@ -4962,12 +4962,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pine{
-	color: #01796f;
+	color: #01796f !important;
 	background-color: #ffffff;
 	border-color: #01796f !important;
 }
 .btn-outline-pine:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #01796f;
 	border-color: #01796f;
 }
@@ -4977,12 +4977,12 @@
 /*-------------------------------------*/
 
 .btn-outline-tea{
-	color: #d0f0c0;
+	color: #d0f0c0 !important;
 	background-color: #ffffff;
 	border-color: #d0f0c0 !important;
 }
 .btn-outline-tea:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #d0f0c0;
 	border-color: #d0f0c0;
 }
@@ -4992,12 +4992,12 @@
 /*-------------------------------------*/
 
 .btn-outline-army{
-	color: #4b5320;
+	color: #4b5320 !important;
 	background-color: #ffffff;
 	border-color: #4b5320 !important;
 }
 .btn-outline-army:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4b5320;
 	border-color: #4b5320;
 }
@@ -5007,12 +5007,12 @@
 /*-------------------------------------*/
 
 .btn-outline-emerald{
-	color: #50c878;
+	color: #50c878 !important;
 	background-color: #ffffff;
 	border-color: #50c878 !important;
 }
 .btn-outline-emerald:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #50c878;
 	border-color: #50c878;
 }
@@ -5022,12 +5022,12 @@
 /*-------------------------------------*/
 
 .btn-outline-kelly{
-	color: #4cbb17;
+	color: #4cbb17 !important;
 	background-color: #ffffff;
 	border-color: #4cbb17 !important;
 }
 .btn-outline-kelly:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4cbb17;
 	border-color: #4cbb17;
 }
@@ -5037,12 +5037,12 @@
 /*-------------------------------------*/
 
 .btn-outline-sacramento{
-	color: #043927;
+	color: #043927 !important;
 	background-color: #ffffff;
 	border-color: #043927 !important;
 }
 .btn-outline-sacramento:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #043927;
 	border-color: #043927;
 }
@@ -5052,12 +5052,12 @@
 /*-------------------------------------*/
 
 .btn-outline-sea-green{
-	color: #2e8b57;
+	color: #2e8b57 !important;
 	background-color: #ffffff;
 	border-color: #2e8b57 !important;
 }
 .btn-outline-sea-green:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #2e8b57;
 	border-color: #2e8b57;
 }
@@ -5067,12 +5067,12 @@
 /*-------------------------------------*/
 
 .btn-outline-cedar{
-	color: #4b3a26;
+	color: #4b3a26 !important;
 	background-color: #ffffff;
 	border-color: #4b3a26 !important;
 }
 .btn-outline-cedar:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4b3a26;
 	border-color: #4b3a26;
 }
@@ -5082,12 +5082,12 @@
 /*-------------------------------------*/
 
 .btn-outline-cinnamon{
-	color: #622a0f;
+	color: #622a0f !important;
 	background-color: #ffffff;
 	border-color: #622a0f !important;
 }
 .btn-outline-cinnamon:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #622a0f;
 	border-color: #622a0f;
 }
@@ -5097,12 +5097,12 @@
 /*-------------------------------------*/
 
 .btn-outline-brunette{
-	color: #3a1f04;
+	color: #3a1f04 !important;
 	background-color: #ffffff;
 	border-color: #3a1f04 !important;
 }
 .btn-outline-brunette:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #3a1f04;
 	border-color: #3a1f04;
 }
@@ -5112,12 +5112,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mocha{
-	color: #3b270c;
+	color: #3b270c !important;
 	background-color: #ffffff;
 	border-color: #3b270c !important;
 }
 .btn-outline-mocha:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #3b270c;
 	border-color: #3b270c;
 }
@@ -5127,12 +5127,12 @@
 /*-------------------------------------*/
 
 .btn-outline-umber{
-	color: #362312;
+	color: #362312 !important;
 	background-color: #ffffff;
 	border-color: #362312 !important;
 }
 .btn-outline-umber:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #362312;
 	border-color: #362312;
 }
@@ -5142,12 +5142,12 @@
 /*-------------------------------------*/
 
 .btn-outline-tortilla{
-	color: #997950;
+	color: #997950 !important;
 	background-color: #ffffff;
 	border-color: #997950 !important;
 }
 .btn-outline-tortilla:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #997950;
 	border-color: #997950;
 }
@@ -5157,12 +5157,12 @@
 /*-------------------------------------*/
 
 .btn-outline-chocolate{
-	color: #2b1700;
+	color: #2b1700 !important;
 	background-color: #ffffff;
 	border-color: #2b1700 !important;
 }
 .btn-outline-chocolate:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #2b1700;
 	border-color: #2b1700;
 }
@@ -5172,12 +5172,12 @@
 /*-------------------------------------*/
 
 .btn-outline-syrup{
-	color: #492000;
+	color: #492000 !important;
 	background-color: #ffffff;
 	border-color: #492000 !important;
 }
 .btn-outline-syrup:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #492000;
 	border-color: #492000;
 }
@@ -5187,12 +5187,12 @@
 /*-------------------------------------*/
 
 .btn-outline-gingerbread{
-	color: #5c2c06;
+	color: #5c2c06 !important;
 	background-color: #ffffff;
 	border-color: #5c2c06 !important;
 }
 .btn-outline-gingerbread:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #5c2c06;
 	border-color: #5c2c06;
 }
@@ -5202,12 +5202,12 @@
 /*-------------------------------------*/
 
 .btn-outline-caramel{
-	color: #613613;
+	color: #613613 !important;
 	background-color: #ffffff;
 	border-color: #613613 !important;
 }
 .btn-outline-caramel:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #613613;
 	border-color: #613613;
 }
@@ -5217,12 +5217,12 @@
 /*-------------------------------------*/
 
 .btn-outline-walnut{
-	color: #43270f;
+	color: #43270f !important;
 	background-color: #ffffff;
 	border-color: #43270f !important;
 }
 .btn-outline-walnut:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #43270f;
 	border-color: #43270f;
 }
@@ -5232,12 +5232,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pecan{
-	color: #48260d;
+	color: #48260d !important;
 	background-color: #ffffff;
 	border-color: #48260d !important;
 }
 .btn-outline-pecan:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #48260d;
 	border-color: #48260d;
 }
@@ -5247,12 +5247,12 @@
 /*-------------------------------------*/
 
 .btn-outline-wood{
-	color: #402f1d;
+	color: #402f1d !important;
 	background-color: #ffffff;
 	border-color: #402f1d !important;
 }
 .btn-outline-wood:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #402f1d;
 	border-color: #402f1d;
 }
@@ -5262,12 +5262,12 @@
 /*-------------------------------------*/
 
 .btn-outline-hickory{
-	color: #351e10;
+	color: #351e10 !important;
 	background-color: #ffffff;
 	border-color: #351e10 !important;
 }
 .btn-outline-hickory:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #351e10;
 	border-color: #351e10;
 }
@@ -5277,12 +5277,12 @@
 /*-------------------------------------*/
 
 .btn-outline-espresso{
-	color: #4b382a;
+	color: #4b382a !important;
 	background-color: #ffffff;
 	border-color: #4b382a !important;
 }
 .btn-outline-espresso:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4b382a;
 	border-color: #4b382a;
 }
@@ -5292,12 +5292,12 @@
 /*-------------------------------------*/
 
 .btn-outline-peanut{
-	color: #795c32;
+	color: #795c32 !important;
 	background-color: #ffffff;
 	border-color: #795c32 !important;
 }
 .btn-outline-peanut:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #795c32;
 	border-color: #795c32;
 }
@@ -5307,12 +5307,12 @@
 /*-------------------------------------*/
 
 .btn-outline-tawny{
-	color: #7e481c;
+	color: #7e481c !important;
 	background-color: #ffffff;
 	border-color: #7e481c !important;
 }
 .btn-outline-tawny:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #7e481c;
 	border-color: #7e481c;
 }
@@ -5322,12 +5322,12 @@
 /*-------------------------------------*/
 
 .btn-outline-coffee{
-	color: #4b3619;
+	color: #4b3619 !important;
 	background-color: #ffffff;
 	border-color: #4b3619 !important;
 }
 .btn-outline-coffee:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #4b3619;
 	border-color: #4b3619;
 }
@@ -5337,12 +5337,12 @@
 /*-------------------------------------*/
 
 .btn-outline-russet{
-	color: #7f461b;
+	color: #7f461b !important;
 	background-color: #ffffff;
 	border-color: #7f461b !important;
 }
 .btn-outline-russet:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #7f461b;
 	border-color: #7f461b;
 }
@@ -5352,12 +5352,12 @@
 /*-------------------------------------*/
 
 .btn-outline-gray{
-	color: #828282;
+	color: #828282 !important;
 	background-color: #ffffff;
 	border-color: #828282 !important;
 }
 .btn-outline-gray:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #828282;
 	border-color: #828282;
 }
@@ -5367,12 +5367,12 @@
 /*-------------------------------------*/
 
 .btn-outline-fossil{
-	color: #787276;
+	color: #787276 !important;
 	background-color: #ffffff;
 	border-color: #787276 !important;
 }
 .btn-outline-fossil:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #787276;
 	border-color: #787276;
 }
@@ -5382,12 +5382,12 @@
 /*-------------------------------------*/
 
 .btn-outline-mink{
-	color: #88807b;
+	color: #88807b !important;
 	background-color: #ffffff;
 	border-color: #88807b !important;
 }
 .btn-outline-mink:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #88807b;
 	border-color: #88807b;
 }
@@ -5397,12 +5397,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pearl-river{
-	color: #d9dddc;
+	color: #d9dddc !important;
 	background-color: #ffffff;
 	border-color: #d9dddc !important;
 }
 .btn-outline-pearl-river:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #d9dddc;
 	border-color: #d9dddc;
 }
@@ -5412,12 +5412,12 @@
 /*-------------------------------------*/
 
 .btn-outline-abalone{
-	color: #d6cfc7;
+	color: #d6cfc7 !important;
 	background-color: #ffffff;
 	border-color: #d6cfc7 !important;
 }
 .btn-outline-abalone:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #d6cfc7;
 	border-color: #d6cfc7;
 }
@@ -5427,12 +5427,12 @@
 /*-------------------------------------*/
 
 .btn-outline-harbor-gray{
-	color: #c7c6c1;
+	color: #c7c6c1 !important;
 	background-color: #ffffff;
 	border-color: #c7c6c1 !important;
 }
 .btn-outline-harbor-gray:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #c7c6c1;
 	border-color: #c7c6c1;
 }
@@ -5442,12 +5442,12 @@
 /*-------------------------------------*/
 
 .btn-outline-smoke{
-	color: #bebdb8;
+	color: #bebdb8 !important;
 	background-color: #ffffff;
 	border-color: #bebdb8 !important;
 }
 .btn-outline-smoke:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #bebdb8;
 	border-color: #bebdb8;
 }
@@ -5457,12 +5457,12 @@
 /*-------------------------------------*/
 
 .btn-outline-thunder{
-	color: #bdb7ab;
+	color: #bdb7ab !important;
 	background-color: #ffffff;
 	border-color: #bdb7ab !important;
 }
 .btn-outline-thunder:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #bdb7ab;
 	border-color: #bdb7ab;
 }
@@ -5472,12 +5472,12 @@
 /*-------------------------------------*/
 
 .btn-outline-pewter{
-	color: #999da0;
+	color: #999da0 !important;
 	background-color: #ffffff;
 	border-color: #999da0 !important;
 }
 .btn-outline-pewter:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #999da0;
 	border-color: #999da0;
 }
@@ -5487,12 +5487,12 @@
 /*-------------------------------------*/
 
 .btn-outline-steel{
-	color: #777b7e;
+	color: #777b7e !important;
 	background-color: #ffffff;
 	border-color: #777b7e !important;
 }
 .btn-outline-steel:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #777b7e;
 	border-color: #777b7e;
 }
@@ -5502,12 +5502,12 @@
 /*-------------------------------------*/
 
 .btn-outline-stone{
-	color: #877f7d;
+	color: #877f7d !important;
 	background-color: #ffffff;
 	border-color: #877f7d !important;
 }
 .btn-outline-stone:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #877f7d;
 	border-color: #877f7d;
 }
@@ -5517,12 +5517,12 @@
 /*-------------------------------------*/
 
 .btn-outline-iron{
-	color: #48494b;
+	color: #48494b !important;
 	background-color: #ffffff;
 	border-color: #48494b !important;
 }
 .btn-outline-iron:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #48494b;
 	border-color: #48494b;
 }
@@ -5532,12 +5532,12 @@
 /*-------------------------------------*/
 
 .btn-outline-rhino{
-	color: #b9bbb6;
+	color: #b9bbb6 !important;
 	background-color: #ffffff;
 	border-color: #b9bbb6 !important;
 }
 .btn-outline-rhino:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #b9bbb6;
 	border-color: #b9bbb6;
 }
@@ -5547,12 +5547,12 @@
 /*-------------------------------------*/
 
 .btn-outline-trout{
-	color: #97978f;
+	color: #97978f !important;
 	background-color: #ffffff;
 	border-color: #97978f !important;
 }
 .btn-outline-trout:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #97978f;
 	border-color: #97978f;
 }
@@ -5562,12 +5562,12 @@
 /*-------------------------------------*/
 
 .btn-outline-seal{
-	color: #818380;
+	color: #818380 !important;
 	background-color: #ffffff;
 	border-color: #818380 !important;
 }
 .btn-outline-seal:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #818380;
 	border-color: #818380;
 }
@@ -5577,12 +5577,12 @@
 /*-------------------------------------*/
 
 .btn-outline-lava{
-	color: #808588;
+	color: #808588 !important;
 	background-color: #ffffff;
 	border-color: #808588 !important;
 }
 .btn-outline-lava:hover{
-	color: #000000;
+	color: #000000 !important;
 	background-color: #808588;
 	border-color: #808588;
 }
@@ -5592,12 +5592,12 @@
 /*-------------------------------------*/
 
 .btn-outline-shadow{
-	color: #363636;
+	color: #363636 !important;
 	background-color: #ffffff;
 	border-color: #363636 !important;
 }
 .btn-outline-shadow:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #363636;
 	border-color: #363636;
 }
@@ -5607,12 +5607,12 @@
 /*-------------------------------------*/
 
 .btn-outline-ash{
-	color: #544c4a;
+	color: #544c4a !important;
 	background-color: #ffffff;
 	border-color: #544c4a !important;
 }
 .btn-outline-ash:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #544c4a;
 	border-color: #544c4a;
 }
@@ -5622,12 +5622,12 @@
 /*-------------------------------------*/
 
 .btn-outline-anchor{
-	color: #3e424b;
+	color: #3e424b !important;
 	background-color: #ffffff;
 	border-color: #3e424b !important;
 }
 .btn-outline-anchor:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #3e424b;
 	border-color: #3e424b;
 }
@@ -5637,12 +5637,12 @@
 /*-------------------------------------*/
 
 .btn-outline-charcoal{
-	color: #222021;
+	color: #222021 !important;
 	background-color: #ffffff;
 	border-color: #222021 !important;
 }
 .btn-outline-charcoal:hover{
-	color: #ffffff;
+	color: #ffffff !important;
 	background-color: #222021;
 	border-color: #222021;
 }
