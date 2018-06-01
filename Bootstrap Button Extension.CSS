@@ -1,0 +1,5653 @@
+.navbar{
+	margin-bottom:0;
+	border-radius:0;
+}
+/*------------------------------
+		Purple Buttom 
+------------------------------*/
+
+.btn-purple{
+	color: #ffffff;
+	background-color: #9933ff;
+	border-color: #9933ff;
+}
+.btn-purple:hover{
+	color: #ffffff;
+	background-color: #8c1aff;
+	border-color: #9933ff;
+}
+
+/*-------------------------------
+		Outline-Purple Button
+-------------------------------*/
+.btn-outline-purple{
+	color: #9933ff;
+	background-color: #ffffff;
+	border-color: #9933ff !important;
+}
+.btn-outline-purple:hover{
+	color: #ffffff;
+	background-color: #9933ff;
+	border-color: #9933ff;
+}
+
+/*------------------------------
+		Light Purple Buttom 
+------------------------------*/
+
+.btn-light-purple{
+	color: #000000;
+	background-color: #aa80ff;
+	border-color: #aa80ff;
+}
+
+.btn-light-purple:hover{
+	color: #000000;
+	background-color: #ddccff;
+	border-color: #ddccff;
+}
+
+/*--------------------------------
+		Outline Light Purple Buttom 
+--------------------------------*/
+
+.btn-outline-light-purple{
+	color: #aa80ff;
+	background-color: #ffffff;
+	border-color: aa80ff;
+}
+.btn-outline-light-purple{
+	color: #000000;
+	background-color: #aa80ff;
+	border-color: #aa80ff !important;
+}
+
+/*-------------------------------
+		Off-White Button
+-------------------------------*/
+
+.btn-off-white{
+	color: #000000;
+	background-color: #ffffe6;
+	border-color: #ffffe6;
+}
+.btn-off-white:hover{
+	color: #000000;
+	background-color: #ffffe6;
+	border-color: #000000;
+}
+
+/*-------------------------------
+		Outline-Off-White Button
+-------------------------------*/
+
+.btn-outline-off-white{
+	color: #ffffe6;
+	background-color: #ffffff;
+	border-color: #ffffe6;
+}
+.btn-outline-off-white:hover{
+	color: #000000;
+	background-color: #ffffe6;
+	border-color: #ffffe6;
+}
+
+
+/*-------------------------------
+		Rust-Orange Button
+-------------------------------*/
+
+.btn-rust-orange{
+	color: #ffffff;
+	background-color: #e67300;
+	border-color: #e67300;
+}
+.btn-rust-orange:hover{
+	color: #ffffff;
+	background-color: #cc6600;
+	border-color: #cc6600;
+}
+
+/*-------------------------------
+		Outline-Rust-Orange Button
+-------------------------------*/
+
+.btn-outline-rust-orange{
+	color: #e67300;
+	background-color: #ffffff;
+	border-color: #e67300 !important;
+}
+.btn-outline-rust-orange:hover{
+	color: #ffffff;
+	background-color: #e67300;
+	border-color: #e67300;
+}
+
+/*-------------------------------
+		Turquoise Button
+-------------------------------*/
+
+.btn-turquoise{
+	color: #000000;
+	background-color: #33ffd6;
+	border-color: #33ffd6;
+}
+.btn-turquoise:hover{
+	color: #000000;
+	background-color: #ccfff5;
+	border-color: #ccfff5;
+}
+
+/*-------------------------------
+		Outline-Turquoise Button
+-------------------------------*/
+
+.btn-outline-turquoise{
+	color: #33ffd6;
+	background-color: #ffffff;
+	border-color: #33ffd6 !important;
+}
+.btn-outline-turquoise:hover{
+	color:#000000;
+	background-color: #33ffd6;
+	border-color: #33ffd6;
+}
+
+/*-------------------------------
+		Hot-Pink Button
+-------------------------------*/
+
+.btn-hot-pink{
+	color: #000000;
+	background-color: #ff1aff;
+	border-color: #ff1aff;
+}
+.btn-hot-pink:hover{
+	color: #000000;
+	background-color: #ffb3ff;
+	border-color: #ffb3ff;
+}
+
+/*-------------------------------
+		Outline-Hot-Pink Button
+-------------------------------*/
+
+.btn-outline-hot-pink{
+	color: #ff1aff;
+	background-color: #ffffff;
+	border-color: #ff1aff !important;
+}
+.btn-outline-hot-pink:hover{
+	color: #000000;
+	background-color: #ff1aff;
+	border-color: #ff1aff;
+}
+
+/*-------------------------------
+		Sky-Blue Button
+-------------------------------*/
+
+.btn-sky-blue{
+	color: #000000;
+	background-color: #00e6ef;
+	border-color: #00e6e7;
+}
+.btn-sky-blue:hover{
+	color: #000000;
+	background-color: #99fcff;
+	border-color: #99fcff;
+}
+
+/*-------------------------------
+		Outline-Sky-Blue Button
+-------------------------------*/
+
+.btn-outline-sky-blue{
+	color: #00e6e7f;
+	background-color: #ffffff;
+	border-color: #00e6ef !important;
+}
+.btn-outline-sky-blue:hover{
+	color: #000000;
+	background-color: #00e6ef;
+	border-color: #00e6ef;
+}
+
+/*-------------------------------
+		Forest Green Button
+-------------------------------*/
+
+.btn-forest-green{
+	color: #ffffff;
+	background-color: #336600;
+	border-color: #336600;
+}
+.btn-forest-green:hover{
+	color: #ffffff;
+	background-color: #264d00;
+	border-color: #264d00;
+}
+
+/*-------------------------------
+		Outline Forest Green Button
+-------------------------------*/
+
+.btn-outline-forest-green{
+	color: #336600;
+	background-color: #ffffff;
+	border-color: #336600 !important;
+}
+
+.btn-outline-forest-green:hover{
+	color: #ffffff;
+	background-color: #336600;
+	border-color: #336600;
+}
+
+/*-------------------------------
+		Thulian Button
+-------------------------------*/
+
+.btn-thulian{
+	color: #000000;
+	background-color: #de6fa1;
+	border-color: #de6fa1;
+}
+.btn-thulian:hover{
+	color: #000000;
+	background-color: #bf4080;
+	border-color: #bf4080;
+}
+
+/*-------------------------------*/
+/*		Outline Thulian Button		*/
+/*-------------------------------*/
+
+.btn-outline-thulian{
+	color: #de6fa1;
+	background-color: #ffffff;
+	border-color: #de6fa1 !important;
+}
+
+.btn-outline-thulian:hover{
+	color: #000000;
+	background-color: #de6fa1;
+	border-color: #de6fa1;
+}
+
+/*-------------------------------*/
+/*		Pink Button						*/
+/*-------------------------------*/
+.btn-pink{
+	color: #000000;
+	background-color: #fc0fc0;
+	border-color: #fc0fc0;
+}
+.btn-pink:hover{
+	color: #000000;
+	background-color: #fd4ed1;
+	border-color: #fd4ed1;
+}
+
+/*-------------------------------*/
+/*		Hibiscus Button				*/
+/*-------------------------------*/
+
+.btn-hibiscus{
+	color: #ffffff;
+	background-color: #b43757;
+	border-color: #b43757;
+}
+.btn-hibiscus:hover{
+	color: #ffffff;
+	background-color: #892a42;
+	border-color: #892a42;
+}
+
+/*-------------------------------*/
+/*		Yellow Button					*/
+/*-------------------------------*/
+
+.btn-yellow{
+	color: #000000;
+	background-color: #fff200;
+	border-color: #fff200;
+}
+.btn-yellow:hover{
+	color: #000000;
+	background-color: #fff64d;
+	border-color: #fff64d;
+}
+
+/*-------------------------------*/
+/*		Mellow Button					*/
+/*-------------------------------*/
+
+.btn-mellow{
+	color: #000000;
+	background-color: #f8de7e;
+	border-color: #f8de7e;
+}
+.btn-mellow:hover{
+	color: #000000;
+	background-color: #fae69e;
+	border-color: #fae69e;
+}
+
+/*-------------------------------*/
+/*		Cyber Button					*/
+/*-------------------------------*/
+
+.btn-cyber{
+	color: #000000;
+	background-color: #ffd300;
+	border-color: #ffd300;
+}
+.btn-cyber:hover{
+	color: #000000;
+	background-color: #ffe14d;
+	border-color: #ffe14d;
+}
+
+/*-------------------------------*/
+/*		Royal Yellow Button			*/
+/*-------------------------------*/
+
+.btn-royal-yellow{
+	color: #000000;
+	background-color: #fada5e;
+	border-color: #fada5e;
+}
+.btn-royal-yellow:hover{
+	color: #000000;
+	background-color: #fce99c;
+	border-color: #fce99c;
+}
+
+/*-------------------------------*/
+/*		Banana Button					*/
+/*-------------------------------*/
+
+.btn-banana{
+	color: #000000;
+	background-color: #fcf4a3;
+	border-color: #fcf4a3;
+}
+.btn-banana:hover{
+	color: #000000;
+	background-color: #fdf9ce;
+	border-color: #fdf9ce;
+}
+
+/*-------------------------------*/
+/*		Tuscany Button					*/
+/*-------------------------------*/
+
+.btn-tuscany{
+	color: #000000;
+	background-color: #fcd12a;
+	border-color: #fcd12a;
+}
+.btn-tuscany:hover{
+	color: #000000;
+	background-color: #fddf68;
+	border-color: #fddf68;
+}
+
+/*-------------------------------*/
+/*		Lemon Button					*/
+/*-------------------------------*/
+
+.btn-lemon{
+	color: #000000;
+	background-color: #eefd5f;
+	border-color: #eefd5f;
+}
+.btn-lemon:hover{
+	color: #000000;
+	background-color: #f6fe9a;
+	border-color: #f6fe9a;
+}
+
+/*-------------------------------*/
+/*		Bumblebee Button				*/
+/*-------------------------------*/
+
+.btn-bumblebee{
+	color: #000000;
+	background-color: #fce205;
+	border-color: #fce205;
+}
+.btn-bumblebee:hover{
+	color: #000000;
+	background-color: #fdec4e;
+	border-color: #fdec4e;
+}
+
+/*-------------------------------*/
+/*		Cream Button					*/
+/*-------------------------------*/
+
+.btn-cream{
+	color: #000000;
+	background-color: #fffdd0;
+	border-color: #fffdd0;
+}
+.btn-cream:hover{
+	color: #000000;
+	background-color: #fffa99;
+	border-color: #fffa99;
+}
+
+/*-------------------------------*/
+/*		Peach Button					*/
+/*-------------------------------*/
+
+.btn-peach{
+	color: #000000;
+	background-color: #ffe5b4;
+	border-color: #ffe5b4;
+}
+.btn-peach:hover{
+	color: #000000;
+	background-color: #ffd280;
+	border-color: #ffd280;
+}
+
+/*-------------------------------*/
+/*		Laguna Button					*/
+/*-------------------------------*/
+
+.btn-laguna{
+	color: #000000;
+	background-color: #f8e473;
+	border-color: #f8e473;
+}
+.btn-laguna:hover{
+	color: #000000;
+	background-color: #faec9e;
+	border-color: #faec9e;
+}
+
+/*-------------------------------*/
+/*		Mustard Button					*/
+/*-------------------------------*/
+
+.btn-mustard{
+	color: #000000;
+	background-color: #fedc56;
+	border-color: #fedc56;
+}
+.btn-mustard:hover{
+	color: #000000;
+	background-color: #fee580;
+	border-color: #fee580;
+}
+
+/*-------------------------------*/
+/*		Corn Button						*/
+/*-------------------------------*/
+
+.btn-corn{
+	color: #000000;
+	background-color: #e4cd05;
+	border-color: #e4cd05;
+}
+.btn-corn:hover{
+	color: #000000;
+	background-color: #c8b404;
+	border-color: #c8b404;
+}
+
+/*-------------------------------*/
+/*		Pineapple Button				*/
+/*-------------------------------*/
+
+.btn-pineapple{
+	color: #000000;
+	background-color: #fee12b;
+	border-color: #fee12b;
+}
+.btn-pineapple:hover{
+	color: #000000;
+	background-color: #feea67;
+	border-color: #feea67;
+}
+
+/*-------------------------------*/
+/*		Flaxen Button					*/
+/*-------------------------------*/
+
+.btn-flaxen{
+	color: #000000;
+	background-color: #d5b85a;
+	border-color: #d5b85a;
+}
+.btn-flaxen:hover{
+	color: #000000;
+	background-color: #e0cb85;
+	border-color: #e0cb85;
+}
+
+/*-------------------------------*/
+/*		Egg Nog Button					*/
+/*-------------------------------*/
+
+.btn-egg-nog{
+	color: #000000;
+	background-color: #f9e29c;
+	border-color: #f9e29c;
+}
+.btn-egg-nog:hover{
+	color: #000000;
+	background-color: #fbeab7;
+	border-color: #fbeab7;
+}
+
+/*-------------------------------*/
+/*		Trombone Button				*/
+/*-------------------------------*/
+
+.btn-trombone{
+	color: #000000;
+	background-color: #d2b55b;
+	border-color: #d2b55b;
+}
+.btn-trombone:hover{
+	color: #000000;
+	background-color: #dec887;
+	border-color: #dec887;
+}
+
+/*-------------------------------*/
+/*		Flax Button						*/
+/*-------------------------------*/
+
+.btn-flax{
+	color: #000000;
+	background-color: #eedc82;
+	border-color: #eedc82;
+}
+.btn-flax:hover{
+	color: #000000;
+	background-color: #f6ecbc;
+	border-color: #f6ecbc;
+}
+
+/*-------------------------------*/
+/*		Ecru Button						*/
+/*-------------------------------*/
+
+.btn-ecru{
+	color: #000000;
+	background-color: #ceb180;
+	border-color: #ceb180;
+}
+.btn-ecru:hover{
+	color: #000000;
+	background-color: #e2d2b6;
+	border-color: #e2d2b6;
+}
+
+/*-------------------------------*/
+/*		Sepia Button					*/
+/*-------------------------------*/
+
+.btn-sepia{
+	color: #000000;
+	background-color: #e3b778;
+	border-color: #e3b778;
+}
+.btn-sepia:hover{
+	color: #000000;
+	background-color: #eed2aa;
+	border-color: #eed2aa;
+}
+
+/*-------------------------------*/
+/*		Orange Button					*/
+/*-------------------------------*/
+
+.btn-orange{
+	color: #ffffff;
+	background-color: #fc6600;
+	border-color: #fc6600;
+}
+.btn-orange:hover{
+	color: #ffffff;
+	background-color: #cc5200;
+	border-color: #cc5200;
+}
+
+/*-------------------------------*/
+/*		Gold Button						*/
+/*-------------------------------*/
+
+.btn-gold{
+	color: #ffffff;
+	background-color: #f9a602;
+	border-color: #f9a602;
+}
+.btn-gold:hover{
+	color: #ffffff;
+	background-color: #ca8702;
+	border-color: #ca8702;
+}
+
+/*-------------------------------*/
+/*		Goldenrod Button				*/
+/*-------------------------------*/
+
+.btn-goldenrod{
+	color: #ffffff;
+	background-color: #dba520;
+	border-color: #dba520;
+}
+.btn-goldenrod:hover{
+	color: #ffffff;
+	background-color: #b38719;
+	border-color: #b38719;
+}
+
+/*-------------------------------*/
+/*		Pumpkin Button					*/
+/*-------------------------------*/
+
+.btn-pumpkin{
+	color: #ffffff;
+	background-color: #ff7417;
+	border-color: #ff7417;
+}
+.btn-pumpkin:hover{
+	color: #ffffff;
+	background-color: #e65c00;
+	border-color: #e65c00;
+}
+
+/*-------------------------------*/
+/*		Fire Button						*/
+/*-------------------------------*/
+
+.btn-fire{
+	color: #ffffff;
+	background-color: #fda50f;
+	border-color: #fda50f;
+}
+.btn-fire:hover{
+	color: #ffffff;
+	background-color: #e39102;
+	border-color: #e39102;
+}
+
+/*-------------------------------*/
+/*		Ochre Button					*/
+/*-------------------------------*/
+
+.btn-ochre{
+	color: #ffffff;
+	background-color: #cc7722;
+	border-color: #cc7722;
+}
+.btn-ochre:hover{
+	color: #ffffff;
+	background-color: #ae661e;
+	border-color: #ae661e;
+}
+
+/*-------------------------------*/
+/*		Burnt Orange Button			*/
+/*-------------------------------*/
+
+.btn-burnt-orange{
+	color: #ffffff;
+	background-color: #964000;
+	border-color: #964000;
+}
+.btn-burnt-orange:hover{
+	color: #ffffff;
+	background-color: #662c00;
+	border-color: #662c00;
+}
+
+/*-------------------------------*/
+/*		Dijon Button					*/
+/*-------------------------------*/
+
+.btn-dijon{
+	color: #ffffff;
+	background-color: #c49102;
+	border-color: #c49102;
+}
+.btn-dijon:hover{
+	color: #ffffff;
+	background-color: #976f02;
+	border-color: #976f02;
+}
+
+/*-------------------------------*/
+/*		Tangerine Button				*/
+/*-------------------------------*/
+
+.btn-tangerine{
+	color: #ffffff;
+	background-color: #f9812a;
+	border-color: #f9812a;
+}
+.btn-tangerine:hover{
+	color: #ffffff;
+	background-color: #f96b06;
+	border-color: #f96b06;
+}
+
+/*-------------------------------*/
+/*		Tiger Button					*/
+/*-------------------------------*/
+
+.btn-tiger{
+	color: #ffffff;
+	background-color: #fd6a02;
+	border-color: #fd6a02;
+}
+.btn-tiger:hover{
+	color: #ffffff;
+	background-color: #ca5502;
+	border-color: #ca5502;
+}
+
+/*-------------------------------*/
+/*		Honey Button					*/
+/*-------------------------------*/
+
+.btn-honey{
+	color: #ffffff;
+	background-color: #eb9605;
+	border-color: #eb9605;
+}
+.btn-honey:hover{
+	color: #ffffff;
+	background-color: #c88004;
+	border-color: #c88004;
+}
+
+/*-------------------------------*/
+/*		Carrot Button					*/
+/*-------------------------------*/
+
+.btn-carrot{
+	color: #ffffff;
+	background-color: #ef7215;
+	border-color: #ef7215;
+}
+.btn-carrot:hover{
+	color: #ffffff;
+	background-color: #bf5a0d;
+	border-color: #bf5a0d;
+}
+
+/*-------------------------------*/
+/*		Amber Button					*/
+/*-------------------------------*/
+
+.btn-amber{
+	color: #ffffff;
+	background-color: #ffbf00;
+	border-color: #ffbf00;
+}
+.btn-amber:hover{
+	color: #ffffff;
+	background-color: #cc9900;
+	border-color: #cc9900;
+}
+
+/*-------------------------------*/
+/*		Apricot Button					*/
+/*-------------------------------*/
+
+.btn-apricot{
+	color: #ffffff;
+	background-color: #ef820d;
+	border-color: #ef820d;
+}
+.btn-apricot:hover{
+	color: #ffffff;
+	background-color: #c2690a;
+	border-color: #c2690a;
+}
+
+/*-------------------------------*/
+/*		Bronze Button					*/
+/*-------------------------------*/
+
+.btn-bronze{
+	color: #ffffff;
+	background-color: #b1560f;
+	border-color: #b1560f;
+}
+.btn-bronze:hover{
+	color: #ffffff;
+	background-color: #8d440c;
+	border-color: #8d440c;
+}
+
+/*-------------------------------*/
+/*		Cider Button					*/
+/*-------------------------------*/
+
+.btn-cider{
+	color: #ffffff;
+	background-color: #b3672b;
+	border-color: #b3672b;
+}
+.btn-cider:hover{
+	color: #ffffff;
+	background-color: #905223;
+	border-color: #905223;
+}
+
+/*-------------------------------*/
+/*		Clay Button						*/
+/*-------------------------------*/
+
+.btn-clay{
+	color: #ffffff;
+	background-color: #813f0b;
+	border-color: #813f0b;
+}
+.btn-clay:hover{
+	color: #ffffff;
+	background-color: #5e2d08;
+	border-color: #5e2d08;
+}
+
+/*-------------------------------*/
+/*		Rust Button						*/
+/*-------------------------------*/
+
+.btn-rust{
+	color: #ffffff;
+	background-color: #8b4000;
+	border-color: #8b4000;
+}
+.btn-rust:hover{
+	color: #ffffff;
+	background-color: #663000;
+	border-color: #663000;
+}
+
+/*-------------------------------*/
+/*		Amber 2 Button					*/
+/*-------------------------------*/
+
+.btn-amber2{
+	color: #ffffff;
+	background-color: #883000;
+	border-color: #883000;
+}
+.btn-amber2:hover{
+	color: #ffffff;
+	background-color: #662400;
+	border-color: #662400;
+}
+
+/*-------------------------------*/
+/*		Spice Button					*/
+/*-------------------------------*/
+
+.btn-spice{
+	color: #ffffff;
+	background-color: #793802;
+	border-color: #793802;
+}
+.btn-spice:hover{
+	color: #ffffff;
+	background-color: #4b2301;
+	border-color: #4b2301;
+}
+
+/*-------------------------------*/
+/*		Red Button						*/
+/*-------------------------------*/
+
+.btn-red{
+	color: #ffffff;
+	background-color: #d30000;
+	border-color: #d30000;
+}
+.btn-red:hover{
+	color: #ffffff;
+	background-color: #b30000;
+	border-color: #b30000;
+}
+
+/*-------------------------------*/
+/*		Salmon Button					*/
+/*-------------------------------*/
+
+.btn-salmon{
+	color: #ffffff;
+	background-color: #fa8072;
+	border-color: #fa8072;
+}
+.btn-salmon:hover{
+	color: #ffffff;
+	background-color: #f84d3a;
+	border-color: #f84d3a;
+}
+
+/*-------------------------------*/
+/*		Scarlet Button					*/
+/*-------------------------------*/
+
+.btn-scarlet{
+	color: #ffffff;
+	background-color: #ff2400;
+	border-color: #ff2400;
+}
+.btn-scarlet:hover{
+	color: #ffffff;
+	background-color: #cc1b00;
+	border-color: #cc1b00;
+}
+
+/*-------------------------------*/
+/*		Barn Red Button				*/
+/*-------------------------------*/
+
+.btn-barn-red{
+	color: #ffffff;
+	background-color: #7c0a02;
+	border-color: #7c0a02;
+}
+.btn-barn-red:hover{
+	color: #ffffff;
+	background-color: #4b0601;
+	border-color: #4b0601;
+}
+
+/*-------------------------------*/
+/*		Imperial Button				*/
+/*-------------------------------*/
+
+.btn-imperial{
+	color: #ffffff;
+	background-color: #ed2939;
+	border-color: #ed2939;
+}
+.btn-imperial:hover{
+	color: #ffffff;
+	background-color: #d31222;
+	border-color: #d31222;
+}
+
+/*-------------------------------*/
+/*		Indian Red Button				*/
+/*-------------------------------*/
+
+.btn-indian-red{
+	color: #ffffff;
+	background-color: #cd5c5c;
+	border-color: #cd5c5c;
+}
+.btn-indian-red:hover{
+	color: #ffffff;
+	background-color: #b03636;
+	border-color: #b03636;
+}
+
+/*-------------------------------*/
+/*		Chili Button					*/
+/*-------------------------------*/
+
+.btn-chili{
+	color: #ffffff;
+	background-color: #c21807;
+	border-color: #c21807;
+}
+.btn-chili:hover{
+	color: #ffffff;
+	background-color: #941105;
+	border-color: #941105;
+}
+
+/*-------------------------------*/
+/*		Fire Brick Button				*/
+/*-------------------------------*/
+
+.btn-fire-brick{
+	color: #ffffff;
+	background-color: #b22222;
+	border-color: #b22222;
+}
+.btn-fire-brick:hover{
+	color: #ffffff;
+	background-color: #961d1d;
+	border-color: #961d1d;
+}
+
+/*-------------------------------*/
+/*		Maroon Button					*/
+/*-------------------------------*/
+
+.btn-maroon{
+	color: #ffffff;
+	background-color: #800000;
+	border-color: #800000;
+}
+.btn-maroon:hover{
+	color: #ffffff;
+	background-color: #4d0000;
+	border-color: #4d0000;
+}
+
+/*-------------------------------*/
+/*		Redwood Button					*/
+/*-------------------------------*/
+
+.btn-redwood{
+	color: #ffffff;
+	background-color: #a45a52;
+	border-color: #a45a52;
+}
+.btn-redwood:hover{
+	color: #ffffff;
+	background-color: #884b44;
+	border-color: #884b44;
+}
+
+/*-------------------------------*/
+/*		Raspberry Button				*/
+/*-------------------------------*/
+
+.btn-raspberry{
+	color: #ffffff;
+	background-color: #d21f3c;
+	border-color: #d21f3c;
+}
+.btn-raspberry:hover{
+	color: #ffffff;
+	background-color: #b11b34;
+	border-color: #b11b34;
+}
+
+/*-------------------------------*/
+/*		Candy Apple Button			*/
+/*-------------------------------*/
+
+.btn-candy-apple{
+	color: #ffffff;
+	background-color: #ff0800;
+	border-color: #ff0800;
+}
+.btn-candy-apple:hover{
+	color: #ffffff;
+	background-color: #cc0700;
+	border-color: #cc0700;
+}
+
+/*-------------------------------*/
+/*		Ferrari Button					*/
+/*-------------------------------*/
+
+.btn-ferrari{
+	color: #ffffff;
+	background-color: #ff2800;
+	border-color: #ff2800;
+}
+.btn-ferrari:hover{
+	color: #ffffff;
+	background-color: #cc1f00;
+	border-color: #cc1f00;
+}
+
+/*-------------------------------*/
+/*		Persian Button					*/
+/*-------------------------------*/
+
+.btn-persian{
+	color: #ffffff;
+	background-color: #ca3433;
+	border-color: #ca3433;
+}
+.btn-persian:hover{
+	color: #ffffff;
+	background-color: #a32929;
+	border-color: #a32929;
+}
+
+/*-------------------------------*/
+/*		US Flag Button					*/
+/*-------------------------------*/
+
+.btn-us-flag{
+	color: #ffffff;
+	background-color: #bf0a30;
+	border-color: #bf0a30;
+}
+.btn-us-flag:hover{
+	color: #ffffff;
+	background-color: #910825;
+	border-color: #910825;
+}
+
+/*-------------------------------*/
+/*		Carmine Button					*/
+/*-------------------------------*/
+
+.btn-carmine{
+	color: #ffffff;
+	background-color: #960019;
+	border-color: #960019;
+}
+.btn-carmine:hover{
+	color: #ffffff;
+	background-color: #660011;
+	border-color: #660011;
+}
+
+/*-------------------------------*/
+/*		Burgundy Button				*/
+/*-------------------------------*/
+
+.btn-burgundy{
+	color: #ffffff;
+	background-color: #8d021f;
+	border-color: #8d021f;
+}
+.btn-burgundy:hover{
+	color: #ffffff;
+	background-color: #640217;
+	border-color: #640217;
+}
+
+/*-------------------------------*/
+/*		Crimson Button					*/
+/*-------------------------------*/
+
+.btn-crimson{
+	color: #ffffff;
+	background-color: #b80f0a;
+	border-color: #b80f0a;
+}
+.btn-crimson:hover{
+	color: #ffffff;
+	background-color: #910c08;
+	border-color: #910c08;
+}
+
+/*-------------------------------*/
+/*		Sangria Button					*/
+/*-------------------------------*/
+
+.btn-sangria{
+	color: #ffffff;
+	background-color: #5e1914;
+	border-color: #5e1914;
+}
+.btn-sangria:hover{
+	color: #ffffff;
+	background-color: #3f110d;
+	border-color: #3f110d;
+}
+
+/*-------------------------------*/
+/*		Mahogany Button				*/
+/*-------------------------------*/
+
+.btn-mahogany{
+	color: #ffffff;
+	background-color: #420d09;
+	border-color: #420d09;
+}
+.btn-mahogany:hover{
+	color: #ffffff;
+	background-color: #160403;
+	border-color: #160403;
+}
+
+/*-------------------------------*/
+/*		Pink Button						*/
+/*-------------------------------*/
+
+.btn-pink{
+	color: #000000;
+	background-color: #fc0fc0;
+	border-color: #fc0fc0;
+}
+.btn-pink:hover{
+	color: #000000;
+	background-color: #e302ab;
+	border-color: #e302ab;
+}
+
+/*-------------------------------*/
+/*		Ruby Button						*/
+/*-------------------------------*/
+
+.btn-ruby{
+	color: #000000;
+	background-color: #e0115f;
+	border-color: #e0115f;
+}
+.btn-ruby:hover{
+	color: #000000;
+	background-color: #be0e52;
+	border-color: #be0e52;
+}
+
+/*-------------------------------*/
+/*		Ultra Button					*/
+/*-------------------------------*/
+
+.btn-ultra{
+	color: #000000;
+	background-color: #ff6fff;
+	border-color: #ff6fff;
+}
+.btn-ultra:hover{
+	color: #000000;
+	background-color: #ff33ff;
+	border-color: #ff33ff;
+}
+
+/*-------------------------------*/
+/*		Magenta Button					*/
+/*-------------------------------*/
+
+.btn-magenta{
+	color: #000000;
+	background-color: #ff0090;
+	border-color: #ff0090;
+}
+.btn-magenta:hover{
+	color: #000000;
+	background-color: #cc0074;
+	border-color: #cc0074;
+}
+
+/*-------------------------------*/
+/*		Rose Pink Button				*/
+/*-------------------------------*/
+
+.btn-rose-pink{
+	color: #000000;
+	background-color: #ff66cc;
+	border-color: #ff66cc;
+}
+.btn-rose-pink:hover{
+	color: #000000;
+	background-color: #ff1ab3;
+	border-color: #ff1ab3;
+}
+
+/*-------------------------------*/
+/*		Lavender Button				*/
+/*-------------------------------*/
+
+.btn-pink-lavender{
+	color: #000000;
+	background-color: #fbaed2;
+	border-color: #fbaed2;
+}
+.btn-pink-lavender:hover{
+	color: #000000;
+	background-color: #f86dae;
+	border-color: #f86dae;
+}
+
+/*-------------------------------*/
+/*		Creamy Button					*/
+/*-------------------------------*/
+
+.btn-creamy{
+	color: #000000;
+	background-color: #ff69b4;
+	border-color: #ff69b4;
+}
+.btn-creamy:hover{
+	color: #000000;
+	background-color: #ff1a8c;
+	border-color: #ff1a8c;
+}
+
+/*-------------------------------*/
+/*		Fuchsia Button					*/
+/*-------------------------------*/
+
+.btn-fuchsia{
+	color: #000000;
+	background-color: #ff00ff;
+	border-color: #ff00ff;
+}
+.btn-fuchsia:hover{
+	color: #000000;
+	background-color: #ff4dff;
+	border-color: #ff4dff;
+}
+
+/*-------------------------------*/
+/*		French Rose Button			*/
+/*-------------------------------*/
+
+.btn-french-rose{
+	color: #000000;
+	background-color: #f64a8a;
+	border-color: #f64a8a;
+}
+.btn-french-rose:hover{
+	color: #000000;
+	background-color: #f985b0;
+	border-color: #f985b0;
+}
+
+/*-------------------------------*/
+/*		Cerise Button					*/
+/*-------------------------------*/
+
+.btn-cerise{
+	color: #000000;
+	background-color: #de3163;
+	border-color: #de3163;
+}
+.btn-cerise:hover{
+	color: #000000;
+	background-color: #e6658a;
+	border-color: #e6658a;
+}
+
+/*-------------------------------*/
+/*		Carnation Button				*/
+/*-------------------------------*/
+
+.btn-carnation{
+	color: #000000;
+	background-color: #ffa6c9;
+	border-color: #ffa6c9;
+}
+.btn-carnation:hover{
+	color: #000000;
+	background-color: #ff66a3;
+	border-color: #ff66a3;
+}
+
+/*-------------------------------*/
+/*		Brick Button					*/
+/*-------------------------------*/
+
+.btn-brick{
+	color: #000000;
+	background-color: #fb607f;
+	border-color: #fb607f;
+}
+.btn-brick:hover{
+	color: #000000;
+	background-color: #fc9caf;
+	border-color: #fc9caf;
+}
+
+/*-------------------------------*/
+/*		Amaranth Button				*/
+/*-------------------------------*/
+
+.btn-amaranth{
+	color: #000000;
+	background-color: #f19cbb;
+	border-color: #f19cbb;
+}
+.btn-amaranth:hover{
+	color: #000000;
+	background-color: #ec79a3;
+	border-color: #ec79a3;
+}
+
+/*-------------------------------*/
+/*		Taffy Button					*/
+/*-------------------------------*/
+
+.btn-taffy{
+	color: #000000;
+	background-color: #f987c5;
+	border-color: #f987c5;
+}
+.btn-taffy:hover{
+	color: #000000;
+	background-color: #fbb6dc;
+	border-color: #fbb6dc;
+}
+
+/*-------------------------------*/
+/*		Bubble Gum Button				*/
+/*-------------------------------*/
+
+.btn-bubble-gum{
+	color: #000000;
+	background-color: #fe5bac;
+	border-color: #fe5bac;
+}
+.btn-bubble-gum:hover{
+	color: #000000;
+	background-color: #fe9acc;
+	border-color: #fe9acc;
+}
+
+/*-------------------------------*/
+/*		Punch Button					*/
+/*-------------------------------*/
+
+.btn-punch{
+	color: #000000;
+	background-color: #ec5578;
+	border-color: #ec5578;
+}
+.btn-punch:hover{
+	color: #000000;
+	background-color: #f28ca4;
+	border-color: #f28ca4;
+}
+
+/*-------------------------------*/
+/*		Pink Lemonade Button			*/
+/*-------------------------------*/
+
+.btn-pink-lemonade{
+	color: #000000;
+	background-color: #fdb9c8;
+	border-color: #fdb9c8;
+}
+.btn-pink-lemonade:hover{
+	color: #000000;
+	background-color: #fb839d;
+	border-color: #fb839d;
+}
+
+/*-------------------------------*/
+/*		Flamingo Button				*/
+/*-------------------------------*/
+
+.btn-flamingo{
+	color: #000000;
+	background-color: #fca3b7;
+	border-color: #fca3b7;
+}
+.btn-flamingo:hover{
+	color: #000000;
+	background-color: #fa6b8a;
+	border-color: #fa6b8a;
+}
+
+/*-------------------------------*/
+/*		Violet Button					*/
+/*-------------------------------*/
+
+.btn-violet{
+	color: #ffffff;
+	background-color: #b200ed;
+	border-color: #b200ed;
+}
+.btn-violet:hover{
+	color: #ffffff;
+	background-color: #8600b3;
+	border-color: #8600b3;
+}
+
+/*-------------------------------*/
+/*		Mauve Button					*/
+/*-------------------------------*/
+
+.btn-mauve{
+	color: #ffffff;
+	background-color: #784b84;
+	border-color: #784b84;
+}
+.btn-mauve:hover{
+	color: #ffffff;
+	background-color: #593762;
+	border-color: #593762;
+}
+
+/*-------------------------------*/
+/*		Mulberry Button				*/
+/*-------------------------------*/
+
+.btn-mulberry{
+	color: #ffffff;
+	background-color: #c64b8c;
+	border-color: #c64b8c;
+}
+.btn-mulberry:hover{
+	color: #ffffff;
+	background-color: #9b316a;
+	border-color: #9b316a;
+}
+
+/*-------------------------------*/
+/*		Lavender Button				*/
+/*-------------------------------*/
+
+.btn-lavender{
+	color: #000000;
+	background-color: #e4a0f7;
+	border-color: #e4a0f7;
+}
+.btn-lavender:hover{
+	color: #000000;
+	background-color: #f2d0fb;
+	border-color: #f2d0fb;
+}
+
+/*-------------------------------*/
+/*		Orchid Button					*/
+/*-------------------------------*/
+
+.btn-orchid{
+	color: #000000;
+	background-color: #af69ee;
+	border-color: #af69ee;
+}
+.btn-orchid:hover{
+	color: #000000;
+	background-color: #cfa3f5;
+	border-color: #cfa3f5;
+}
+
+/*-------------------------------*/
+/*		Lilac Button					*/
+/*-------------------------------*/
+
+.btn-lilac{
+	color: #000000;
+	background-color: #b660cd;
+	border-color: #b660cd;
+}
+.btn-lilac:hover{
+	color: #000000;
+	background-color: #c98bda;
+	border-color: #c98bda;
+}
+
+/*-------------------------------*/
+/*		Electric Button				*/
+/*-------------------------------*/
+
+.btn-electric{
+	color: #000000;
+	background-color: #8f00ff;
+	border-color: #8f00ff;
+}
+.btn-electric:hover{
+	color: #000000;
+	background-color: #b24dff;
+	border-color: #b24dff;
+}
+
+/*-------------------------------*/
+/*		African Button					*/
+/*-------------------------------*/
+
+.btn-african{
+	color: #000000;
+	background-color: #b284be;
+	border-color: #b284be;
+}
+.btn-african:hover{
+	color: #000000;
+	background-color: #cbabd3;
+	border-color: #cbabd3;
+}
+
+/*-------------------------------*/
+/*		Grape Button					*/
+/*-------------------------------*/
+
+.btn-grape{
+	color: #ffffff;
+	background-color: #6f2da8;
+	border-color: #6f2da8;
+}
+.btn-grape:hover{
+	color: #ffffff;
+	background-color: #4f2079;
+	border-color: #4f2079;
+}
+
+/*-------------------------------*/
+/*		Amethyst Button				*/
+/*-------------------------------*/
+
+.btn-amethyst{
+	color: #000000;
+	background-color: #9966cb;
+	border-color: #9966cb;
+}
+.btn-amethyst:hover{
+	color: #000000;
+	background-color: #bfa0de;
+	border-color: #bfa0de;
+}
+
+/*-------------------------------*/
+/*		Byzantine Button				*/
+/*-------------------------------*/
+
+.btn-byzantine{
+	color: #ffffff;
+	background-color: #702963;
+	border-color: #702963;
+}
+.btn-byzantine:hover{
+	color: #ffffff;
+	background-color: #381531;
+	border-color: #381531;
+}
+
+/*-------------------------------*/
+/*		Fandango Button				*/
+/*-------------------------------*/
+
+.btn-fandango{
+	color: #ffffff;
+	background-color: #b5338a;
+	border-color: #b5338a;
+}
+.btn-fandango:hover{
+	color: #ffffff;
+	background-color: #77225b;
+	border-color: #77225b;
+}
+
+/*-------------------------------*/
+/*		Helio Button					*/
+/*-------------------------------*/
+
+.btn-helio{
+	color: #000000;
+	background-color: #de73ff;
+	border-color: #de73ff;
+}
+.btn-helio:hover{
+	color: #000000;
+	background-color: #ebd3ff;
+	border-color: #ebd3ff;
+}
+
+/*-------------------------------*/
+/*		Floral Button					*/
+/*-------------------------------*/
+
+.btn-floral{
+	color: #000000;
+	background-color: #b47ede;
+	border-color: #b47ede;
+}
+.btn-floral:hover{
+	color: #000000;
+	background-color: #d0aeea;
+	border-color: #d0aeea;
+}
+
+/*-------------------------------*/
+/*		Thistle Button					*/
+/*-------------------------------*/
+
+.btn-thistle{
+	color: #000000;
+	background-color: #d7bfdc;
+	border-color: #d7bfdc;
+}
+.btn-thistle:hover{
+	color: #000000;
+	background-color: #eadeed;
+	border-color: #eadeed;
+}
+
+/*-------------------------------*/
+/*		Royal Button					*/
+/*-------------------------------*/
+
+.btn-royal{
+	color: #ffffff;
+	background-color: #7852a9;
+	border-color: #7852a9;
+}
+.btn-royal:hover{
+	color: #ffffff;
+	background-color: #553a78;
+	border-color: #553a78;
+}
+
+/*-------------------------------*/
+/*		Lollipop Button				*/
+/*-------------------------------*/
+
+.btn-lollipop{
+	color: #ffffff;
+	background-color: #81007f;
+	border-color: #81007f;
+}
+.btn-lollipop:hover{
+	color: #ffffff;
+	background-color: #4d004b;
+	border-color: #4d004b;
+}
+
+/*-------------------------------*/
+/*		Plum Button						*/
+/*-------------------------------*/
+
+.btn-plum{
+	color: #ffffff;
+	background-color: #8d4585;
+	border-color: #8d4585;
+}
+.btn-plum:hover{
+	color: #ffffff;
+	background-color: #693260;
+	border-color: #693260;
+}
+
+/*-------------------------------*/
+/*		Eggplant Button				*/
+/*-------------------------------*/
+
+.btn-eggplant{
+	color: #ffffff;
+	background-color: #311432;
+	border-color: #311432;
+}
+.btn-eggplant:hover{
+	color: #ffffff;
+	background-color: #59245b;
+	border-color: #59245b;
+}
+
+/*-------------------------------*/
+/*		Blue Button						*/
+/*-------------------------------*/
+
+.btn-blue{
+	color: #ffffff;
+	background-color: #0018f9;
+	border-color: #0018f9;
+}
+.btn-blue:hover{
+	color: #ffffff;
+	background-color: #0012b3;
+	border-color: #0012b3;
+}
+
+/*-------------------------------*/
+/*		Yale Button						*/
+/*-------------------------------*/
+
+.btn-yale{
+	color: #ffffff;
+	background-color: #0e4c92;
+	border-color: #0e4c92;
+}
+.btn-yale:hover{
+	color: #ffffff;
+	background-color: #09305d;
+	border-color: #09305d;
+}
+
+/*-------------------------------*/
+/*		Pigeon Button					*/
+/*-------------------------------*/
+
+.btn-pigeon{
+	color: #000000;
+	background-color: #7285a5;
+	border-color: #7285a5;
+}
+.btn-pigeon:hover{
+	color: #000000;
+	background-color: #a2aec3;
+	border-color: #a2aec3;
+}
+
+/*-------------------------------*/
+/*		Sky Button						*/
+/*-------------------------------*/
+
+.btn-sky{
+	color: #000000;
+	background-color: #95c8d8;
+	border-color: #95c8d8;
+}
+.btn-sky:hover{
+	color: #000000;
+	background-color: #c7e2ea;
+	border-color: #c7e2ea;
+}
+
+/*-------------------------------*/
+/*		Independence Button			*/
+/*-------------------------------*/
+
+.btn-independence{
+	color: #ffffff;
+	background-color: #4d516d;
+	border-color: #4d516d;
+}
+.btn-independence:hover{
+	color: #ffffff;
+	background-color: #35374b;
+	border-color: #35374b;
+}
+
+/*-------------------------------*/
+/*		Air Force Button				*/
+/*-------------------------------*/
+
+.btn-air-force{
+	color: #000000;
+	background-color: #598baf;
+	border-color: #598baf;
+}
+.btn-air-force:hover{
+	color: #000000;
+	background-color: #87abc5;
+	border-color: #87abc5;
+}
+
+/*-------------------------------*/
+/*		Baby Blue Button				*/
+/*-------------------------------*/
+
+.btn-baby-blue{
+	color: #000000;
+	background-color: #89cfef;
+	border-color: #89cfef;
+}
+.btn-baby-blue:hover{
+	color: #000000;
+	background-color: #bce3f6;
+	border-color: #bce3f6;
+}
+
+/*-------------------------------*/
+/*		Navy Button					*/
+/*-------------------------------*/
+
+.btn-navy{
+	color: #ffffff;
+	background-color: #000080;
+	border-color: #000080;
+}
+.btn-navy:hover{
+	color: #ffffff;
+	background-color: #0000cc;
+	border-color: #0000cc;
+}
+
+/*-------------------------------*/
+/*		Steel Blue Button				*/
+/*-------------------------------*/
+
+.btn-steel-blue{
+	color: #ffffff;
+	background-color: #4682b4;
+	border-color: #4682b4;
+}
+.btn-steel-blue:hover{
+	color: #ffffff;
+	background-color: #325d81;
+	border-color: #325d81;
+}
+
+/*-------------------------------*/
+/*		Carolina Button				*/
+/*-------------------------------*/
+
+.btn-carolina{
+	color: #000000;
+	background-color: #57a0d2;
+	border-color: #57a0d2;
+}
+.btn-carolina:hover{
+	color: #000000;
+	background-color: #86bbdf;
+	border-color: #86bbdf;
+}
+
+/*-------------------------------*/
+/*		Turkish Button					*/
+/*-------------------------------*/
+
+.btn-turkish{
+	color: #ffffff;
+	background-color: #5097a4;
+	border-color: #5097a4;
+}
+.btn-turkish:hover{
+	color: #ffffff;
+	background-color: #3b6e78;
+	border-color: #3b6e78;
+}
+
+/*-------------------------------*/
+/*		Maya Button						*/
+/*-------------------------------*/
+
+.btn-maya{
+	color: #000000;
+	background-color: #73c2fb;
+	border-color: #73c2fb;
+}
+.btn-maya:hover{
+	color: #000000;
+	background-color: #39a9f9;
+	border-color: #39a9f9;
+}
+
+/*-------------------------------*/
+/*		Cornflower Button				*/
+/*-------------------------------*/
+
+.btn-cornflower{
+	color: #000000;
+	background-color: #6693f5;
+	border-color: #6693f5;
+}
+.btn-cornflower:hover{
+	color: #000000;
+	background-color: #9fbcf9;
+	border-color: #9fbcf9;
+}
+
+/*-------------------------------*/
+/*		Olympic Button					*/
+/*-------------------------------*/
+
+.btn-olympic{
+	color: #ffffff;
+	background-color: #008ecc;
+	border-color: #008ecc;
+}
+.btn-olympic:hover{
+	color: #ffffff;
+	background-color: #005980;
+	border-color: #005980;
+}
+
+/*-------------------------------*/
+/*		Sapphire Button				*/
+/*-------------------------------*/
+
+.btn-sapphire{
+	color: #ffffff;
+	background-color: #0f52ba;
+	border-color: #0f52ba;
+}
+.btn-sapphire:hover{
+	color: #ffffff;
+	background-color: #0a3576;
+	border-color: #0a3576;
+}
+
+/*-------------------------------*/
+/*		Azure Button					*/
+/*-------------------------------*/
+
+.btn-azure{
+	color: #ffffff;
+	background-color: #0080fe;
+	border-color: #0080fe;
+}
+.btn-azure:hover{
+	color: #ffffff;
+	background-color: #0059b3;
+	border-color: #0059b3;
+}
+
+/*-------------------------------*/
+/*		Egyptian Button				*/
+/*-------------------------------*/
+
+.btn-egyptian{
+	color: #ffffff;
+	background-color: #1134a6;
+	border-color: #1134a6;
+}
+.btn-egyptian:hover{
+	color: #ffffff;
+	background-color: #0c2473;
+	border-color: #0c2473;
+}
+
+/*-------------------------------*/
+/*		Denim Button					*/
+/*-------------------------------*/
+
+.btn-denim{
+	color: #ffffff;
+	background-color: #131e3a;
+	border-color: #131e3a;
+}
+.btn-denim:hover{
+	color: #ffffff;
+	background-color: #253c74;
+	border-color: #253c74;
+}
+
+/*-------------------------------*/
+/*		Prussian Button				*/
+/*-------------------------------*/
+
+.btn-prussian{
+	color: #ffffff;
+	background-color: #003151;
+	border-color: #003151;
+}
+.btn-prussian:hover{
+	color: #ffffff;
+	background-color: #005c99;
+	border-color: #005c99;
+}
+
+/*-------------------------------*/
+/*		Space Button					*/
+/*-------------------------------*/
+
+.btn-space{
+	color: #ffffff;
+	background-color: #1c2951;
+	border-color: #1c2951;
+}
+.btn-space:hover{
+	color: #ffffff;
+	background-color: #2e4385;
+	border-color: #2e4385;
+}
+
+/*-------------------------------*/
+/*		Green Button					*/
+/*-------------------------------*/
+
+.btn-green{
+	color: #ffffff;
+	background-color: #3bb143;
+	border-color: #3bb143;
+}
+.btn-green:hover{
+	color: #ffffff;
+	background-color: #26732b;
+	border-color: #26732b;
+}
+
+/*-------------------------------*/
+/*		Forest Button					*/
+/*-------------------------------*/
+
+.btn-forest{
+	color: #ffffff;
+	background-color: #0b6623;
+	border-color: #0b6623;
+}
+.btn-forest:hover{
+	color: #ffffff;
+	background-color: #11a238;
+	border-color: #11a238;
+}
+
+/*-------------------------------*/
+/*		Sage Button						*/
+/*-------------------------------*/
+
+.btn-sage{
+	color: #000000;
+	background-color: #9dc183;
+	border-color: #9dc183;
+}
+.btn-sage:hover{
+	color: #000000;
+	background-color: #c9ddbb;
+	border-color: #c9ddbb;
+}
+
+/*-------------------------------*/
+/*		Olive Button					*/
+/*-------------------------------*/
+
+.btn-olive{
+	color: #ffffff;
+	background-color: #708238;
+	border-color: #708238;
+}
+.btn-olive:hover{
+	color: #ffffff;
+	background-color: #3d471f;
+	border-color: #3d471f;
+}
+
+/*-------------------------------*/
+/*		Lime Button						*/
+/*-------------------------------*/
+
+.btn-lime{
+	color: #000000;
+	background-color: #c7ea46;
+	border-color: #c7ea46;
+}
+.btn-lime:hover{
+	color: #000000;
+	background-color: #dcf28c;
+	border-color: #dcf28c;
+}
+
+/*-------------------------------*/
+/*		Hunter Button					*/
+/*-------------------------------*/
+
+.btn-hunter{
+	color: #ffffff;
+	background-color: #3f704d;
+	border-color: #3f704d;
+}
+.btn-hunter:hover{
+	color: #ffffff;
+	background-color: #25412d;
+	border-color: #25412d;
+}
+
+/*-------------------------------*/
+/*		Jade Button						*/
+/*-------------------------------*/
+
+.btn-jade{
+	color: #ffffff;
+	background-color: #00a86b;
+	border-color: #00a86b;
+}
+.btn-jade:hover{
+	color: #ffffff;
+	background-color: #006641;
+	border-color: #006641;
+}
+
+/*-------------------------------*/
+/*		Artichoke Button				*/
+/*-------------------------------*/
+
+.btn-artichoke{
+	color: #000000;
+	background-color: #8f9779;
+	border-color: #8f9779;
+}
+.btn-artichoke:hover{
+	color: #000000;
+	background-color: #b7bca9;
+	border-color: #b7bca9;
+}
+
+/*-------------------------------*/
+/*		Fern Button						*/
+/*-------------------------------*/
+
+.btn-fern{
+	color: #ffffff;
+	background-color: #4f7942;
+	border-color: #4f7942;
+}
+.btn-fern:hover{
+	color: #ffffff;
+	background-color: #2b4224;
+	border-color: #2b4224;
+}
+
+/*-------------------------------*/
+/*		Jungle Button					*/
+/*-------------------------------*/
+
+.btn-jungle{
+	color: #ffffff;
+	background-color: #29ab87;
+	border-color: #29ab87;
+}
+.btn-jungle:hover{
+	color: #ffffff;
+	background-color: #196751;
+	border-color: #196751;
+}
+
+/*-------------------------------*/
+/*		Laurel Button					*/
+/*-------------------------------*/
+
+.btn-laurel{
+	color: #000000;
+	background-color: #a9ba9d;
+	border-color: #a9ba9d;
+}
+.btn-laurel:hover{
+	color: #000000;
+	background-color: #cbd5c3;
+	border-color: #cbd5c3;
+}
+
+/*-------------------------------*/
+/*		Moss Button						*/
+/*-------------------------------*/
+
+.btn-moss{
+	color: #ffffff;
+	background-color: #8a9a5b;
+	border-color: #8a9a5b;
+}
+.btn-moss:hover{
+	color: #ffffff;
+	background-color: #657042;
+	border-color: #657042;
+}
+
+/*-------------------------------*/
+/*		Mint Button						*/
+/*-------------------------------*/
+
+.btn-mint{
+	color: #000000;
+	background-color: #98fb98;
+	border-color: #98fb98;
+}
+.btn-mint:hover{
+	color: #000000;
+	background-color: #53f953;
+	border-color: #53f953;
+}
+
+/*-------------------------------*/
+/*		Pine Button						*/
+/*-------------------------------*/
+
+.btn-pine{
+	color: #ffffff;
+	background-color: #01796f;
+	border-color: #01796f;
+}
+.btn-pine:hover{
+	color: #ffffff;
+	background-color: #02cab9;
+	border-color: #02cab9;
+}
+
+/*-------------------------------*/
+/*		Tea Button						*/
+/*-------------------------------*/
+
+.btn-tea{
+	color: #000000;
+	background-color: #d0f0c0;
+	border-color: #d0f0c0;
+}
+.btn-tea:hover{
+	color: #000000;
+	background-color: #a3e283;
+	border-color: #a3e283;
+}
+
+/*-------------------------------*/
+/*		Army Button						*/
+/*-------------------------------*/
+
+.btn-army{
+	color: #ffffff;
+	background-color: #4b5320;
+	border-color: #4b5320;
+}
+.btn-army:hover{
+	color: #ffffff;
+	background-color: #859339;
+	border-color: #859339;
+}
+
+/*-------------------------------*/
+/*		Emerald Button					*/
+/*-------------------------------*/
+
+.btn-emerald{
+	color: #000000;
+	background-color: #50c878;
+	border-color: #50c878;
+}
+.btn-emerald:hover{
+	color: #000000;
+	background-color: #8bdaa5;
+	border-color: #8bdaa5;
+}
+
+/*-------------------------------*/
+/*		Kelly Button					*/
+/*-------------------------------*/
+
+.btn-kelly{
+	color: #ffffff;
+	background-color: #4cbb17;
+	border-color: #4cbb17;
+}
+.btn-kelly:hover{
+	color: #ffffff;
+	background-color: #2e710e;
+	border-color: #2e710e;
+}
+
+/*-------------------------------*/
+/*		Sacramento Button				*/
+/*-------------------------------*/
+
+.btn-sacramento{
+	color: #ffffff;
+	background-color: #043927;
+	border-color: #043927;
+}
+.btn-sacramento:hover{
+	color: #ffffff;
+	background-color: #087752;
+	border-color: #087752;
+}
+
+/*-------------------------------*/
+/*		Sea Green Button				*/
+/*-------------------------------*/
+
+.btn-sea-green{
+	color: #ffffff;
+	background-color: #2e8b57;
+	border-color: #2e8b57;
+}
+.btn-sea-green:hover{
+	color: #ffffff;
+	background-color: #194d30;
+	border-color: #194d30;
+}
+
+/*-------------------------------*/
+/*		Brown Button					*/
+/*-------------------------------*/
+
+.btn-brown{
+	color: #ffffff;
+	background-color: #7c4700;
+	border-color: #7c4700;
+}
+.btn-brown:hover{
+	color: #ffffff;
+	background-color: #4d2b00;
+	border-color: #4d2b00;
+}
+
+/*-------------------------------
+		Outline-Brown Button
+-------------------------------*/
+
+.btn-outline-brown{
+	color: #7c4700;
+	background-color: #ffffff;
+	border-color: #7c4700 !important;
+}
+
+.btn-outline-brown:hover{
+	color: #ffffff;
+	background-color: #7c4700;
+	border-color: #7c4700;
+}
+
+
+/*-------------------------------*/
+/*		Cedar Button					*/
+/*-------------------------------*/
+
+.btn-cedar{
+	color: #ffffff;
+	background-color: #4b3a26;
+	border-color: #4b3a26;
+}
+.btn-cedar:hover{
+	color: #ffffff;
+	background-color: #775b3c;
+	border-color: #775b3c;
+}
+
+/*-------------------------------*/
+/*		Cinnamon Button				*/
+/*-------------------------------*/
+
+.btn-cinnamon{
+	color: #ffffff;
+	background-color: #622a0f;
+	border-color: #622a0f;
+}
+.btn-cinnamon:hover{
+	color: #ffffff;
+	background-color: #9a4418;
+	border-color: #9a4418;
+}
+
+/*-------------------------------*/
+/*		Brunette Button				*/
+/*-------------------------------*/
+
+.btn-brunette{
+	color: #ffffff;
+	background-color: #3a1f04;
+	border-color: #3a1f04;
+}
+.btn-brunette:hover{
+	color: #ffffff;
+	background-color: #774008;
+	border-color: #774008;
+}
+
+/*-------------------------------*/
+/*		Mocha Button					*/
+/*-------------------------------*/
+
+.btn-mocha{
+	color: #ffffff;
+	background-color: #3b270c;
+	border-color: #3b270c;
+}
+.btn-mocha:hover{
+	color: #ffffff;
+	background-color: #7f531a;
+	border-color: #7f531a;
+}
+
+/*-------------------------------*/
+/*		Umber Button					*/
+/*-------------------------------*/
+
+.btn-umber{
+	color: #ffffff;
+	background-color: #362312;
+	border-color: #362312;
+}
+.btn-umber:hover{
+	color: #ffffff;
+	background-color: #734a26;
+	border-color: #734a26;
+}
+
+/*-------------------------------*/
+/*		Tortilla Button				*/
+/*-------------------------------*/
+
+.btn-tortilla{
+	color: #ffffff;
+	background-color: #997950;
+	border-color: #997950;
+}
+.btn-tortilla:hover{
+	color: #ffffff;
+	background-color: #645035;
+	border-color: #645035;
+}
+
+/*-------------------------------*/
+/*		Chocolate Button				*/
+/*-------------------------------*/
+
+.btn-chocolate{
+	color: #ffffff;
+	background-color: #2b1700;
+	border-color: #2b1700;
+}
+.btn-chocolate:hover{
+	color: #ffffff;
+	background-color: #804400;
+	border-color: #804400;
+}
+
+/*-------------------------------*/
+/*		Syrup Button					*/
+/*-------------------------------*/
+
+.btn-syrup{
+	color: #ffffff;
+	background-color: #492000;
+	border-color: #492000;
+}
+.btn-syrup:hover{
+	color: #ffffff;
+	background-color: #994200;
+	border-color: #994200;
+}
+
+/*-------------------------------*/
+/*		Gingerbread Button			*/
+/*-------------------------------*/
+
+.btn-gingerbread{
+	color: #ffffff;
+	background-color: #5c2c06;
+	border-color: #5c2c06;
+}
+.btn-gingerbread:hover{
+	color: #ffffff;
+	background-color: #a8510b;
+	border-color: #a8510b;
+}
+
+/*-------------------------------*/
+/*		Caramel Button					*/
+/*-------------------------------*/
+
+.btn-caramel{
+	color: #ffffff;
+	background-color: #613613;
+	border-color: #613613;
+}
+.btn-caramel:hover{
+	color: #ffffff;
+	background-color: #aa5f22;
+	border-color: #aa5f22;
+}
+
+/*-------------------------------*/
+/*		Walnut Button					*/
+/*-------------------------------*/
+
+.btn-walnut{
+	color: #ffffff;
+	background-color: #43270f;
+	border-color: #43270f;
+}
+.btn-walnut:hover{
+	color: #ffffff;
+	background-color: #7d491c;
+	border-color: #7d491c;
+}
+
+/*-------------------------------*/
+/*		Pecan Button					*/
+/*-------------------------------*/
+
+.btn-pecan{
+	color: #ffffff;
+	background-color: #48260d;
+	border-color: #48260d;
+}
+.btn-pecan:hover{
+	color: #ffffff;
+	background-color: #814418;
+	border-color: #814418;
+}
+
+/*-------------------------------*/
+/*		Wood Button						*/
+/*-------------------------------*/
+
+.btn-wood{
+	color: #ffffff;
+	background-color: #402f1d;
+	border-color: #402f1d;
+}
+.btn-wood:hover{
+	color: #ffffff;
+	background-color: #7b5a37;
+	border-color: #7b5a37;
+}
+
+/*-------------------------------*/
+/*		Hickory Button					*/
+/*-------------------------------*/
+
+.btn-hickory{
+	color: #ffffff;
+	background-color: #351e10;
+	border-color: #351e10;
+}
+.btn-hickory:hover{
+	color: #ffffff;
+	background-color: #764323;
+	border-color: #764323;
+}
+
+/*-------------------------------*/
+/*		Espresso Button				*/
+/*-------------------------------*/
+
+.btn-espresso{
+	color: #ffffff;
+	background-color: #4b382a;
+	border-color: #4b382a;
+}
+.btn-espresso:hover{
+	color: #ffffff;
+	background-color: #936d53;
+	border-color: #936d53;
+}
+
+/*-------------------------------*/
+/*		Peanut Button					*/
+/*-------------------------------*/
+
+.btn-peanut{
+	color: #ffffff;
+	background-color: #795c32;
+	border-color: #795c32;
+}
+.btn-peanut:hover{
+	color: #ffffff;
+	background-color: #48371e;
+	border-color: #48371e;
+}
+
+/*-------------------------------*/
+/*		Tawny Button					*/
+/*-------------------------------*/
+
+.btn-tawny{
+	color: #ffffff;
+	background-color: #7e481c;
+	border-color: #7e481c;
+}
+.btn-tawny:hover{
+	color: #ffffff;
+	background-color: #3f240e;
+	border-color: #3f240e;
+}
+
+/*-------------------------------*/
+/*		Coffee Button					*/
+/*-------------------------------*/
+
+.btn-coffee{
+	color: #ffffff;
+	background-color: #4b3619;
+	border-color: #4b3619;
+}
+.btn-coffee:hover{
+	color: #ffffff;
+	background-color: #86612d;
+	border-color: #86612d;
+}
+
+/*-------------------------------*/
+/*		Russet Button					*/
+/*-------------------------------*/
+
+.btn-russet{
+	color: #ffffff;
+	background-color: #7f461b;
+	border-color: #7f461b;
+}
+.btn-russet:hover{
+	color: #ffffff;
+	background-color: #3f230d;
+	border-color: #3f230d;
+}
+
+/*-------------------------------*/
+/*		Gray Button						*/
+/*-------------------------------*/
+
+.btn-gray{
+	color: #000000;
+	background-color: #828282;
+	border-color: #828282;
+}
+.btn-gray:hover{
+	color: #000000;
+	background-color: #a6a6a6;
+	border-color: #a6a6a6;
+}
+
+/*-------------------------------*/
+/*		Fossil Button					*/
+/*-------------------------------*/
+
+.btn-fossil{
+	color: #ffffff;
+	background-color: #787276;
+	border-color: #787276;
+}
+.btn-fossil:hover{
+	color: #ffffff;
+	background-color: #4f4a4d;
+	border-color: #4f4a4d;
+}
+
+/*-------------------------------*/
+/*		Mink Button						*/
+/*-------------------------------*/
+
+.btn-mink{
+	color: #000000;
+	background-color: #88807b;
+	border-color: #88807b;
+}
+.btn-mink:hover{
+	color: #000000;
+	background-color: #aaa5a1;
+	border-color: #aaa5a1;
+}
+
+/*-------------------------------*/
+/*		Pearl River Button			*/
+/*-------------------------------*/
+
+.btn-pearl-river{
+	color: #000000;
+	background-color: #d9dddc;
+	border-color: #d9dddc;
+}
+.btn-pearl-river:hover{
+	color: #000000;
+	background-color: #aeb7b5;
+	border-color: #aeb7b5;
+}
+
+/*-------------------------------*/
+/*		Abalone Button					*/
+/*-------------------------------*/
+
+.btn-abalone{
+	color: #000000;
+	background-color: #d6cfc7;
+	border-color: #d6cfc7;
+}
+.btn-abalone:hover{
+	color: #000000;
+	background-color: #beb3a7;
+	border-color: #beb3a7;
+}
+
+/*-------------------------------*/
+/*		Harbor Gray Button			*/
+/*-------------------------------*/
+
+.btn-harbor-gray{
+	color: #000000;
+	background-color: #c7c6c1;
+	border-color: #c7c6c1;
+}
+.btn-harbor-gray:hover{
+	color: #000000;
+	background-color: #9e9c94;
+	border-color: #9e9c94;
+}
+
+/*-------------------------------*/
+/*		Smoke Button					*/
+/*-------------------------------*/
+
+.btn-smoke{
+	color: #000000;
+	background-color: #bebdb8;
+	border-color: #bebdb8;
+}
+.btn-smoke:hover{
+	color: #000000;
+	background-color: #e7e6e4;
+	border-color: #e7e6e4;
+}
+
+/*-------------------------------*/
+/*		Thunder Button					*/
+/*-------------------------------*/
+
+.btn-thunder{
+	color: #000000;
+	background-color: #bdb7ab;
+	border-color: #bdb7ab;
+}
+.btn-thunder:hover{
+	color: #000000;
+	background-color: #dddad4;
+	border-color: #dddad4;
+}
+
+/*-------------------------------*/
+/*		Pewter Button					*/
+/*-------------------------------*/
+
+.btn-pewter{
+	color: #000000;
+	background-color: #999da0;
+	border-color: #999da0;
+}
+.btn-pewter:hover{
+	color: #000000;
+	background-color: #bdc0c2;
+	border-color: #bdc0c2;
+}
+
+/*-------------------------------*/
+/*		Steel Button					*/
+/*-------------------------------*/
+
+.btn-steel{
+	color: #ffffff;
+	background-color: #777b7e;
+	border-color: #777b7e;
+}
+.btn-steel:hover{
+	color: #ffffff;
+	background-color: #575a5c;
+	border-color: #575a5c;
+}
+
+/*-------------------------------*/
+/*		Stone Button					*/
+/*-------------------------------*/
+
+.btn-stone{
+	color: #000000;
+	background-color: #877f7d;
+	border-color: #877f7d;
+}
+.btn-stone:hover{
+	color: #000000;
+	background-color: #a9a4a2;
+	border-color: #a9a4a2;
+}
+
+/*-------------------------------*/
+/*		Iron Button						*/
+/*-------------------------------*/
+
+.btn-iron{
+	color: #ffffff;
+	background-color: #48494b;
+	border-color: #48494b;
+}
+.btn-iron:hover{
+	color: #ffffff;
+	background-color: #252627;
+	border-color: #252627;
+}
+
+/*-------------------------------*/
+/*		Rhino Button					*/
+/*-------------------------------*/
+
+.btn-rhino{
+	color: #000000;
+	background-color: #b9bbb6;
+	border-color: #b9bbb6;
+}
+.btn-rhino:hover{
+	color: #000000;
+	background-color: #d9dad7;
+	border-color: #d9dad7;
+}
+
+/*-------------------------------*/
+/*		Trout Button					*/
+/*-------------------------------*/
+
+.btn-trout{
+	color: #000000;
+	background-color: #97978f;
+	border-color: #97978f;
+}
+.btn-trout:hover{
+	color: #000000;
+	background-color: #c2c2bd;
+	border-color: #c2c2bd;
+}
+
+/*-------------------------------*/
+/*		Seal Button						*/
+/*-------------------------------*/
+
+.btn-seal{
+	color: #000000;
+	background-color: #818380;
+	border-color: #818380;
+}
+.btn-seal:hover{
+	color: #000000;
+	background-color: #a5a7a5;
+	border-color: #a5a7a5;
+}
+
+/*-------------------------------*/
+/*		Lava Button						*/
+/*-------------------------------*/
+
+.btn-lava{
+	color: #000000;
+	background-color: #808588;
+	border-color: #808588;
+}
+.btn-lava:hover{
+	color: #000000;
+	background-color: #a3a6a8;
+	border-color: #a3a6a8;
+}
+
+/*-------------------------------*/
+/*		Shadown Button					*/
+/*-------------------------------*/
+
+.btn-shadow{
+	color: #ffffff;
+	background-color: #363636;
+	border-color: #363636;
+}
+.btn-shadow:hover{
+	color: #ffffff;
+	background-color: #595959;
+	border-color: #595959;
+}
+
+/*-------------------------------*/
+/*		Ash Button						*/
+/*-------------------------------*/
+
+.btn-ash{
+	color: #ffffff;
+	background-color: #544c4a;
+	border-color: #544c4a;
+}
+.btn-ash:hover{
+	color: #ffffff;
+	background-color: #363130;
+	border-color: #363130;
+}
+
+/*-------------------------------*/
+/*		Anchor Button					*/
+/*-------------------------------*/
+
+.btn-anchor{
+	color: #ffffff;
+	background-color: #3e424b;
+	border-color: #3e424b;
+}
+.btn-anchor:hover{
+	color: #ffffff;
+	background-color: #17191c;
+	border-color: #17191c;
+}
+
+/*-------------------------------*/
+/*		Charcoal Button				*/
+/*-------------------------------*/
+
+.btn-charcoal{
+	color: #ffffff;
+	background-color: #222021;
+	border-color: #222021;
+}
+.btn-charcoal:hover{
+	color: #ffffff;
+	background-color: #4f4a4d;
+	border-color: #4f4a4d;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*																																 */
+/*	BEGIN OUTLINE BUTTONS - THIS WILL NOT INCULDE BUTTONS WHO ALREADY HAVE AN OUTLINE BUTTON      */
+/*																																 */
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------*/
+/*		Pink Outline Button			      */
+/*-------------------------------------*/
+.btn-outline-pink{
+	color: #fc0fc0;
+	background-color: #ffffff;
+	border-color: #fc0fc0 !important;
+}
+.btn-outline-pink:hover{
+	color: #000000;
+	background-color: #fc0fc0;
+	border-color: #fc0fc0;
+}
+
+/*-------------------------------------*/
+/*		Hibiscus Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-hibiscus{
+	color: #b43757;
+	background-color: #ffffff;
+	border-color: #b43757 !important;
+}
+.btn-outline-hibiscus:hover{
+	color: #ffffff;
+	background-color: #b43757;
+	border-color: #b43757;
+}
+
+/*-------------------------------------*/
+/*		Yellow Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-yellow{
+	color: #fff200;
+	background-color: #ffffff;
+	border-color: #fff200 !important;
+}
+.btn-outline-yellow:hover{
+	color: #000000;
+	background-color: #fff200;
+	border-color: #fff200;
+}
+
+/*-------------------------------------*/
+/*		Mellow Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-mellow{
+	color: #f8de7e;
+	background-color: #ffffff;
+	border-color: #f8de7e !important;
+}
+.btn-outline-mellow:hover{
+	color: #000000;
+	background-color: #f8de7e;
+	border-color: #f8de7e;
+}
+
+/*-------------------------------------*/
+/*		Cyber Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-cyber{
+	color: #ffd300;
+	background-color: #ffffff;
+	border-color: #ffd300 !important;
+}
+.btn-outline-cyber:hover{
+	color: #000000;
+	background-color: #ffd300;
+	border-color: #ffd300;
+}
+
+/*-------------------------------------*/
+/*		Royal Yellow Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-royal-yellow{
+	color: #fada5e;
+	background-color: #ffffff;
+	border-color: #fada5e !important;
+}
+.btn-outline-royal-yellow:hover{
+	color: #000000;
+	background-color: #fada5e;
+	border-color: #fada5e;
+}
+
+/*-------------------------------------*/
+/*		Banana Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-banana{
+	color: #fcf4a3;
+	background-color: #ffffff;
+	border-color: #fcf4a3 !important;
+}
+.btn-outline-banana:hover{
+	color: #000000;
+	background-color: #fcf4a3;
+	border-color: #fcf4a3;
+}
+
+/*-------------------------------------*/
+/*		Tuscany Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-tuscany{
+	color: #fcd12a;
+	background-color: #ffffff;
+	border-color: #fcd12a !important;
+}
+.btn-outline-tuscany:hover{
+	color: #000000;
+	background-color: #fcd12a;
+	border-color: #fcd12a;
+}
+
+/*-------------------------------------*/
+/*		Lemon Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-lemon{
+	color: #eefd5f;
+	background-color: #ffffff;
+	border-color: #eefd5f !important;
+}
+.btn-outline-lemon:hover{
+	color: #000000;
+	background-color: #eefd5f;
+	border-color: #eefd5f;
+}
+
+/*-------------------------------------*/
+/*		Bumblebee Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-bumblebee{
+	color: #fce205;
+	background-color: #ffffff;
+	border-color: #fce205 !important;
+}
+.btn-outline-bumblebee:hover{
+	color: #000000;
+	background-color: #fce205;
+	border-color: #fce205;
+}
+
+/*-------------------------------------*/
+/*		Cream Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-cream{
+	color: #fffdd0;
+	background-color: #ffffff;
+	border-color: #fffdd0 !important;
+}
+.btn-outline-cream:hover{
+	color: #000000;
+	background-color: #fffdd0;
+	border-color: #fffdd0;
+}
+
+/*-------------------------------------*/
+/*		Peach Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-peach{
+	color: #ffe5b4;
+	background-color: #ffffff;
+	border-color: #ffe5b4 !important;
+}
+.btn-outline-peach:hover{
+	color: #000000;
+	background-color: #ffe5b4;
+	border-color: #ffe5b4;
+}
+
+/*-------------------------------------*/
+/*		Laguna Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-laguna{
+	color: #f8e473;
+	background-color: #ffffff;
+	border-color: #f8e473 !important;
+}
+.btn-outline-laguna:hover{
+	color: #000000;
+	background-color: #f8e473;
+	border-color: #f8e473;
+}
+
+/*-------------------------------------*/
+/*		Mustard Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-mustard{
+	color: #fedc56;
+	background-color: #ffffff;
+	border-color: #fedc56 !important;
+}
+.btn-outline-mustard:hover{
+	color: #000000;
+	background-color: #fedc56;
+	border-color: #fedc56;
+}
+
+/*-------------------------------------*/
+/*		Corn Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-corn{
+	color: #e4cd05;
+	background-color: #ffffff;
+	border-color: #e4cd05 !important;
+}
+.btn-outline-corn:hover{
+	color: #000000;
+	background-color: #e4cd05;
+	border-color: #e4cd05;
+}
+
+/*-------------------------------------*/
+/*		Pineapple Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-pineapple{
+	color: #fee12b;
+	background-color: #ffffff;
+	border-color: #fee12b !important;
+}
+.btn-outline-pineapple:hover{
+	color: #000000;
+	background-color: #fee12b;
+	border-color: #fee12b;
+}
+
+/*-------------------------------------*/
+/*		Flaxen Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-flaxen{
+	color: #d5b85a;
+	background-color: #ffffff;
+	border-color: #d5b85a !important;
+}
+.btn-outline-flaxen:hover{
+	color: #000000;
+	background-color: #d5b85a;
+	border-color: #d5b85a;
+}
+
+/*-------------------------------------*/
+/*		Egg Nog Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-egg-nog{
+	color: #f9e29c;
+	background-color: #ffffff;
+	border-color: #f9e29c !important;
+}
+.btn-outline-egg-nog:hover{
+	color: #000000;
+	background-color: #f9e29c;
+	border-color: #f9e29c;
+}
+
+/*-------------------------------------*/
+/*		Trombone Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-trombone{
+	color: #d2b55b;
+	background-color: #ffffff;
+	border-color: #d2b55b !important;
+}
+.btn-outline-trombone:hover{
+	color: #000000;
+	background-color: #d2b55b;
+	border-color: #d2b55b;
+}
+
+/*-------------------------------------*/
+/*		Flax Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-flax{
+	color: #eedc82;
+	background-color: #ffffff;
+	border-color: #eedc82 !important;
+}
+.btn-outline-flax:hover{
+	color: #000000;
+	background-color: #eedc82;
+	border-color: #eedc82;
+}
+
+/*-------------------------------------*/
+/*		Ecru Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-ecru{
+	color: #ceb180;
+	background-color: #ffffff;
+	border-color: #ceb180 !important;
+}
+.btn-outline-ecru:hover{
+	color: #000000;
+	background-color: #ceb180;
+	border-color: #ceb180;
+}
+
+/*-------------------------------------*/
+/*		Sepia Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-sepia{
+	color: #e3b778;
+	background-color: #ffffff;
+	border-color: #e3b778 !important;
+}
+.btn-outline-sepia:hover{
+	color: #000000;
+	background-color: #e3b778;
+	border-color: #e3b778;
+}
+
+/*-------------------------------------*/
+/*		Orange Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-orange{
+	color: #fc6600;
+	background-color: #ffffff;
+	border-color: #fc6600 !important;
+}
+.btn-outline-orange:hover{
+	color: #ffffff;
+	background-color: #fc6600;
+	border-color: #fc6600;
+}
+
+/*-------------------------------------*/
+/*		Gold Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-gold{
+	color: #f9a602;
+	background-color: #ffffff;
+	border-color: #f9a602 !important;
+}
+.btn-outline-gold:hover{
+	color: #ffffff;
+	background-color: #f9a602;
+	border-color: #f9a602;
+}
+
+/*-------------------------------------*/
+/*		Goldenrod Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-goldenrod{
+	color: #dba520;
+	background-color: #ffffff;
+	border-color: #dba520 !important;
+}
+.btn-outline-goldenrod:hover{
+	color: #ffffff;
+	background-color: #dba520;
+	border-color: #dba520;
+}
+
+/*-------------------------------------*/
+/*		Pumpkin Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-pumpkin{
+	color: #ff7417;
+	background-color: #ffffff;
+	border-color: #ff7417 !important;
+}
+.btn-outline-pumpkin:hover{
+	color: #ffffff;
+	background-color: #ff7417;
+	border-color: #ff7417;
+}
+
+/*-------------------------------------*/
+/*		Fire Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-fire{
+	color: #fda50f;
+	background-color: #ffffff;
+	border-color: #fda50f !important;
+}
+.btn-outline-fire:hover{
+	color: #ffffff;
+	background-color: #fda50f;
+	border-color: #fda50f;
+}
+
+/*-------------------------------------*/
+/*		Ochre Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-ochre{
+	color: #cc7722;
+	background-color: #ffffff;
+	border-color: #cc7722 !important;
+}
+.btn-outline-ochre:hover{
+	color: #ffffff;
+	background-color: #cc7722;
+	border-color: #cc7722;
+}
+
+/*-------------------------------------*/
+/*		Burnt Orange Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-burnt-orange{
+	color: #964000;
+	background-color: #ffffff;
+	border-color: #964000 !important;
+}
+.btn-outline-burnt-orange:hover{
+	color: #ffffff;
+	background-color: #964000;
+	border-color: #964000;
+}
+
+/*-------------------------------------*/
+/*		Dijon Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-dijon{
+	color: #c49102;
+	background-color: #ffffff;
+	border-color: #c49102 !important;
+}
+.btn-outline-dijon:hover{
+	color: #ffffff;
+	background-color: #c49102;
+	border-color: #c49102;
+}
+
+/*-------------------------------------*/
+/*		Tangerine Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-tangerine{
+	color: #f9812a;
+	background-color: #ffffff;
+	border-color: #f9812a !important;
+}
+.btn-outline-tangerine:hover{
+	color: #ffffff;
+	background-color: #f9812a;
+	border-color: #f9812a;
+}
+
+/*-------------------------------------*/
+/*		Tiger Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-tiger{
+	color: #fd6a02;
+	background-color: #ffffff;
+	border-color: #fd6a02 !important;
+}
+.btn-outline-tiger:hover{
+	color: #ffffff;
+	background-color: #fd6a02;
+	border-color: #fd6a02;
+}
+
+/*-------------------------------------*/
+/*		Honey Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-honey{
+	color: #eb9605;
+	background-color: #ffffff;
+	border-color: #eb9605 !important;
+}
+.btn-outline-honey:hover{
+	color: #ffffff;
+	background-color: #eb9605;
+	border-color: #eb9605;
+}
+
+/*-------------------------------------*/
+/*		Carrot Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-carrot{
+	color: #ef7215;
+	background-color: #ffffff;
+	border-color: #ef7215 !important;
+}
+.btn-outline-carrot:hover{
+	color: #ffffff;
+	background-color: #ef7215;
+	border-color: #ef7215;
+}
+
+/*-------------------------------------*/
+/*		Amber Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-amber{
+	color: #ffbf00;
+	background-color: #ffffff;
+	border-color: #ffbf00 !important;
+}
+.btn-outline-amber:hover{
+	color: #ffffff;
+	background-color: #ffbf00;
+	border-color: #ffbf00;
+}
+
+/*-------------------------------------*/
+/*		Apricot Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-apricot{
+	color: #ef820d;
+	background-color: #ffffff;
+	border-color: #ef820d !important;
+}
+.btn-outline-apricot:hover{
+	color: #ffffff;
+	background-color: #ef820d;
+	border-color: #ef820d;
+}
+
+/*-------------------------------------*/
+/*		Bronze Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-bronze{
+	color: #b1560f;
+	background-color: #ffffff;
+	border-color: #b1560f !important;
+}
+.btn-outline-bronze:hover{
+	color: #ffffff;
+	background-color: #b1560f;
+	border-color: #b1560f;
+}
+
+/*-------------------------------------*/
+/*		Cider Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-cider{
+	color: #b3672b;
+	background-color: #ffffff;
+	border-color: #b3672b !important;
+}
+.btn-outline-cider:hover{
+	color: #ffffff;
+	background-color: #b3672b;
+	border-color: #b3672b;
+}
+
+/*-------------------------------------*/
+/*		Clay Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-clay{
+	color: #813f0b;
+	background-color: #ffffff;
+	border-color: #813f0b !important;
+}
+.btn-outline-clay:hover{
+	color: #ffffff;
+	background-color: #813f0b;
+	border-color: #813f0b;
+}
+
+/*-------------------------------------*/
+/*		Rust Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-rust{
+	color: #8b4000;
+	background-color: #ffffff;
+	border-color: #8b4000 !important;
+}
+.btn-outline-rust:hover{
+	color: #ffffff;
+	background-color: #8b4000;
+	border-color: #8b4000;
+}
+
+/*-------------------------------------*/
+/*		Amber 2 Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-amber2{
+	color: #883000;
+	background-color: #ffffff;
+	border-color: #883000 !important;
+}
+.btn-outline-amber2:hover{
+	color: #ffffff;
+	background-color: #883000;
+	border-color: #883000;
+}
+
+/*-------------------------------------*/
+/*		Spice Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-spice{
+	color: #793802;
+	background-color: #ffffff;
+	border-color: #793802 !important;
+}
+.btn-outline-spice:hover{
+	color: #ffffff;
+	background-color: #793802;
+	border-color: #793802;
+}
+
+/*-------------------------------------*/
+/*		Red Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-red{
+	color: #d30000;
+	background-color: #ffffff;
+	border-color: #d30000 !important;
+}
+.btn-outline-red:hover{
+	color: #ffffff;
+	background-color: #d30000;
+	border-color: #d30000;
+}
+
+/*-------------------------------------*/
+/*		Salmon Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-salmon{
+	color: #fa8072;
+	background-color: #ffffff;
+	border-color: #fa8072 !important;
+}
+.btn-outline-salmon:hover{
+	color: #ffffff;
+	background-color: #fa8072;
+	border-color: #fa8072;
+}
+
+/*-------------------------------------*/
+/*		Scarlet Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-scarlet{
+	color: #ff2400;
+	background-color: #ffffff;
+	border-color: #ff2400 !important;
+}
+.btn-outline-scarlet:hover{
+	color: #ffffff;
+	background-color: #ff2400;
+	border-color: #ff2400;
+}
+
+/*-------------------------------------*/
+/*		Barn Red Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-barn-red{
+	color: #7c0a02;
+	background-color: #ffffff;
+	border-color: #7c0a02 !important;
+}
+.btn-outline-barn-red:hover{
+	color: #ffffff;
+	background-color: #7c0a02;
+	border-color: #7c0a02;
+}
+
+/*-------------------------------------*/
+/*		Imperial Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-imperial{
+	color: #ed2939;
+	background-color: #ffffff;
+	border-color: #ed2939 !important;
+}
+.btn-outline-imperial:hover{
+	color: #ffffff;
+	background-color: #ed2939;
+	border-color: #ed2939;
+}
+
+/*-------------------------------------*/
+/*		Indian Red Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-indian-red{
+	color: #cd5c5c;
+	background-color: #ffffff;
+	border-color: #cd5c5c !important;
+}
+.btn-outline-indian-red:hover{
+	color: #ffffff;
+	background-color: #cd5c5c;
+	border-color: #cd5c5c;
+}
+
+/*-------------------------------------*/
+/*		Chili Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-chili{
+	color: #c21807;
+	background-color: #ffffff;
+	border-color: #c21807 !important;
+}
+.btn-outline-chili:hover{
+	color: #ffffff;
+	background-color: #c21807;
+	border-color: #c21807;
+}
+
+/*-------------------------------------*/
+/*		Fire Brick Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-fire-brick{
+	color: #b22222;
+	background-color: #ffffff;
+	border-color: #b22222 !important;
+}
+.btn-outline-fire-brick:hover{
+	color: #ffffff;
+	background-color: #b22222;
+	border-color: #b22222;
+}
+
+/*-------------------------------------*/
+/*		Maroon Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-maroon{
+	color: #800000;
+	background-color: #ffffff;
+	border-color: #800000 !important;
+}
+.btn-outline-maroon:hover{
+	color: #ffffff;
+	background-color: #800000;
+	border-color: #800000;
+}
+
+/*-------------------------------------*/
+/*		Redwood Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-redwood{
+	color: #a45a52;
+	background-color: #ffffff;
+	border-color: #a45a52 !important;
+}
+.btn-outline-redwood:hover{
+	color: #ffffff;
+	background-color: #a45a52;
+	border-color: #a45a52;
+}
+
+/*-------------------------------------*/
+/*		Raspberry Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-raspberry{
+	color: #d21f3c;
+	background-color: #ffffff;
+	border-color: #d21f3c !important;
+}
+.btn-outline-raspberry:hover{
+	color: #ffffff;
+	background-color: #d21f3c;
+	border-color: #d21f3c;
+}
+
+/*-------------------------------------*/
+/*		Candy Apple Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-candy-apple{
+	color: #ff0800;
+	background-color: #ffffff;
+	border-color: #ff0800 !important;
+}
+.btn-outline-candy-apple:hover{
+	color: #ffffff;
+	background-color: #ff0800;
+	border-color: #ff0800;
+}
+
+/*-------------------------------------*/
+/*		Ferrari Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-ferrari{
+	color: #ff2800;
+	background-color: #ffffff;
+	border-color: #ff2800 !important;
+}
+.btn-outline-ferrari:hover{
+	color: #ffffff;
+	background-color: #ff2800;
+	border-color: #ff2800;
+}
+
+/*-------------------------------------*/
+/*		Persian Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-persian{
+	color: #ca3433;
+	background-color: #ffffff;
+	border-color: #ca3433 !important;
+}
+.btn-outline-persian:hover{
+	color: #ffffff;
+	background-color: #ca3433;
+	border-color: #ca3433;
+}
+
+/*-------------------------------------*/
+/*		US Flag Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-us-flag{
+	color: #bf0a30;
+	background-color: #ffffff;
+	border-color: #bf0a30 !important;
+}
+.btn-outline-us-flag:hover{
+	color: #ffffff;
+	background-color: #bf0a30;
+	border-color: #bf0a30;
+}
+
+/*-------------------------------------*/
+/*		Carmine Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-carmine{
+	color: #960019;
+	background-color: #ffffff;
+	border-color: #960019 !important;
+}
+.btn-outline-carmine:hover{
+	color: #ffffff;
+	background-color: #960019;
+	border-color: #960019;
+}
+
+/*-------------------------------------*/
+/*		Burgundy Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-burgundy{
+	color: #8d021f;
+	background-color: #ffffff;
+	border-color: #8d021f !important;
+}
+.btn-outline-burgundy:hover{
+	color: #ffffff;
+	background-color: #8d021f;
+	border-color: #8d021f;
+}
+
+/*-------------------------------------*/
+/*		Crimson Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-crimson{
+	color: #b80f0a;
+	background-color: #ffffff;
+	border-color: #b80f0a !important;
+}
+.btn-outline-crimson:hover{
+	color: #ffffff;
+	background-color: #b80f0a;
+	border-color: #b80f0a;
+}
+
+/*-------------------------------------*/
+/*		Sangria Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-sangria{
+	color: #5e1914;
+	background-color: #ffffff;
+	border-color: #5e1914 !important;
+}
+.btn-outline-sangria:hover{
+	color: #ffffff;
+	background-color: #5e1914;
+	border-color: #5e1914;
+}
+
+/*-------------------------------------*/
+/*		Mahogany Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-mahogany{
+	color: #420d09;
+	background-color: #ffffff;
+	border-color: #420d09 !important;
+}
+.btn-outline-mahogany:hover{
+	color: #ffffff;
+	background-color: #420d09;
+	border-color: #420d09;
+}
+
+/*-------------------------------------*/
+/*		Pink Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-pink{
+	color: #fc0fc0;
+	background-color: #ffffff;
+	border-color: #fc0fc0 !important;
+}
+.btn-outline-pink:hover{
+	color: #000000;
+	background-color: #fc0fc0;
+	border-color: #fc0fc0;
+}
+
+/*-------------------------------------*/
+/*		Ruby Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-ruby{
+	color: #e0115f;
+	background-color: #ffffff;
+	border-color: #e0115f !important;
+}
+.btn-outline-ruby:hover{
+	color: #000000;
+	background-color: #e0115f;
+	border-color: #e0115f;
+}
+
+/*-------------------------------------*/
+/*		Ultra Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-ultra{
+	color: #ff6fff;
+	background-color: #ffffff;
+	border-color: #ff6fff !important;
+}
+.btn-outline-ultra:hover{
+	color: #000000;
+	background-color: #ff6fff;
+	border-color: #ff6fff;
+}
+
+/*-------------------------------------*/
+/*		Magenta Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-magenta{
+	color: #ff0090;
+	background-color: #ffffff;
+	border-color: #ff0090 !important;
+}
+.btn-outline-magenta:hover{
+	color: #000000;
+	background-color: #ff0090;
+	border-color: #ff0090;
+}
+
+/*-------------------------------------*/
+/*		Rose Pink Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-rose-pink{
+	color: #ff66cc;
+	background-color: #ffffff;
+	border-color: #ff66cc !important;
+}
+.btn-outline-rose-pink:hover{
+	color: #000000;
+	background-color: #ff66cc;
+	border-color: #ff66cc;
+}
+
+/*-------------------------------------*/
+/*		Lavender Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-pink-lavender{
+	color: #fbaed2;
+	background-color: #ffffff;
+	border-color: #fbaed2 !important;
+}
+.btn-outline-pink-lavender:hover{
+	color: #000000;
+	background-color: #fbaed2;
+	border-color: #fbaed2;
+}
+
+/*-------------------------------------*/
+/*		Creamy Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-creamy{
+	color: #ff69b4;
+	background-color: #ffffff;
+	border-color: #ff69b4 !important;
+}
+.btn-outline-creamy:hover{
+	color: #000000;
+	background-color: #ff69b4;
+	border-color: #ff69b4;
+}
+
+/*-------------------------------------*/
+/*		Fuchsia Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-fuchsia{
+	color: #ff00ff;
+	background-color: #ffffff;
+	border-color: #ff00ff !important;
+}
+.btn-outline-fuchsia:hover{
+	color: #000000;
+	background-color: #ff00ff;
+	border-color: #ff00ff;
+}
+
+/*-------------------------------------*/
+/*		French Rose Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-french-rose{
+	color: #f64a8a;
+	background-color: #ffffff;
+	border-color: #f64a8a !important;
+}
+.btn-outline-french-rose:hover{
+	color: #000000;
+	background-color: #f64a8a;
+	border-color: #f64a8a;
+}
+
+/*-------------------------------------*/
+/*		Cerise Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-cerise{
+	color: #de3163;
+	background-color: #ffffff;
+	border-color: #de3163 !important;
+}
+.btn-outline-cerise:hover{
+	color: #000000;
+	background-color: #de3163;
+	border-color: #de3163;
+}
+
+/*-------------------------------------*/
+/*		Carnation Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-carnation{
+	color: #ffa6c9;
+	background-color: #ffffff;
+	border-color: #ffa6c9 !important;
+}
+.btn-outline-carnation:hover{
+	color: #000000;
+	background-color: #ffa6c9;
+	border-color: #ffa6c9;
+}
+
+/*-------------------------------------*/
+/*		Brick Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-brick{
+	color: #fb607f;
+	background-color: #ffffff;
+	border-color: #fb607f !important;
+}
+.btn-outline-brick:hover{
+	color: #000000;
+	background-color: #fb607f;
+	border-color: #fb607f;
+}
+
+/*-------------------------------------*/
+/*		Amaranth Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-amaranth{
+	color: #f19cbb;
+	background-color: #ffffff;
+	border-color: #f19cbb !important;
+}
+.btn-outline-amaranth:hover{
+	color: #000000;
+	background-color: #f19cbb;
+	border-color: #f19cbb;
+}
+
+/*-------------------------------------*/
+/*		Taffy Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-taffy{
+	color: #f987c5;
+	background-color: #ffffff;
+	border-color: #f987c5 !important;
+}
+.btn-outline-taffy:hover{
+	color: #000000;
+	background-color: #f987c5;
+	border-color: #f987c5;
+}
+
+/*-------------------------------------*/
+/*		Bubble Gum Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-bubble-gum{
+	color: #fe5bac;
+	background-color: #ffffff;
+	border-color: #fe5bac !important;
+}
+.btn-outline-bubble-gum:hover{
+	color: #000000;
+	background-color: #fe5bac;
+	border-color: #fe5bac;
+}
+
+/*-------------------------------------*/
+/*		Punch Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-punch{
+	color: #ec5578;
+	background-color: #ffffff;
+	border-color: #ec5578 !important;
+}
+.btn-outline-punch:hover{
+	color: #000000;
+	background-color: #ec5578;
+	border-color: #ec5578;
+}
+
+/*-------------------------------------*/
+/*		Pink Lemonade Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-pink-lemonade{
+	color: #fdb9c8;
+	background-color: #ffffff;
+	border-color: #fdb9c8 !important;
+}
+.btn-outline-pink-lemonade:hover{
+	color: #000000;
+	background-color: #fdb9c8;
+	border-color: #fdb9c8;
+}
+
+/*-------------------------------------*/
+/*		Flamingo Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-flamingo{
+	color: #fca3b7;
+	background-color: #ffffff;
+	border-color: #fca3b7 !important;
+}
+.btn-outline-flamingo:hover{
+	color: #000000;
+	background-color: #fca3b7;
+	border-color: #fca3b7;
+}
+
+/*-------------------------------------*/
+/*		Violet Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-violet{
+	color: #b200ed;
+	background-color: #ffffff;
+	border-color: #b200ed !important;
+}
+.btn-outline-violet:hover{
+	color: #ffffff;
+	background-color: #b200ed;
+	border-color: #b200ed;
+}
+
+/*-------------------------------------*/
+/*		Mauve Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-mauve{
+	color: #784b84;
+	background-color: #ffffff;
+	border-color: #784b84 !important;
+}
+.btn-outline-mauve:hover{
+	color: #ffffff;
+	background-color: #784b84;
+	border-color: #784b84;
+}
+
+/*-------------------------------------*/
+/*		Mulberry Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-mulberry{
+	color: #c64b8c;
+	background-color: #ffffff;
+	border-color: #c64b8c !important;
+}
+.btn-outline-mulberry:hover{
+	color: #ffffff;
+	background-color: #c64b8c;
+	border-color: #c64b8c;
+}
+
+/*-------------------------------------*/
+/*		Lavender Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-lavender{
+	color: #e4a0f7;
+	background-color: #ffffff;
+	border-color: #e4a0f7 !important;
+}
+.btn-outline-lavender:hover{
+	color: #000000;
+	background-color: #e4a0f7;
+	border-color: #e4a0f7;
+}
+
+/*-------------------------------------*/
+/*		Orchid Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-orchid{
+	color: #af69ee;
+	background-color: #ffffff;
+	border-color: #af69ee !important;
+}
+.btn-outline-orchid:hover{
+	color: #000000;
+	background-color: #af69ee;
+	border-color: #af69ee;
+}
+
+/*-------------------------------------*/
+/*		Lilac Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-lilac{
+	color: #b660cd;
+	background-color: #ffffff;
+	border-color: #b660cd !important;
+}
+.btn-outline-lilac:hover{
+	color: #000000;
+	background-color: #b660cd;
+	border-color: #b660cd;
+}
+
+/*-------------------------------------*/
+/*		Electric Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-electric{
+	color: #8f00ff;
+	background-color: #ffffff;
+	border-color: #8f00ff !important;
+}
+.btn-outline-electric:hover{
+	color: #000000;
+	background-color: #8f00ff;
+	border-color: #8f00ff;
+}
+
+/*-------------------------------------*/
+/*		African Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-african{
+	color: #b284be;
+	background-color: #ffffff;
+	border-color: #b284be !important;
+}
+.btn-outline-african:hover{
+	color: #000000;
+	background-color: #b284be;
+	border-color: #b284be;
+}
+
+/*-------------------------------------*/
+/*		Grape Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-grape{
+	color: #6f2da8;
+	background-color: #ffffff;
+	border-color: #6f2da8 !important;
+}
+.btn-outline-grape:hover{
+	color: #ffffff;
+	background-color: #6f2da8;
+	border-color: #6f2da8;
+}
+
+/*-------------------------------------*/
+/*		Amethyst Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-amethyst{
+	color: #9966cb;
+	background-color: #ffffff;
+	border-color: #9966cb !important;
+}
+.btn-outline-amethyst:hover{
+	color: #000000;
+	background-color: #9966cb;
+	border-color: #9966cb;
+}
+
+/*-------------------------------------*/
+/*		Byzantine Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-byzantine{
+	color: #702963;
+	background-color: #ffffff;
+	border-color: #702963 !important;
+}
+.btn-outline-byzantine:hover{
+	color: #ffffff;
+	background-color: #702963;
+	border-color: #702963;
+}
+
+/*-------------------------------------*/
+/*		Fandango Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-fandango{
+	color: #b5338a;
+	background-color: #ffffff;
+	border-color: #b5338a !important;
+}
+.btn-outline-fandango:hover{
+	color: #ffffff;
+	background-color: #b5338a;
+	border-color: #b5338a;
+}
+
+/*-------------------------------------*/
+/*		Helio Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-helio{
+	color: #de73ff;
+	background-color: #ffffff;
+	border-color: #de73ff !important;
+}
+.btn-outline-helio:hover{
+	color: #000000;
+	background-color: #de73ff;
+	border-color: #de73ff;
+}
+
+/*-------------------------------------*/
+/*		Floral Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-floral{
+	color: #b47ede;
+	background-color: #ffffff;
+	border-color: #b47ede !important;
+}
+.btn-outline-floral:hover{
+	color: #000000;
+	background-color: #b47ede;
+	border-color: #b47ede;
+}
+
+/*-------------------------------------*/
+/*		Thistle Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-thistle{
+	color: #d7bfdc;
+	background-color: #ffffff;
+	border-color: #d7bfdc !important;
+}
+.btn-outline-thistle:hover{
+	color: #000000;
+	background-color: #d7bfdc;
+	border-color: #d7bfdc;
+}
+
+/*-------------------------------------*/
+/*		Royal Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-royal{
+	color: #7852a9;
+	background-color: #ffffff;
+	border-color: #7852a9 !important;
+}
+.btn-outline-royal:hover{
+	color: #ffffff;
+	background-color: #7852a9;
+	border-color: #7852a9;
+}
+
+/*-------------------------------------*/
+/*		Lollipop Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-lollipop{
+	color: #81007f;
+	background-color: #ffffff;
+	border-color: #81007f !important;
+}
+.btn-outline-lollipop:hover{
+	color: #ffffff;
+	background-color: #81007f;
+	border-color: #81007f;
+}
+
+/*-------------------------------------*/
+/*		Plum Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-plum{
+	color: #8d4585;
+	background-color: #ffffff;
+	border-color: #8d4585 !important;
+}
+.btn-outline-plum:hover{
+	color: #ffffff;
+	background-color: #8d4585;
+	border-color: #8d4585;
+}
+
+/*-------------------------------------*/
+/*		Eggplant Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-eggplant{
+	color: #311432;
+	background-color: #ffffff;
+	border-color: #311432 !important;
+}
+.btn-outline-eggplant:hover{
+	color: #ffffff;
+	background-color: #311432;
+	border-color: #311432;
+}
+
+/*-------------------------------------*/
+/*		Blue Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-blue{
+	color: #0018f9;
+	background-color: #ffffff;
+	border-color: #0018f9 !important;
+}
+.btn-outline-blue:hover{
+	color: #ffffff;
+	background-color: #0018f9;
+	border-color: #0018f9;
+}
+
+/*-------------------------------------*/
+/*		Yale Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-yale{
+	color: #0e4c92;
+	background-color: #ffffff;
+	border-color: #0e4c92 !important;
+}
+.btn-outline-yale:hover{
+	color: #ffffff;
+	background-color: #0e4c92;
+	border-color: #0e4c92;
+}
+
+/*-------------------------------------*/
+/*		Pigeon Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-pigeon{
+	color: #7285a5;
+	background-color: #ffffff;
+	border-color: #7285a5 !important;
+}
+.btn-outline-pigeon:hover{
+	color: #000000;
+	background-color: #7285a5;
+	border-color: #7285a5;
+}
+
+/*-------------------------------------*/
+/*		Sky Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-sky{
+	color: #95c8d8;
+	background-color: #ffffff;
+	border-color: #95c8d8 !important;
+}
+.btn-outline-sky:hover{
+	color: #000000;
+	background-color: #95c8d8;
+	border-color: #95c8d8;
+}
+
+/*-------------------------------------*/
+/*		Independence Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-independence{
+	color: #4d516d;
+	background-color: #ffffff;
+	border-color: #4d516d !important;
+}
+.btn-outline-independence:hover{
+	color: #ffffff;
+	background-color: #4d516d;
+	border-color: #4d516d;
+}
+
+/*-------------------------------------*/
+/*		Air Force Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-air-force{
+	color: #598baf;
+	background-color: #ffffff;
+	border-color: #598baf !important;
+}
+.btn-outline-air-force:hover{
+	color: #000000;
+	background-color: #598baf;
+	border-color: #598baf;
+}
+
+/*-------------------------------------*/
+/*		Baby Blue Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-baby-blue{
+	color: #89cfef;
+	background-color: #ffffff;
+	border-color: #89cfef !important;
+}
+.btn-outline-baby-blue:hover{
+	color: #000000;
+	background-color: #89cfef;
+	border-color: #89cfef;
+}
+
+/*-------------------------------------*/
+/*		Navy Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-navy{
+	color: #000080;
+	background-color: #ffffff;
+	border-color: #000080 !important;
+}
+.btn-outline-navy:hover{
+	color: #ffffff;
+	background-color: #000080;
+	border-color: #000080;
+}
+
+/*-------------------------------------*/
+/*		Steel Blue Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-steel-blue{
+	color: #4682b4;
+	background-color: #ffffff;
+	border-color: #4682b4 !important;
+}
+.btn-outline-steel-blue:hover{
+	color: #ffffff;
+	background-color: #4682b4;
+	border-color: #4682b4;
+}
+
+/*-------------------------------------*/
+/*		Carolina Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-carolina{
+	color: #57a0d2;
+	background-color: #ffffff;
+	border-color: #57a0d2 !important;
+}
+.btn-outline-carolina:hover{
+	color: #000000;
+	background-color: #57a0d2;
+	border-color: #57a0d2;
+}
+
+/*-------------------------------------*/
+/*		Turkish Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-turkish{
+	color: #5097a4;
+	background-color: #ffffff;
+	border-color: #5097a4 !important;
+}
+.btn-outline-turkish:hover{
+	color: #ffffff;
+	background-color: #5097a4;
+	border-color: #5097a4;
+}
+
+/*-------------------------------------*/
+/*		Maya Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-maya{
+	color: #73c2fb;
+	background-color: #ffffff;
+	border-color: #73c2fb !important;
+}
+.btn-outline-maya:hover{
+	color: #000000;
+	background-color: #73c2fb;
+	border-color: #73c2fb;
+}
+
+/*-------------------------------------*/
+/*		Cornflower Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-cornflower{
+	color: #6693f5;
+	background-color: #ffffff;
+	border-color: #6693f5 !important;
+}
+.btn-outline-cornflower:hover{
+	color: #000000;
+	background-color: #6693f5;
+	border-color: #6693f5;
+}
+
+/*-------------------------------------*/
+/*		Olympic Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-olympic{
+	color: #008ecc;
+	background-color: #ffffff;
+	border-color: #008ecc !important;
+}
+.btn-outline-olympic:hover{
+	color: #ffffff;
+	background-color: #008ecc;
+	border-color: #008ecc;
+}
+
+/*-------------------------------------*/
+/*		Sapphire Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-sapphire{
+	color: #0f52ba;
+	background-color: #ffffff;
+	border-color: #0f52ba !important;
+}
+.btn-outline-sapphire:hover{
+	color: #ffffff;
+	background-color: #0f52ba;
+	border-color: #0f52ba;
+}
+
+/*-------------------------------------*/
+/*		Azure Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-azure{
+	color: #0080fe;
+	background-color: #ffffff;
+	border-color: #0080fe !important;
+}
+.btn-outline-azure:hover{
+	color: #ffffff;
+	background-color: #0080fe;
+	border-color: #0080fe;
+}
+
+/*-------------------------------------*/
+/*		Egyptian Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-egyptian{
+	color: #1134a6;
+	background-color: #ffffff;
+	border-color: #1134a6 !important;
+}
+.btn-outline-egyptian:hover{
+	color: #ffffff;
+	background-color: #1134a6;
+	border-color: #1134a6;
+}
+
+/*-------------------------------------*/
+/*		Denim Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-denim{
+	color: #131e3a;
+	background-color: #ffffff;
+	border-color: #131e3a !important;
+}
+.btn-outline-denim:hover{
+	color: #ffffff;
+	background-color: #131e3a;
+	border-color: #131e3a;
+}
+
+/*-------------------------------------*/
+/*		Prussian Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-prussian{
+	color: #003151;
+	background-color: #ffffff;
+	border-color: #003151 !important;
+}
+.btn-outline-prussian:hover{
+	color: #ffffff;
+	background-color: #003151;
+	border-color: #003151;
+}
+
+/*-------------------------------------*/
+/*		Space Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-space{
+	color: #1c2951;
+	background-color: #ffffff;
+	border-color: #1c2951 !important;
+}
+.btn-outline-space:hover{
+	color: #ffffff;
+	background-color: #1c2951;
+	border-color: #1c2951;
+}
+
+/*-------------------------------------*/
+/*		Green Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-green{
+	color: #3bb143;
+	background-color: #ffffff;
+	border-color: #3bb143 !important;
+}
+.btn-outline-green:hover{
+	color: #ffffff;
+	background-color: #3bb143;
+	border-color: #3bb143;
+}
+
+/*-------------------------------------*/
+/*		Forest Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-forest{
+	color: #0b6623;
+	background-color: #ffffff;
+	border-color: #0b6623 !important;
+}
+.btn-outline-forest:hover{
+	color: #ffffff;
+	background-color: #0b6623;
+	border-color: #0b6623;
+}
+
+/*-------------------------------------*/
+/*		Sage Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-sage{
+	color: #9dc183;
+	background-color: #ffffff;
+	border-color: #9dc183 !important;
+}
+.btn-outline-sage:hover{
+	color: #000000;
+	background-color: #9dc183;
+	border-color: #9dc183;
+}
+
+/*-------------------------------------*/
+/*		Olive Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-olive{
+	color: #708238;
+	background-color: #ffffff;
+	border-color: #708238 !important;
+}
+.btn-outline-olive:hover{
+	color: #ffffff;
+	background-color: #708238;
+	border-color: #708238;
+}
+
+/*-------------------------------------*/
+/*		Lime Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-lime{
+	color: #c7ea46;
+	background-color: #ffffff;
+	border-color: #c7ea46 !important;
+}
+.btn-outline-lime:hover{
+	color: #000000;
+	background-color: #c7ea46;
+	border-color: #c7ea46;
+}
+
+/*-------------------------------------*/
+/*		Hunter Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-hunter{
+	color: #3f704d;
+	background-color: #ffffff;
+	border-color: #3f704d !important;
+}
+.btn-outline-hunter:hover{
+	color: #ffffff;
+	background-color: #3f704d;
+	border-color: #3f704d;
+}
+
+/*-------------------------------------*/
+/*		Jade Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-jade{
+	color: #00a86b;
+	background-color: #ffffff;
+	border-color: #00a86b !important;
+}
+.btn-outline-jade:hover{
+	color: #ffffff;
+	background-color: #00a86b;
+	border-color: #00a86b;
+}
+
+/*-------------------------------------*/
+/*		Artichoke Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-artichoke{
+	color: #8f9779;
+	background-color: #ffffff;
+	border-color: #8f9779 !important;
+}
+.btn-outline-artichoke:hover{
+	color: #000000;
+	background-color: #8f9779;
+	border-color: #8f9779;
+}
+
+/*-------------------------------------*/
+/*		Fern Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-fern{
+	color: #4f7942;
+	background-color: #ffffff;
+	border-color: #4f7942 !important;
+}
+.btn-outline-fern:hover{
+	color: #ffffff;
+	background-color: #4f7942;
+	border-color: #4f7942;
+}
+
+/*-------------------------------------*/
+/*		Jungle Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-jungle{
+	color: #29ab87;
+	background-color: #ffffff;
+	border-color: #29ab87 !important;
+}
+.btn-outline-jungle:hover{
+	color: #ffffff;
+	background-color: #29ab87;
+	border-color: #29ab87;
+}
+
+/*-------------------------------------*/
+/*		Laurel Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-laurel{
+	color: #a9ba9d;
+	background-color: #ffffff;
+	border-color: #a9ba9d !important;
+}
+.btn-outline-laurel:hover{
+	color: #000000;
+	background-color: #a9ba9d;
+	border-color: #a9ba9d;
+}
+
+/*-------------------------------------*/
+/*		Moss Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-moss{
+	color: #8a9a5b;
+	background-color: #ffffff;
+	border-color: #8a9a5b !important;
+}
+.btn-outline-moss:hover{
+	color: #ffffff;
+	background-color: #8a9a5b;
+	border-color: #8a9a5b;
+}
+
+/*-------------------------------------*/
+/*		Mint Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-mint{
+	color: #98fb98;
+	background-color: #ffffff;
+	border-color: #98fb98 !important;
+}
+.btn-outline-mint:hover{
+	color: #000000;
+	background-color: #98fb98;
+	border-color: #98fb98;
+}
+
+/*-------------------------------------*/
+/*		Pine Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-pine{
+	color: #01796f;
+	background-color: #ffffff;
+	border-color: #01796f !important;
+}
+.btn-outline-pine:hover{
+	color: #ffffff;
+	background-color: #01796f;
+	border-color: #01796f;
+}
+
+/*-------------------------------------*/
+/*		Tea Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-tea{
+	color: #d0f0c0;
+	background-color: #ffffff;
+	border-color: #d0f0c0 !important;
+}
+.btn-outline-tea:hover{
+	color: #000000;
+	background-color: #d0f0c0;
+	border-color: #d0f0c0;
+}
+
+/*-------------------------------------*/
+/*		Army Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-army{
+	color: #4b5320;
+	background-color: #ffffff;
+	border-color: #4b5320 !important;
+}
+.btn-outline-army:hover{
+	color: #ffffff;
+	background-color: #4b5320;
+	border-color: #4b5320;
+}
+
+/*-------------------------------------*/
+/*		Emerald Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-emerald{
+	color: #50c878;
+	background-color: #ffffff;
+	border-color: #50c878 !important;
+}
+.btn-outline-emerald:hover{
+	color: #000000;
+	background-color: #50c878;
+	border-color: #50c878;
+}
+
+/*-------------------------------------*/
+/*		Kelly Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-kelly{
+	color: #4cbb17;
+	background-color: #ffffff;
+	border-color: #4cbb17 !important;
+}
+.btn-outline-kelly:hover{
+	color: #ffffff;
+	background-color: #4cbb17;
+	border-color: #4cbb17;
+}
+
+/*-------------------------------------*/
+/*		Sacramento Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-sacramento{
+	color: #043927;
+	background-color: #ffffff;
+	border-color: #043927 !important;
+}
+.btn-outline-sacramento:hover{
+	color: #ffffff;
+	background-color: #043927;
+	border-color: #043927;
+}
+
+/*-------------------------------------*/
+/*		Sea Green Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-sea-green{
+	color: #2e8b57;
+	background-color: #ffffff;
+	border-color: #2e8b57 !important;
+}
+.btn-outline-sea-green:hover{
+	color: #ffffff;
+	background-color: #2e8b57;
+	border-color: #2e8b57;
+}
+
+/*-------------------------------------*/
+/*		Cedar Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-cedar{
+	color: #4b3a26;
+	background-color: #ffffff;
+	border-color: #4b3a26 !important;
+}
+.btn-outline-cedar:hover{
+	color: #ffffff;
+	background-color: #4b3a26;
+	border-color: #4b3a26;
+}
+
+/*-------------------------------------*/
+/*		Cinnamon Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-cinnamon{
+	color: #622a0f;
+	background-color: #ffffff;
+	border-color: #622a0f !important;
+}
+.btn-outline-cinnamon:hover{
+	color: #ffffff;
+	background-color: #622a0f;
+	border-color: #622a0f;
+}
+
+/*-------------------------------------*/
+/*		Brunette Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-brunette{
+	color: #3a1f04;
+	background-color: #ffffff;
+	border-color: #3a1f04 !important;
+}
+.btn-outline-brunette:hover{
+	color: #ffffff;
+	background-color: #3a1f04;
+	border-color: #3a1f04;
+}
+
+/*-------------------------------------*/
+/*		Mocha Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-mocha{
+	color: #3b270c;
+	background-color: #ffffff;
+	border-color: #3b270c !important;
+}
+.btn-outline-mocha:hover{
+	color: #ffffff;
+	background-color: #3b270c;
+	border-color: #3b270c;
+}
+
+/*-------------------------------------*/
+/*		Umber Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-umber{
+	color: #362312;
+	background-color: #ffffff;
+	border-color: #362312 !important;
+}
+.btn-outline-umber:hover{
+	color: #ffffff;
+	background-color: #362312;
+	border-color: #362312;
+}
+
+/*-------------------------------------*/
+/*		Tortilla Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-tortilla{
+	color: #997950;
+	background-color: #ffffff;
+	border-color: #997950 !important;
+}
+.btn-outline-tortilla:hover{
+	color: #ffffff;
+	background-color: #997950;
+	border-color: #997950;
+}
+
+/*-------------------------------------*/
+/*		Chocolate Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-chocolate{
+	color: #2b1700;
+	background-color: #ffffff;
+	border-color: #2b1700 !important;
+}
+.btn-outline-chocolate:hover{
+	color: #ffffff;
+	background-color: #2b1700;
+	border-color: #2b1700;
+}
+
+/*-------------------------------------*/
+/*		Syrup Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-syrup{
+	color: #492000;
+	background-color: #ffffff;
+	border-color: #492000 !important;
+}
+.btn-outline-syrup:hover{
+	color: #ffffff;
+	background-color: #492000;
+	border-color: #492000;
+}
+
+/*-------------------------------------*/
+/*		Gingerbread Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-gingerbread{
+	color: #5c2c06;
+	background-color: #ffffff;
+	border-color: #5c2c06 !important;
+}
+.btn-outline-gingerbread:hover{
+	color: #ffffff;
+	background-color: #5c2c06;
+	border-color: #5c2c06;
+}
+
+/*-------------------------------------*/
+/*		Caramel Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-caramel{
+	color: #613613;
+	background-color: #ffffff;
+	border-color: #613613 !important;
+}
+.btn-outline-caramel:hover{
+	color: #ffffff;
+	background-color: #613613;
+	border-color: #613613;
+}
+
+/*-------------------------------------*/
+/*		Walnut Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-walnut{
+	color: #43270f;
+	background-color: #ffffff;
+	border-color: #43270f !important;
+}
+.btn-outline-walnut:hover{
+	color: #ffffff;
+	background-color: #43270f;
+	border-color: #43270f;
+}
+
+/*-------------------------------------*/
+/*		Pecan Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-pecan{
+	color: #48260d;
+	background-color: #ffffff;
+	border-color: #48260d !important;
+}
+.btn-outline-pecan:hover{
+	color: #ffffff;
+	background-color: #48260d;
+	border-color: #48260d;
+}
+
+/*-------------------------------------*/
+/*		Wood Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-wood{
+	color: #402f1d;
+	background-color: #ffffff;
+	border-color: #402f1d !important;
+}
+.btn-outline-wood:hover{
+	color: #ffffff;
+	background-color: #402f1d;
+	border-color: #402f1d;
+}
+
+/*-------------------------------------*/
+/*		Hickory Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-hickory{
+	color: #351e10;
+	background-color: #ffffff;
+	border-color: #351e10 !important;
+}
+.btn-outline-hickory:hover{
+	color: #ffffff;
+	background-color: #351e10;
+	border-color: #351e10;
+}
+
+/*-------------------------------------*/
+/*		Espresso Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-espresso{
+	color: #4b382a;
+	background-color: #ffffff;
+	border-color: #4b382a !important;
+}
+.btn-outline-espresso:hover{
+	color: #ffffff;
+	background-color: #4b382a;
+	border-color: #4b382a;
+}
+
+/*-------------------------------------*/
+/*		Peanut Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-peanut{
+	color: #795c32;
+	background-color: #ffffff;
+	border-color: #795c32 !important;
+}
+.btn-outline-peanut:hover{
+	color: #ffffff;
+	background-color: #795c32;
+	border-color: #795c32;
+}
+
+/*-------------------------------------*/
+/*		Tawny Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-tawny{
+	color: #7e481c;
+	background-color: #ffffff;
+	border-color: #7e481c !important;
+}
+.btn-outline-tawny:hover{
+	color: #ffffff;
+	background-color: #7e481c;
+	border-color: #7e481c;
+}
+
+/*-------------------------------------*/
+/*		Coffee Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-coffee{
+	color: #4b3619;
+	background-color: #ffffff;
+	border-color: #4b3619 !important;
+}
+.btn-outline-coffee:hover{
+	color: #ffffff;
+	background-color: #4b3619;
+	border-color: #4b3619;
+}
+
+/*-------------------------------------*/
+/*		Russet Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-russet{
+	color: #7f461b;
+	background-color: #ffffff;
+	border-color: #7f461b !important;
+}
+.btn-outline-russet:hover{
+	color: #ffffff;
+	background-color: #7f461b;
+	border-color: #7f461b;
+}
+
+/*-------------------------------------*/
+/*		Gray Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-gray{
+	color: #828282;
+	background-color: #ffffff;
+	border-color: #828282 !important;
+}
+.btn-outline-gray:hover{
+	color: #000000;
+	background-color: #828282;
+	border-color: #828282;
+}
+
+/*-------------------------------------*/
+/*		Fossil Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-fossil{
+	color: #787276;
+	background-color: #ffffff;
+	border-color: #787276 !important;
+}
+.btn-outline-fossil:hover{
+	color: #ffffff;
+	background-color: #787276;
+	border-color: #787276;
+}
+
+/*-------------------------------------*/
+/*		Mink Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-mink{
+	color: #88807b;
+	background-color: #ffffff;
+	border-color: #88807b !important;
+}
+.btn-outline-mink:hover{
+	color: #000000;
+	background-color: #88807b;
+	border-color: #88807b;
+}
+
+/*-------------------------------------*/
+/*		Pearl River Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-pearl-river{
+	color: #d9dddc;
+	background-color: #ffffff;
+	border-color: #d9dddc !important;
+}
+.btn-outline-pearl-river:hover{
+	color: #000000;
+	background-color: #d9dddc;
+	border-color: #d9dddc;
+}
+
+/*-------------------------------------*/
+/*		Abalone Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-abalone{
+	color: #d6cfc7;
+	background-color: #ffffff;
+	border-color: #d6cfc7 !important;
+}
+.btn-outline-abalone:hover{
+	color: #000000;
+	background-color: #d6cfc7;
+	border-color: #d6cfc7;
+}
+
+/*-------------------------------------*/
+/*		Harbor Gray Outline Button			*/
+/*-------------------------------------*/
+
+.btn-outline-harbor-gray{
+	color: #c7c6c1;
+	background-color: #ffffff;
+	border-color: #c7c6c1 !important;
+}
+.btn-outline-harbor-gray:hover{
+	color: #000000;
+	background-color: #c7c6c1;
+	border-color: #c7c6c1;
+}
+
+/*-------------------------------------*/
+/*		Smoke Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-smoke{
+	color: #bebdb8;
+	background-color: #ffffff;
+	border-color: #bebdb8 !important;
+}
+.btn-outline-smoke:hover{
+	color: #000000;
+	background-color: #bebdb8;
+	border-color: #bebdb8;
+}
+
+/*-------------------------------------*/
+/*		Thunder Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-thunder{
+	color: #bdb7ab;
+	background-color: #ffffff;
+	border-color: #bdb7ab !important;
+}
+.btn-outline-thunder:hover{
+	color: #000000;
+	background-color: #bdb7ab;
+	border-color: #bdb7ab;
+}
+
+/*-------------------------------------*/
+/*		Pewter Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-pewter{
+	color: #999da0;
+	background-color: #ffffff;
+	border-color: #999da0 !important;
+}
+.btn-outline-pewter:hover{
+	color: #000000;
+	background-color: #999da0;
+	border-color: #999da0;
+}
+
+/*-------------------------------------*/
+/*		Steel Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-steel{
+	color: #777b7e;
+	background-color: #ffffff;
+	border-color: #777b7e !important;
+}
+.btn-outline-steel:hover{
+	color: #ffffff;
+	background-color: #777b7e;
+	border-color: #777b7e;
+}
+
+/*-------------------------------------*/
+/*		Stone Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-stone{
+	color: #877f7d;
+	background-color: #ffffff;
+	border-color: #877f7d !important;
+}
+.btn-outline-stone:hover{
+	color: #000000;
+	background-color: #877f7d;
+	border-color: #877f7d;
+}
+
+/*-------------------------------------*/
+/*		Iron Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-iron{
+	color: #48494b;
+	background-color: #ffffff;
+	border-color: #48494b !important;
+}
+.btn-outline-iron:hover{
+	color: #ffffff;
+	background-color: #48494b;
+	border-color: #48494b;
+}
+
+/*-------------------------------------*/
+/*		Rhino Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-rhino{
+	color: #b9bbb6;
+	background-color: #ffffff;
+	border-color: #b9bbb6 !important;
+}
+.btn-outline-rhino:hover{
+	color: #000000;
+	background-color: #b9bbb6;
+	border-color: #b9bbb6;
+}
+
+/*-------------------------------------*/
+/*		Trout Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-trout{
+	color: #97978f;
+	background-color: #ffffff;
+	border-color: #97978f !important;
+}
+.btn-outline-trout:hover{
+	color: #000000;
+	background-color: #97978f;
+	border-color: #97978f;
+}
+
+/*-------------------------------------*/
+/*		Seal Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-seal{
+	color: #818380;
+	background-color: #ffffff;
+	border-color: #818380 !important;
+}
+.btn-outline-seal:hover{
+	color: #000000;
+	background-color: #818380;
+	border-color: #818380;
+}
+
+/*-------------------------------------*/
+/*		Lava Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-lava{
+	color: #808588;
+	background-color: #ffffff;
+	border-color: #808588 !important;
+}
+.btn-outline-lava:hover{
+	color: #000000;
+	background-color: #808588;
+	border-color: #808588;
+}
+
+/*-------------------------------------*/
+/*		Shadow Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-shadow{
+	color: #363636;
+	background-color: #ffffff;
+	border-color: #363636 !important;
+}
+.btn-outline-shadow:hover{
+	color: #ffffff;
+	background-color: #363636;
+	border-color: #363636;
+}
+
+/*-------------------------------------*/
+/*		Ash Outline Button						*/
+/*-------------------------------------*/
+
+.btn-outline-ash{
+	color: #544c4a;
+	background-color: #ffffff;
+	border-color: #544c4a !important;
+}
+.btn-outline-ash:hover{
+	color: #ffffff;
+	background-color: #544c4a;
+	border-color: #544c4a;
+}
+
+/*-------------------------------------*/
+/*		Anchor Outline Button					*/
+/*-------------------------------------*/
+
+.btn-outline-anchor{
+	color: #3e424b;
+	background-color: #ffffff;
+	border-color: #3e424b !important;
+}
+.btn-outline-anchor:hover{
+	color: #ffffff;
+	background-color: #3e424b;
+	border-color: #3e424b;
+}
+
+/*-------------------------------------*/
+/*		Charcoal Outline Button				*/
+/*-------------------------------------*/
+
+.btn-outline-charcoal{
+	color: #222021;
+	background-color: #ffffff;
+	border-color: #222021 !important;
+}
+.btn-outline-charcoal:hover{
+	color: #ffffff;
+	background-color: #222021;
+	border-color: #222021;
+}
+
