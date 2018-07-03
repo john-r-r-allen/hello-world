@@ -306,6 +306,11 @@ RPGLE Subfile Example Program
        Dcl-C View              Const('Display a Record');
        Dcl-C Delete            Const('Delete a Record');
        Dcl-C SFLH3             Const('Work With Posting Status');
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // Page Size Constants
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       Dcl-C Sfl_Page_Size         Const(12);
+       Dcl-C Sfl_Page_Size_Minus_1 Const(11);
       *=============================================================================================
       *                                 I n d i c a t o r s
       *=============================================================================================
@@ -397,7 +402,7 @@ RPGLE Subfile Example Program
 
           SetLL %kds(Key_MAINFLF) MAINFLF;
           Read MAINFLF;
-          DoW (RRN1 < 12) and (Not %EoF(MAINFLF));
+          DoW (RRN1 < Sfl_Page_Size) and (Not %EoF(MAINFLF));
              If AlpDate( FIELD12
                        : FIELD13
                        : FIELD14
@@ -420,7 +425,7 @@ RPGLE Subfile Example Program
                    FirstRrn = MainFileLF_InfDS.FileRrn;
                    Exsr Set_Key_To_File_Fields;
                 EndIf;
-                If Rrn1 = 12;
+                If Rrn1 = Sfl_Page_Size;
                    LastRrn = MainFileLF_InfDS.FileRrn;
                 EndIf;
              EndIf;
@@ -429,7 +434,7 @@ RPGLE Subfile Example Program
 
           If Not %EoF(MAINFLF);
              SFL_Not_End = *On;    // *In93
-             SflRrn = Rrn1 - 11;
+             SflRrn = Rrn1 - Sfl_Page_Size_Minus_1;
           Else;
              SFL_Not_End = *Off;   // *In93
           EndIf;
@@ -547,7 +552,7 @@ RPGLE Subfile Example Program
       *=========================================================================
        BegSr Refresh_Subfile;
 
-          If Rrn1 <= 12;
+          If Rrn1 <= Sfl_Page_Size;
              Leave_at_Full_Page = *On;
           EndIf;
 
@@ -587,7 +592,7 @@ RPGLE Subfile Example Program
                    FirstRRN = MainFileLF_InfDS.FileRRN;
                 EndIf;
 
-                If Rrn1 >= 12 and Leave_at_Full_Page = *On;
+                If Rrn1 >= Sfl_Page_Size and Leave_at_Full_Page = *On;
                    LastRrn = MainFileLF_InfDS.FileRrn;
                    Leave;
                 EndIf;
@@ -597,7 +602,7 @@ RPGLE Subfile Example Program
              Read MAINFLF;
 
              If LastRrn = MainFileLF_InfDS.FileRrn
-             and Rrn1 >= 12;
+             and Rrn1 >= Sfl_Page_Size;
                 Leave;
              Elseif LastRrn = MainFileLF_InfDS.FileRrn;
                 Leave_at_full_Page = *On;
@@ -607,7 +612,7 @@ RPGLE Subfile Example Program
 
 
           If Not %EoF(MAINFLF);
-             SflRrn = Rrn1 - 11;
+             SflRrn = Rrn1 - Sfl_Page_Size_Minus_1;
              SFL_Not_End = *On;    // *In93
           Else;
              SflRrn = 1;
@@ -636,7 +641,7 @@ RPGLE Subfile Example Program
           Count = *Zero;
           SetGt *Hival MAINFLF;
           ReadP MAINFLF;
-          DoW Count < 12 and Not %EoF(MAINFLF);
+          DoW Count < Sfl_Page_Size and Not %EoF(MAINFLF);
              If AlpDate( FIELD12
                        : FIELD13
                        : FIELD14
@@ -649,7 +654,7 @@ RPGLE Subfile Example Program
 
           Count = *Zero;
           Read MAINFLF;
-          DoW Count < 12 and Not %EoF(MAINFLF);
+          DoW Count < Sfl_Page_Size and Not %EoF(MAINFLF);
              If AlpDate( FIELD12
                        : FIELD13
                        : FIELD14
@@ -681,7 +686,7 @@ RPGLE Subfile Example Program
 
           If Not %EoF(MAINFLF);
              SFL_Not_End = *On;    // *In93
-             SflRrn = Rrn1 - 11;
+             SflRrn = Rrn1 - Sfl_Page_Size_Minus_1;
           Else;
              SflRrn = 1;
              Sfl_Not_End = *Off;   // *In93
@@ -1333,7 +1338,7 @@ RPGLE Subfile Example Program
           Count = *Zero;
           SetGT %Kds(Last_Rrn_Key) MAINFLF;
           Read MAINFLF;
-          DoW (Count < 12) and (Not %EoF(MAINFLF));
+          DoW (Count < Sfl_Page_Size) and (Not %EoF(MAINFLF));
              If AlpDate( FIELD12
                        : FIELD13
                        : FIELD14
@@ -1361,7 +1366,7 @@ RPGLE Subfile Example Program
           // If a full page is loaded, and we are not at the end of the file,
           // position the subfile to the top of the next page
           If Not %EoF(MAINFLF);
-             SflRrn = Rrn1 - 11;
+             SflRrn = Rrn1 - Sfl_Page_Size_Minus_1;
              SFL_Not_End = *On;    // *In93
           // If we are at the end of the file, we want to position to the top
           // of the next page, we will do this by taking the rrn of the final
